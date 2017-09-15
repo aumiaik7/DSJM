@@ -1496,7 +1496,7 @@ public:
  *                  0(zero).
  *
  */
-/*
+
 int Matrix::sdo(int *color)
 {
     int *satDeg = NULL;
@@ -1511,7 +1511,9 @@ int Matrix::sdo(int *color)
     int *inducedDeg = NULL;	
     int *maxSatTrack = NULL;
 
-    boost::dynamic_bitset<>** bitsets;
+    //boost::dynamic_bitset<>** bitsets;
+
+    bool **colorTracker;
 
 
    
@@ -1560,37 +1562,17 @@ int Matrix::sdo(int *color)
                                // order in Staruation Degree Ordering.
         inducedDeg = new int[N+1]; //Degree of columns in G(V\V')
 
-        bitsets = new boost::dynamic_bitset<>*[N+1]; 
-        head = new int*[N+1];
-        //headj = new int[N+1];
-        maxSatTrack = new int[N+1]();
+        colorTracker = new bool*[N+1]; //track whether the colored column is a new colored column for its neighbors
 
-        int* incMax = new  int[maxdeg+1]();
+        head = new int*[N+1]; //2D head to find column of maximum saturation degree and maximum induced degree 
 
-         // vector <vector <int> > maxIncTrack(maxdeg);
-         // vector <int> maxIncList(maxdeg);
+        maxSatTrack = new int[N+1](); //track the no of column in saturation degree lists 
 
+        int* incMax = new  int[maxdeg+1](); //holds the maximum induced degree in saturation degree lists
 
-        // Sort the indices of degree array <id:ndeg> in descending order, i.e
-        // ndeg(tag(i)) is in descending order , i = 1,2,...,n
-        //
-        // <id:tag> is used here as an in-out-parameter to <id:indexSort> routine. It
-        // will hold the sorted indices. The two arrays, <id:previous> and
-        // <id:next> is used for temporary storage required for <id:indexSort>
-        // routine.
-	
-        //MatrixUtility::indexsort(N,N-1, ndeg,-1,tag , previous, next);
-	//head2[0] = new int[N+1];
-	//head2[0][0] = 0;
-	
-
-       
-        head[0] = new int[maxdeg+1]();
-        // maxIncTrack.push_back(maxIncList);
-        // maxIncTrack[0].push_back(0);
-        
-        //maxSatTrack[0] = 0;
-        
+               
+        head[0] = new int[maxdeg+1](); //initialize saturation degree 0 list 
+  
         // Initialize the doubly linked list, <id:satDeg>, and <id:tag> and <id:order> integer array.
         //for (int jp = N; jp >= 1; jp--)
         incMax[0] = maxdeg;
@@ -1598,9 +1580,6 @@ int Matrix::sdo(int *color)
         {
             //int ic = tag[jp]; // Tag is sorted indices for now 
             int ic = jp;
-            //head[N-jp] = 0;
-	       //head2[N-jp] = new int[N+1]();	  	
-            //head2[jp] = new int[maxdeg+1]();       
             head[jp] = NULL;       
             
 
@@ -1608,15 +1587,11 @@ int Matrix::sdo(int *color)
             satDeg[jp] = 0;
             color[jp] = N;
             seqTag[jp] = 0;
-            *(bitsets+jp) = NULL; 
+            //*(bitsets+jp) = NULL; 
+            colorTracker[jp] = NULL;
            //headj[jp] = -1;
 	        inducedDeg[jp] = ndeg[jp];
             maxSatTrack[0]++;
-            // if(inducedDeg[jp]>maxIncTrack[0][maxIncTrack[0].size()-1])
-            //     maxIncTrack[0].push_back(inducedDeg[jp]);
-            //maxSatTrack[jp] = 0;
-            //inducedDeg[ic] = ndeg[ic];
-            //addColumn2(head2,next,previous,headj,inducedDeg,0,ic);
             addColumn2(head,next,previous,inducedDeg[jp],0,jp);
         }
         
@@ -1624,17 +1599,7 @@ int Matrix::sdo(int *color)
         cout<<"maxSatTrack[0] : "<<maxSatTrack[0]<<" maxDeg: "<<maxdeg<<endl;
         int numord = 1;
 
-        // determine the maximal search length to search for maximal degree in
-        // the maximal incidence degree satDeg.
-        int maxlst = 0;
-
-        //for( int ir = 1; ir <= M; ir++)
-        //{
-        //    maxlst = maxlst + MatrixUtility::square(ipntr[ir+1] - ipntr[ir]);
-        //}
-
-        //maxlst = maxlst / N;
-
+        //int maxlst = 0;
         int maxsat = 0;
     	int prevJcol = 0;
         int searchLength = 0;
@@ -1743,8 +1708,9 @@ int Matrix::sdo(int *color)
                 // This position means we are creating a new color.
                 // So, create a new bitset.
                 // boost::dynamic_bitset<> x(N);
-                *(bitsets+maxgrp) = new boost::dynamic_bitset<>(N+1,0);
-                head[maxgrp] = new int [N+1]();
+                //*(bitsets+maxgrp) = new boost::dynamic_bitset<>(N+1,0);
+                colorTracker[maxgrp] = new bool[N+1]();
+                head[maxgrp] = new int [maxdeg+1]();
                 
                 // maxIncTrack.push_back(maxIncList);
                 // maxIncTrack[maxgrp].push_back(0);
@@ -1753,7 +1719,8 @@ int Matrix::sdo(int *color)
 
         //SDO_L50:
             color[jcol] = newColor;
-            (*(bitsets+newColor))->set(jcol); 
+            //(*(bitsets+newColor))->set(jcol); 
+            colorTracker[newColor][jcol] = true;
 
             satDeg[jcol] = numord;
             numord++;
@@ -1791,10 +1758,12 @@ int Matrix::sdo(int *color)
                         tag[ic] = numord;
                         //inducedDeg[ic] = inducedDeg[ic] - 1;
                         //bool isNewColor = (*(bitsets+newColor))->test(jcol); 
-                        bool isNewColor = (*(bitsets+newColor))->test(ic); 
+                        //bool isNewColor = (*(bitsets+newColor))->test(ic); 
+                        bool isNewColor = colorTracker[newColor][ic]; 
                         if(!isNewColor)
                         {
-                            (*(bitsets+newColor))->set(ic);     
+                            //(*(bitsets+newColor))->set(ic);     
+                            colorTracker[newColor][ic] = true;
                             // update the pointers to the current saturation
                             // degree lists.
                             satDeg[ic]++;
@@ -1890,20 +1859,21 @@ int Matrix::sdo(int *color)
         if(inducedDeg) delete[] inducedDeg;
         //if(headj) delete[] headj;
         if(head) delete[] head;
+        if(colorTracker) delete[] colorTracker;
 
-       if(bitsets)
-        {
-	    //	
-            //for(int i =0 ; i <= N; i++)
-            //{
-            //    if(bitsets+i)
-            //    {
-            //        delete (*(bitsets+i)); 
-            //    } 
-            //}
+     //   if(bitsets)
+     //    {
+	    // //	
+     //        //for(int i =0 ; i <= N; i++)
+     //        //{
+     //        //    if(bitsets+i)
+     //        //    {
+     //        //        delete (*(bitsets+i)); 
+     //        //    } 
+     //        //}
 	    	
-            delete[] bitsets; 
-        } 
+     //        delete[] bitsets; 
+     //    } 
 	
         return 0;
     }
@@ -1917,25 +1887,26 @@ int Matrix::sdo(int *color)
     if(inducedDeg) delete[] inducedDeg;
     //if(headj) delete[] headj;
     if(head) delete [] head;
-    if(bitsets)
-    {
-        //for(int i =0 ; i <= N; i++)
-        //{
-        //    if(bitsets+i)
-        //    {
-        //        delete (*(bitsets+i)); 
-        //    } 
-        //}
-	//	
-        delete[] bitsets; 
-    } 
+    if(colorTracker) delete[] colorTracker;
+ //    if(bitsets)
+ //    {
+ //        //for(int i =0 ; i <= N; i++)
+ //        //{
+ //        //    if(bitsets+i)
+ //        //    {
+ //        //        delete (*(bitsets+i)); 
+ //        //    } 
+ //        //}
+	// //	
+ //        delete[] bitsets; 
+ //    } 
 
 
     return maxgrp;
 }
-*/
-/* sdo() ENDS*/
 
+/* sdo() ENDS*/
+/*
 int Matrix::sdo(int *color)
 {
     int *satDeg = NULL;
@@ -2217,6 +2188,7 @@ int Matrix::sdo(int *color)
 
     return maxgrp;
 }
+*/
 
 /* sdo() ENDS*/
 
