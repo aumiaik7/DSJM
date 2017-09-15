@@ -1,0 +1,51 @@
+\hypertarget{classColPack_1_1Timer}{
+\section{ColPack::Timer Class Reference}
+\label{classColPack_1_1Timer}\index{ColPack::Timer@{ColPack::Timer}}
+}
+
+
+class \hyperlink{classColPack_1_1Timer}{Timer} in \hyperlink{}{group4}.  
+
+
+{\ttfamily \#include $<$Timer.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classColPack_1_1Timer_a2ee878c906acc649e315741783729748}{
+void {\bfseries Start} ()}
+\label{classColPack_1_1Timer_a2ee878c906acc649e315741783729748}
+
+\item 
+\hypertarget{classColPack_1_1Timer_aee44f24596bbc8bfeea07eb85b699f79}{
+void {\bfseries Stop} ()}
+\label{classColPack_1_1Timer_aee44f24596bbc8bfeea07eb85b699f79}
+
+\item 
+\hypertarget{classColPack_1_1Timer_afa9cdbc07f53e5b09b5b1101930b05ec}{
+double {\bfseries GetWallTime} ()}
+\label{classColPack_1_1Timer_afa9cdbc07f53e5b09b5b1101930b05ec}
+
+\item 
+\hypertarget{classColPack_1_1Timer_a3ca3b7a0736317bec308c1d9db702dd0}{
+double {\bfseries GetProcessorTime} ()}
+\label{classColPack_1_1Timer_a3ca3b7a0736317bec308c1d9db702dd0}
+
+\item 
+\hypertarget{classColPack_1_1Timer_aeb1ba675cefe25bbea493ce25af1e67c}{
+double {\bfseries GetUserProcessorTime} ()}
+\label{classColPack_1_1Timer_aeb1ba675cefe25bbea493ce25af1e67c}
+
+\item 
+\hypertarget{classColPack_1_1Timer_a396a4839280ad5e4f06da4b7d1ee07f5}{
+double {\bfseries GetSystemProcessorTime} ()}
+\label{classColPack_1_1Timer_a396a4839280ad5e4f06da4b7d1ee07f5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{classColPack_1_1Timer}{Timer} in \hyperlink{}{group4}. The timer class is the only class in ColPack which has an optional dependency on the operating system. It offers both system independent C++ timer based on ctime.h or linux/unix dependent timer based on sys/times.h. The sytem independent timer only gives wall clock time while linux/unix dependent timer gives wall, processor, user and system times. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/Timer.h\item 
+src/Timer.cpp\end{DoxyCompactItemize}

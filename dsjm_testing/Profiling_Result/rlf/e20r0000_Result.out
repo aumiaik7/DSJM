@@ -1,0 +1,10 @@
+- 
+    commandLine: Not Given
+    inputFile: data/e20r0000.mtx
+    segmented: no
+    method: RLF
+    matrix_M: 4241
+    matrix_N: 4241
+    matrix_NNZ: 131556
+    totalColors: 66
+    coloring_time: 1.65

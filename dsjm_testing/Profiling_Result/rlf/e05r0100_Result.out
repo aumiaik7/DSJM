@@ -1,0 +1,10 @@
+- 
+    commandLine: Not Given
+    inputFile: data/e05r0100.mtx
+    segmented: no
+    method: RLF
+    matrix_M: 236
+    matrix_N: 236
+    matrix_NNZ: 5856
+    totalColors: 62
+    coloring_time: 0.05

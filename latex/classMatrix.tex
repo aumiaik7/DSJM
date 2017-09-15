@@ -1,0 +1,186 @@
+\hypertarget{classMatrix}{
+\section{Matrix Class Reference}
+\label{classMatrix}\index{Matrix@{Matrix}}
+}
+
+
+{\ttfamily \#include $<$Matrix.hh$>$}Inheritance diagram for Matrix::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classMatrix}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatrix_a9b1c3627f573d78a2f08623fdfef990f}{$\sim$Matrix} ()
+\item 
+\hyperlink{classMatrix_ae1ee0790f74689ac1ea9d6493e5ccd60}{Matrix} (int M, int N, int nz, bool value)
+\item 
+int \hyperlink{classMatrix_a7c1221aa40beeb82fdbacddcf86d58c9}{updateDegreesToUVertices} (int n, int ic, int u\_\-maxdeg, int $\ast$jpntr, int $\ast$indRow, int $\ast$ipntr, int $\ast$indCol, bool $\ast$f\_\-added, int $\ast$tag, int $\ast$f\_\-tag, int $\ast$u\_\-list, int $\ast$u\_\-head, int $\ast$u\_\-next, int $\ast$u\_\-previous, int $\ast$list, int $\ast$blackList, const int q)
+\item 
+bool \hyperlink{classMatrix_ac7e287f032e1296c51ce29704a0af704}{slo} (int $\ast$order)
+\item 
+bool \hyperlink{classMatrix_ab9bef57c1115e601cdeb493ecb381b82}{ido} (int $\ast$order)
+\item 
+bool \hyperlink{classMatrix_a24f9f912233b249ba1bb8e18eb979121}{lfo} (int $\ast$order)
+\item 
+bool \hyperlink{classMatrix_a6f6be59bfe0d4d5e1efae38f22174482}{computedegree} ()
+\item 
+int \hyperlink{classMatrix_a7ecfea6224fd953efa4a2add29307d0a}{greedycolor} (int $\ast$list, int $\ast$ngrp)
+\item 
+int \hyperlink{classMatrix_a55f7c0c85880d58823dd77aeefbd046c}{rlf} (int $\ast$ngrp)
+\item 
+int \hyperlink{classMatrix_a52e013055a3aef16751672815fc06600}{sdo} (int $\ast$ngrp)
+\item 
+\hypertarget{classMatrix_adbd4897b49ac42163ff50884a43499dc}{
+\hyperlink{classMatrix}{Matrix} $\ast$ {\bfseries getSeedMatrix} (int $\ast$ngrp)}
+\label{classMatrix_adbd4897b49ac42163ff50884a43499dc}
+
+\item 
+\hypertarget{classMatrix_aaa650ab5e57f0e1be15756184425794f}{
+int {\bfseries getNumberOfColors} () const }
+\label{classMatrix_aaa650ab5e57f0e1be15756184425794f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{Desc}
+\item[\hyperlink{todo__todo000002}{Todo}]\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMatrix_a9b1c3627f573d78a2f08623fdfef990f}{
+\index{Matrix@{Matrix}!$\sim$Matrix@{$\sim$Matrix}}
+\index{$\sim$Matrix@{$\sim$Matrix}!Matrix@{Matrix}}
+\subsubsection[{$\sim$Matrix}]{\setlength{\rightskip}{0pt plus 5cm}Matrix::$\sim$Matrix ()}}
+\label{classMatrix_a9b1c3627f573d78a2f08623fdfef990f}
+Destructor \hypertarget{classMatrix_ae1ee0790f74689ac1ea9d6493e5ccd60}{
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{Matrix}]{\setlength{\rightskip}{0pt plus 5cm}Matrix::Matrix (int {\em M}, \/  int {\em N}, \/  int {\em nz}, \/  bool {\em value})}}
+\label{classMatrix_ae1ee0790f74689ac1ea9d6493e5ccd60}
+Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classMatrix_a6f6be59bfe0d4d5e1efae38f22174482}{
+\index{Matrix@{Matrix}!computedegree@{computedegree}}
+\index{computedegree@{computedegree}!Matrix@{Matrix}}
+\subsubsection[{computedegree}]{\setlength{\rightskip}{0pt plus 5cm}bool Matrix::computedegree ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMatrix_a6f6be59bfe0d4d5e1efae38f22174482}
+Purpose: Computes Degree sequence of the columns of a sparse matrix A (i.e. the vertices of the column intersection graph G(A) ).
+
+Pre-\/condition: The matrix object is nonempty. Assumes that the computeCCS(), compress() and \hyperlink{classIRowColumnDS_ab93c5ed2748d15f61ac047a033e0deca}{computeCRS()} has been called prior calling this function, such that matrix object holds the sparsity information in Compressed Column and Compressed Row storage.
+
+Post-\/condition: Degree information for the columns of matrix A ( graph G(A) ) is stored in the data member $<$id:ndeg$>$, an integer array of size n+1 such that if k = ndeg\mbox{[}j\mbox{]} then the column j has degree k, where j = 1,2, ...,n.
+
+Return values: Returns true when the function is executed successfully, otherwise returns false. 
+
+Implements \hyperlink{classIMatrix}{IMatrix}.\hypertarget{classMatrix_a7ecfea6224fd953efa4a2add29307d0a}{
+\index{Matrix@{Matrix}!greedycolor@{greedycolor}}
+\index{greedycolor@{greedycolor}!Matrix@{Matrix}}
+\subsubsection[{greedycolor}]{\setlength{\rightskip}{0pt plus 5cm}int Matrix::greedycolor (int $\ast$ {\em order}, \/  int $\ast$ {\em color})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMatrix_a7ecfea6224fd953efa4a2add29307d0a}
+Purpose: Computes the greedy coloring of the columns of a sparse matrix A (i.e. the vertices of the column intersection graph G(A))
+
+Pre-\/condition: The matrix object is nonempty. Assumes that an ordering has been provided in the in-\/parameter $<$id:order$>$ integer array of size n+1, such that order\mbox{[}1\mbox{]}...order\mbox{[}n\mbox{]} is a permutation of \{1,...,n\}
+
+Post-\/condition: The greedy coloring of \hyperlink{classMatrix}{Matrix} A( graph G(A) ) is stored in the in-\/out-\/parameter $<$id:color$>$, an integer array of size n+1, such that if k = color\mbox{[}j\mbox{]} then the column j is colored with color k, j = 1,2,...,n
+
+Parameters: in-\/parameter $<$id:order$>$, an integer pointer to an array of size n+1, containing a permutation of \{1,...,n\}. The integer array uses 1-\/based indexing.
+
+in-\/out-\/parameter $<$id:color$>$, an integer pointer to an array of size n+1, it stores the color values of the columns in successful completion.The integer array uses 1-\/based indexing.
+
+Return values: Returns the number of colors if succeeds, otherwise returns 0(zero). 
+
+Implements \hyperlink{classIMatrix}{IMatrix}.\hypertarget{classMatrix_ab9bef57c1115e601cdeb493ecb381b82}{
+\index{Matrix@{Matrix}!ido@{ido}}
+\index{ido@{ido}!Matrix@{Matrix}}
+\subsubsection[{ido}]{\setlength{\rightskip}{0pt plus 5cm}bool Matrix::ido (int $\ast$ {\em order})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMatrix_ab9bef57c1115e601cdeb493ecb381b82}
+Method \hyperlink{classMatrix_ab9bef57c1115e601cdeb493ecb381b82}{ido()}
+
+Purpose: Computes Incidence-\/Degree Ordering (IDO) of the columns of a sparse matrix A (i.e. the vertices of the column intersection graph G(A) )
+
+Pre-\/condition: The matrix object is nonempty. Assumes that the degree of of the columns have already been computed in the data member $<$id:ndeg$>$ integer array of size n+1 using computeDegree() method.
+
+Post-\/condition: The IDO ordering of matrix A ( graph G(A) ) is stored in the out-\/parameter $<$id:order$>$, an integer array of size n+1 such that if k = order\mbox{[}j\mbox{]} then the column j is the k-\/th element, k = 1,2, ..., n, in the IDO ordering, and j = 1,2, ..., n.
+
+Parameters: out-\/parameter $<$id:order$>$, an integer pointer to an array of size n+1. The array will contain the ordering information when the function normally returns.
+
+Return values: Returns true when the function is executed successfully, otherwise returns false. 
+
+Implements \hyperlink{classIMatrix_a8e0f3a1062786b6a20548e847de1109b}{IMatrix}.\hypertarget{classMatrix_a24f9f912233b249ba1bb8e18eb979121}{
+\index{Matrix@{Matrix}!lfo@{lfo}}
+\index{lfo@{lfo}!Matrix@{Matrix}}
+\subsubsection[{lfo}]{\setlength{\rightskip}{0pt plus 5cm}bool Matrix::lfo (int $\ast$ {\em order})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMatrix_a24f9f912233b249ba1bb8e18eb979121}
+Purpose: Computes Largest-\/First Ordering (LFO) of the columns of a sparse matrix A (i.e. the vertices of the column intersection graph G(A) )
+
+Pre-\/condition: The matrix object is nonempty. Assumes that the degree of of the columns have already been computed in the data member $<$id:ndeg$>$ integer array of size n+1 using computeDegree() method.
+
+Post-\/condition: The LFO ordering of matrix A ( graph G(A) ) is stored in the out-\/parameter $<$id:order$>$, an integer array of size n+1 such that if k = order\mbox{[}j\mbox{]} then the column j is the k-\/th element, k = 1,2, ..., n, in the LFO ordering, and j = 1,2, ..., n.
+
+Parameters: out-\/parameter $<$id:order$>$, an integer pointer to an array of size n+1. The array will contain the ordering information when the function normally returns.
+
+Return values: Returns true when the function is executed successfully, otherwise returns false. 
+
+Implements \hyperlink{classIMatrix}{IMatrix}.\hypertarget{classMatrix_a55f7c0c85880d58823dd77aeefbd046c}{
+\index{Matrix@{Matrix}!rlf@{rlf}}
+\index{rlf@{rlf}!Matrix@{Matrix}}
+\subsubsection[{rlf}]{\setlength{\rightskip}{0pt plus 5cm}int Matrix::rlf (int $\ast$ {\em color})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMatrix_a55f7c0c85880d58823dd77aeefbd046c}
+Purpose: Computes Recursive Largest-\/First coloring (\hyperlink{classRLF}{RLF}) of the columns of a sparse matrix A (i.e. the vertices of the column intersection graph G(A) )
+
+Pre-\/condition: The matrix object is nonempty. Assumes that the degree of of the columns have already been computed in the data member $<$id:ndeg$>$ integer array of size n+1 using computeDegree() method.
+
+Post-\/condition: \hyperlink{classRLF}{RLF} coloring of \hyperlink{classMatrix}{Matrix} A(graph G(A)) is stored in the in-\/out-\/parameter $<$id:color$>$, an integer array of size n+1, such that if k = color\mbox{[}j\mbox{]} then the column j is colored with color k, j = 1,2,...,n
+
+Parameters: out-\/parameter $<$id:color$>$, an integer pointer to an array of size n+1. The array will contain the color values of the columns in successful completion. The integer array uses 1-\/based indexing.
+
+Return values: Returns the number of colors if succeeds, otherwise returns 0(zero). 
+
+Implements \hyperlink{classIMatrix}{IMatrix}.\hypertarget{classMatrix_a52e013055a3aef16751672815fc06600}{
+\index{Matrix@{Matrix}!sdo@{sdo}}
+\index{sdo@{sdo}!Matrix@{Matrix}}
+\subsubsection[{sdo}]{\setlength{\rightskip}{0pt plus 5cm}int Matrix::sdo (int $\ast$ {\em color})}}
+\label{classMatrix_a52e013055a3aef16751672815fc06600}
+: This method is called when we move a vertex from set V' to set U. This method has a complexity of \{\}
+
+: This method is called when we move a vertex from set V' to set U. This method has a complexity of \{\} Purpose: Computes Saturation-\/Degree Coloring(or Ordering) (SDO) of the columns of a sparse matrix A (i.e. the vertices of the column intersection graph G(A) )
+
+Pre-\/condition: The matrix object is nonempty. Assumes that the degree of of the columns have already been computed in the data member $<$id:ndeg$>$ integer array of size n+1 using computeDegree() method.
+
+Post-\/condition: SDO coloring of \hyperlink{classMatrix}{Matrix} A(graph G(A)) is stored in the in-\/out-\/parameter $<$id:color$>$, an integer array of size n+1, such that if k = color\mbox{[}j\mbox{]} then the column j is colored with color k, j = 1,2,...,n
+
+Parameters: out-\/parameter $<$id:color$>$, an integer pointer to an array of size n+1. The array will contain the color values of the columns in successful completion. The integer array uses 1-\/based indexing.
+
+Return values: Returns the number of colors if succeeds, otherwise returns 0(zero). \hypertarget{classMatrix_ac7e287f032e1296c51ce29704a0af704}{
+\index{Matrix@{Matrix}!slo@{slo}}
+\index{slo@{slo}!Matrix@{Matrix}}
+\subsubsection[{slo}]{\setlength{\rightskip}{0pt plus 5cm}bool Matrix::slo (int $\ast$ {\em list})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classMatrix_ac7e287f032e1296c51ce29704a0af704}
+Purpose: Computes Smallest-\/Last Ordering (SLO) of the columns of a sparse matrix A (i.e. the vertices of the column intersection graph G(A) )
+
+Pre-\/condition: The matrix object is nonempty. Assumes that the degree of of the columns have already been computed in the data member $<$id:ndeg$>$ integer array of size n+1 using computeDegree() method.
+
+Post-\/condition: The SLO ordering of matrix A ( graph G(A) ) is stored in the out-\/parameter $<$id:list$>$, an integer array of size n+1 such that if k = list\mbox{[}j\mbox{]} then the column j is the k-\/th element, k = 1,2, ..., n, in the SLO ordering, and j = 1,2, ..., n.
+
+Parameters: out-\/parameter $<$id:list$>$, an integer pointer to an array of size n+1. The array will contain the ordering information when the function normally returns.
+
+Return values: Returns true when the function is executed successfully, otherwise returns false. 
+
+Implements \hyperlink{classIMatrix_ad6d689b7a38120b6463f1965915f7163}{IMatrix}.\hypertarget{classMatrix_a7c1221aa40beeb82fdbacddcf86d58c9}{
+\index{Matrix@{Matrix}!updateDegreesToUVertices@{updateDegreesToUVertices}}
+\index{updateDegreesToUVertices@{updateDegreesToUVertices}!Matrix@{Matrix}}
+\subsubsection[{updateDegreesToUVertices}]{\setlength{\rightskip}{0pt plus 5cm}int Matrix::updateDegreesToUVertices (int {\em n}, \/  int {\em ic}, \/  int {\em u\_\-maxdeg}, \/  int $\ast$ {\em jpntr}, \/  int $\ast$ {\em indRow}, \/  int $\ast$ {\em ipntr}, \/  int $\ast$ {\em indCol}, \/  bool $\ast$ {\em f\_\-added}, \/  int $\ast$ {\em tag}, \/  int $\ast$ {\em f\_\-tag}, \/  int $\ast$ {\em u\_\-list}, \/  int $\ast$ {\em u\_\-head}, \/  int $\ast$ {\em u\_\-next}, \/  int $\ast$ {\em u\_\-previous}, \/  int $\ast$ {\em list}, \/  int $\ast$ {\em blackList}, \/  const int {\em q})}}
+\label{classMatrix_a7c1221aa40beeb82fdbacddcf86d58c9}
+
+
+Update the pointers to the current degree u\_\-lists.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/Matrix.hh\item 
+src/Matrix.cpp\end{DoxyCompactItemize}

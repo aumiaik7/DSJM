@@ -1,0 +1,11 @@
+- 
+    commandLine: Not Given
+    inputFile: data/Matrix2873.mtx
+    segmented: no
+    method: SLO
+    matrix_M: 2873
+    matrix_N: 2873
+    matrix_NNZ: 27191
+    totalColors: 48
+    ordering_time: 0.01
+    coloring_time: 0

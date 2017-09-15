@@ -1,0 +1,10 @@
+- 
+    commandLine: Not Given
+    inputFile: data/Matrix.mtx
+    segmented: no
+    method: RLF
+    matrix_M: 841
+    matrix_N: 841
+    matrix_NNZ: 4089
+    totalColors: 5
+    coloring_time: 0.01

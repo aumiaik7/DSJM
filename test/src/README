@@ -1,0 +1,5 @@
+README test/src
+======================================================================
+This file contains the source files of the Unit Tests. These Unit
+tests were written to exercies different methods on the source files
+in $(top_dir)/src. Unit Testing has been used with CPPUnit

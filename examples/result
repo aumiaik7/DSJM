@@ -1,0 +1,8404 @@
+/home/imtiaz/Data_DSJM/gpia/ash958_ext.mtx,Now
+Here1916 maxsat: 0
+After: 1912
+After: 1914
+After: 1906
+After: 1866
+After: 1910
+After: 1868
+After: 1830
+After: 1856
+After: 1852
+After: 1572
+After: 1310
+After: 1302
+After: 1296
+After: 1294
+After: 1142
+After: 1252
+After: 1264
+After: 1132
+After: 0
+ newcolor : 1 maxgrp: 1 maxdeg: 24
+ Why now Maxgrp1
+Jcoooooooool: 1132 1
+After
+ic: 1258 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1252 inducedDeg[ic]: 21 satDeg[ic]: 1
+After
+ic: 1118 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1121 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1135 inducedDeg[ic]: 21 satDeg[ic]: 1
+After
+ic: 1137 inducedDeg[ic]: 20 satDeg[ic]: 1
+After
+ic: 1124 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1139 inducedDeg[ic]: 18 satDeg[ic]: 1
+After
+ic: 1125 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+ic: 1127 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+ic: 1129 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1004 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1133 inducedDeg[ic]: 18 satDeg[ic]: 1
+After
+ic: 1141 inducedDeg[ic]: 22 satDeg[ic]: 1
+After
+ic: 1254 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+ic: 1248 inducedDeg[ic]: 18 satDeg[ic]: 1
+After
+ic: 1018 inducedDeg[ic]: 22 satDeg[ic]: 1
+After
+ic: 1256 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1264 inducedDeg[ic]: 20 satDeg[ic]: 1
+After
+ic: 1260 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1250 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1262 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1245 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1131 inducedDeg[ic]: 23 satDeg[ic]: 1
+ JJ : 18
+Now
+Here1262 maxsat: 1
+After: 1135
+After: 1121
+After: 1264
+After: 1245
+After: 1248
+After: 1254
+After: 1018
+After: 1256
+After: 1131
+After: 0
+ newcolor : 2 maxgrp: 2 maxdeg: 24
+ Why now Maxgrp2
+Jcoooooooool: 1131 2
+ JJ : 9
+ic: 1263 inducedDeg[ic]: 20 satDeg[ic]: 1
+After
+ic: 1249 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1122 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1251 inducedDeg[ic]: 21 satDeg[ic]: 1
+After
+ic: 1253 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+ic: 1134 inducedDeg[ic]: 18 satDeg[ic]: 1
+After
+ic: 1130 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1117 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1003 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1255 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1136 inducedDeg[ic]: 21 satDeg[ic]: 1
+After
+ic: 1123 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1140 inducedDeg[ic]: 18 satDeg[ic]: 1
+After
+ic: 1257 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1126 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+ic: 1259 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1128 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+ic: 1246 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1261 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1142 inducedDeg[ic]: 22 satDeg[ic]: 1
+After
+ic: 1247 inducedDeg[ic]: 18 satDeg[ic]: 1
+After
+ic: 1138 inducedDeg[ic]: 20 satDeg[ic]: 1
+After
+ic: 1017 inducedDeg[ic]: 22 satDeg[ic]: 1
+ JJ : 15
+ JJ : 16
+ JJ : 17
+Now
+Here1261 maxsat: 1
+After: 1136
+After: 1122
+After: 1138
+After: 1246
+After: 1247
+After: 1128
+After: 1017
+After: 1255
+After: 0
+Jcoooooooool: 1017 3
+After
+ic: 975 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1020 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 999 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1014 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1016 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1022 inducedDeg[ic]: 21 satDeg[ic]: 1
+After
+ic: 893 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1012 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 983 inducedDeg[ic]: 18 satDeg[ic]: 1
+After
+ic: 1010 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+Now
+Here1016 maxsat: 1
+After: 1022
+After: 1012
+After: 1138
+After: 893
+After: 983
+After: 1010
+After: 1142
+After: 1255
+After: 0
+Jcoooooooool: 1142 4
+After
+ic: 1298 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1279 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+ic: 1251 inducedDeg[ic]: 20 satDeg[ic]: 2
+After
+ic: 1300 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1302 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1153 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1145 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1296 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+ic: 1293 inducedDeg[ic]: 18 satDeg[ic]: 1
+After
+ic: 1267 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+Now
+Here1251 maxsat: 2
+After: 0
+ newcolor : 3 maxgrp: 3 maxdeg: 24
+ Why now Maxgrp3
+Jcoooooooool: 1251 5
+ JJ : 0
+ic: 1295 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+ic: 1297 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1260 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 1256 inducedDeg[ic]: 12 satDeg[ic]: 2
+ic: 1299 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1262 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 1146 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1254 inducedDeg[ic]: 18 satDeg[ic]: 2
+After
+ic: 1264 inducedDeg[ic]: 19 satDeg[ic]: 2
+After
+ic: 1301 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1250 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 1245 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 1154 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1258 inducedDeg[ic]: 16 satDeg[ic]: 2
+ic: 1268 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1121 inducedDeg[ic]: 14 satDeg[ic]: 2
+ic: 1252 inducedDeg[ic]: 20 satDeg[ic]: 2
+ic: 1280 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+ic: 1294 inducedDeg[ic]: 18 satDeg[ic]: 1
+After
+ic: 1248 inducedDeg[ic]: 17 satDeg[ic]: 2
+After
+Now
+Here1258 maxsat: 2
+After: 1256
+After: 1254
+After: 1264
+After: 1245
+After: 1121
+After: 1252
+After: 1248
+After: 0
+Jcoooooooool: 1252 6
+ JJ : 6
+ JJ : 7
+ic: 1302 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 1141 inducedDeg[ic]: 19 satDeg[ic]: 2
+ic: 1145 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 1267 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 1300 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 1279 inducedDeg[ic]: 18 satDeg[ic]: 2
+After
+ic: 1298 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 1293 inducedDeg[ic]: 17 satDeg[ic]: 2
+After
+ic: 1296 inducedDeg[ic]: 18 satDeg[ic]: 2
+After
+ic: 1153 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+Now
+Here1153 maxsat: 2
+After: 1256
+After: 1296
+After: 1141
+After: 1298
+After: 1121
+After: 1293
+After: 0
+Jcoooooooool: 1141 7
+After
+ic: 1130 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 1140 inducedDeg[ic]: 17 satDeg[ic]: 2
+After
+ic: 1136 inducedDeg[ic]: 20 satDeg[ic]: 2
+After
+ic: 1003 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 1123 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 1128 inducedDeg[ic]: 18 satDeg[ic]: 2
+After
+ic: 1134 inducedDeg[ic]: 17 satDeg[ic]: 2
+After
+ic: 1138 inducedDeg[ic]: 19 satDeg[ic]: 2
+After
+ic: 1117 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 1126 inducedDeg[ic]: 18 satDeg[ic]: 2
+After
+Now
+Here1117 maxsat: 2
+After: 1256
+After: 1126
+After: 1138
+After: 1123
+After: 1121
+After: 1134
+After: 1136
+After: 0
+Jcoooooooool: 1136 8
+ JJ : 7
+ic: 1280 inducedDeg[ic]: 17 satDeg[ic]: 2
+After
+ic: 1286 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1278 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1276 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1284 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1282 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1288 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1271 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1263 inducedDeg[ic]: 18 satDeg[ic]: 2
+After
+Now
+Here1117 maxsat: 2
+After: 1256
+After: 1263
+After: 1138
+After: 1123
+After: 1121
+After: 1280
+After: 0
+Jcoooooooool: 1138 9
+After
+ic: 1269 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1292 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1147 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1151 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1294 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 1253 inducedDeg[ic]: 17 satDeg[ic]: 2
+After
+ic: 1281 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1290 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+Now
+Here1294 maxsat: 2
+After: 1256
+After: 1263
+After: 1264
+After: 1123
+After: 1121
+After: 1253
+After: 0
+Jcoooooooool: 1264 10
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ic: 1271 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1276 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 1135 inducedDeg[ic]: 16 satDeg[ic]: 2
+ic: 1278 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 1286 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1282 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 1288 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1280 inducedDeg[ic]: 16 satDeg[ic]: 3
+After
+ic: 1284 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+Now
+Here1280 maxsat: 3
+After: 0
+ newcolor : 4 maxgrp: 4 maxdeg: 24
+ Why now Maxgrp4
+Jcoooooooool: 1280 11
+ JJ : 0
+ic: 1298 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+ic: 1153 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+ic: 1275 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1296 inducedDeg[ic]: 17 satDeg[ic]: 3
+After
+ic: 1267 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+ic: 1277 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1281 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 1293 inducedDeg[ic]: 16 satDeg[ic]: 3
+After
+ic: 1283 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1302 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+ic: 1285 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1287 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1300 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+ic: 1279 inducedDeg[ic]: 17 satDeg[ic]: 3
+After
+ic: 1272 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1145 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+Now
+Here1300 maxsat: 3
+After: 1145
+After: 1279
+After: 1293
+After: 0
+Jcoooooooool: 1279 12
+After
+ic: 1286 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1282 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+ic: 1288 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1276 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+ic: 1271 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1284 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1263 inducedDeg[ic]: 16 satDeg[ic]: 3
+After
+ic: 1135 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+ic: 1278 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+Now
+Here1278 maxsat: 3
+After: 1135
+After: 1296
+After: 1263
+After: 1284
+After: 0
+Jcoooooooool: 1296 13
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ic: 1314 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1159 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1312 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1316 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1223 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1310 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1303 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1318 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1308 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+Now
+Here1278 maxsat: 3
+After: 1135
+After: 1263
+After: 1284
+After: 0
+Jcoooooooool: 1263 14
+After
+ic: 1254 inducedDeg[ic]: 17 satDeg[ic]: 3
+ic: 1258 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+ic: 1250 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+ic: 1245 inducedDeg[ic]: 14 satDeg[ic]: 3
+ic: 1248 inducedDeg[ic]: 16 satDeg[ic]: 3
+ic: 1262 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+ic: 1256 inducedDeg[ic]: 11 satDeg[ic]: 3
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ic: 1121 inducedDeg[ic]: 13 satDeg[ic]: 3
+ JJ : 3
+ JJ : 4
+ic: 1260 inducedDeg[ic]: 15 satDeg[ic]: 3
+Now
+Here1245 maxsat: 3
+After: 1260
+After: 1248
+After: 1121
+After: 1254
+After: 1256
+After: 0
+Jcoooooooool: 1254 15
+ JJ : 4
+ JJ : 5
+ic: 1137 inducedDeg[ic]: 15 satDeg[ic]: 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ic: 1292 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1147 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1281 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+ic: 1290 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 1151 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1269 inducedDeg[ic]: 13 satDeg[ic]: 2
+ JJ : 8
+ic: 1294 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+Now
+Here1281 maxsat: 3
+After: 1260
+After: 1248
+After: 1294
+After: 1256
+After: 0
+Jcoooooooool: 1248 16
+After
+ic: 1291 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1277 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1410 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1406 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1412 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1273 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1408 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+Now
+Here1281 maxsat: 3
+After: 1260
+After: 1293
+After: 1294
+After: 1256
+After: 0
+Jcoooooooool: 1293 17
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ic: 1290 inducedDeg[ic]: 12 satDeg[ic]: 3
+ic: 1147 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1281 inducedDeg[ic]: 13 satDeg[ic]: 4
+After
+ic: 1269 inducedDeg[ic]: 12 satDeg[ic]: 3
+ JJ : 5
+ic: 1253 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1151 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1292 inducedDeg[ic]: 13 satDeg[ic]: 3
+ JJ : 4
+ic: 1137 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+Now
+Here1281 maxsat: 4
+After: 0
+ newcolor : 5 maxgrp: 5 maxdeg: 24
+ Why now Maxgrp5
+Jcoooooooool: 1281 18
+ JJ : 0
+ic: 1291 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1152 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1286 inducedDeg[ic]: 12 satDeg[ic]: 4
+ic: 1288 inducedDeg[ic]: 12 satDeg[ic]: 4
+ic: 1270 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1276 inducedDeg[ic]: 13 satDeg[ic]: 4
+After
+ic: 1284 inducedDeg[ic]: 12 satDeg[ic]: 4
+After
+ic: 1148 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1289 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1135 inducedDeg[ic]: 14 satDeg[ic]: 4
+After
+ic: 1282 inducedDeg[ic]: 14 satDeg[ic]: 4
+After
+ic: 1278 inducedDeg[ic]: 13 satDeg[ic]: 4
+After
+ic: 1271 inducedDeg[ic]: 12 satDeg[ic]: 4
+Now
+Here1271 maxsat: 4
+After: 1278
+After: 1282
+After: 0
+Jcoooooooool: 1282 19
+After
+ic: 1151 inducedDeg[ic]: 12 satDeg[ic]: 4
+After
+ic: 1269 inducedDeg[ic]: 11 satDeg[ic]: 4
+After
+ic: 1253 inducedDeg[ic]: 12 satDeg[ic]: 4
+After
+ic: 1137 inducedDeg[ic]: 13 satDeg[ic]: 4
+After
+ic: 1294 inducedDeg[ic]: 11 satDeg[ic]: 4
+After
+ic: 1147 inducedDeg[ic]: 12 satDeg[ic]: 4
+After
+ic: 1292 inducedDeg[ic]: 12 satDeg[ic]: 4
+After
+ic: 1290 inducedDeg[ic]: 11 satDeg[ic]: 4
+ JJ : 4
+Now
+Here1292 maxsat: 4
+After: 1137
+After: 1135
+After: 1290
+After: 0
+Jcoooooooool: 1135 20
+ JJ : 2
+ JJ : 3
+ic: 1117 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+ic: 1126 inducedDeg[ic]: 17 satDeg[ic]: 3
+After
+ic: 1134 inducedDeg[ic]: 16 satDeg[ic]: 3
+After
+ic: 1003 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+ic: 1140 inducedDeg[ic]: 16 satDeg[ic]: 3
+ic: 1128 inducedDeg[ic]: 17 satDeg[ic]: 3
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ic: 1130 inducedDeg[ic]: 15 satDeg[ic]: 3
+ JJ : 0
+ JJ : 1
+ JJ : 2
+ic: 1123 inducedDeg[ic]: 14 satDeg[ic]: 3
+ JJ : 0
+ JJ : 1
+Now
+Here1292 maxsat: 4
+After: 1137
+After: 1290
+After: 0
+Jcoooooooool: 1137 21
+After
+ic: 1123 inducedDeg[ic]: 13 satDeg[ic]: 4
+After
+ic: 1128 inducedDeg[ic]: 16 satDeg[ic]: 4
+After
+ic: 1117 inducedDeg[ic]: 14 satDeg[ic]: 4
+After
+ic: 1134 inducedDeg[ic]: 15 satDeg[ic]: 4
+ic: 1126 inducedDeg[ic]: 16 satDeg[ic]: 4
+ JJ : 4
+ JJ : 5
+ic: 1140 inducedDeg[ic]: 15 satDeg[ic]: 4
+ JJ : 4
+ic: 1003 inducedDeg[ic]: 14 satDeg[ic]: 4
+After
+ic: 1130 inducedDeg[ic]: 14 satDeg[ic]: 4
+After
+Now
+Here1292 maxsat: 4
+After: 1123
+After: 1290
+After: 1126
+After: 1130
+After: 1140
+After: 0
+Jcoooooooool: 1126 22
+After
+ic: 1156 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1154 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1029 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1150 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1019 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1152 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 1143 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+Now
+Here1292 maxsat: 4
+After: 1123
+After: 1290
+After: 1128
+After: 1130
+After: 1140
+After: 0
+Jcoooooooool: 1128 23
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ic: 1144 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1001 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1111 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1148 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 1015 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1146 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1027 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+Now
+Here1292 maxsat: 4
+After: 1123
+After: 1290
+After: 1130
+After: 1140
+After: 0
+Jcoooooooool: 1140 24
+After
+ic: 1157 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1304 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1155 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1297 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1306 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1289 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+Now
+Here1292 maxsat: 4
+After: 1123
+After: 1290
+After: 1130
+After: 1134
+After: 0
+Jcoooooooool: 1134 25
+ JJ : 4
+ic: 1266 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1274 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1272 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1268 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1249 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1270 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+Now
+Here1292 maxsat: 4
+After: 1123
+After: 1290
+After: 1130
+After: 0
+Jcoooooooool: 1130 26
+After
+ic: 1244 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1119 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+ic: 1246 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1113 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1242 inducedDeg[ic]: 7 satDeg[ic]: 1
+After
+Now
+Here1292 maxsat: 4
+After: 1123
+After: 1290
+After: 1003
+After: 0
+Jcoooooooool: 1003 27
+After
+ic: 1000 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1002 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1008 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+ic: 891 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1006 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+Now
+Here1292 maxsat: 4
+After: 1123
+After: 1290
+After: 1117
+After: 0
+Jcoooooooool: 1117 28
+ JJ : 3
+ic: 1005 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1112 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1013 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1114 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1116 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+Now
+Here1292 maxsat: 4
+After: 1123
+After: 1290
+After: 0
+Jcoooooooool: 1123 29
+After
+ic: 1120 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+ic: 1007 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+ic: 1115 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+ic: 1122 inducedDeg[ic]: 10 satDeg[ic]: 2
+Now
+Here1292 maxsat: 4
+After: 1278
+After: 1290
+After: 0
+Jcoooooooool: 1278 30
+After
+ic: 1273 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1412 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 1291 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 1410 inducedDeg[ic]: 12 satDeg[ic]: 2
+ic: 1408 inducedDeg[ic]: 12 satDeg[ic]: 2
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ic: 1247 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 1406 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+Now
+Here1292 maxsat: 4
+After: 1276
+After: 1290
+After: 0
+Jcoooooooool: 1276 31
+ JJ : 1
+ JJ : 2
+ic: 1411 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1432 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1413 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1428 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1430 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1419 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1434 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+Now
+Here1292 maxsat: 4
+After: 1290
+After: 0
+Jcoooooooool: 1292 32
+After
+ic: 1247 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 1408 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1410 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1277 inducedDeg[ic]: 9 satDeg[ic]: 3
+ic: 1412 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 1273 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1406 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+Now
+Here1147 maxsat: 4
+After: 1290
+After: 0
+Jcoooooooool: 1147 33
+After
+ic: 1146 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1027 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 1144 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 1111 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1015 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 1001 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1127 inducedDeg[ic]: 6 satDeg[ic]: 2
+After
+Now
+Here1253 maxsat: 4
+After: 1290
+After: 0
+Jcoooooooool: 1253 34
+After
+ic: 1262 inducedDeg[ic]: 14 satDeg[ic]: 4
+After
+ic: 1260 inducedDeg[ic]: 14 satDeg[ic]: 4
+After
+ic: 1256 inducedDeg[ic]: 10 satDeg[ic]: 4
+ic: 1250 inducedDeg[ic]: 14 satDeg[ic]: 4
+After
+ic: 1245 inducedDeg[ic]: 13 satDeg[ic]: 4
+After
+ic: 1121 inducedDeg[ic]: 12 satDeg[ic]: 4
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ic: 1258 inducedDeg[ic]: 14 satDeg[ic]: 4
+After
+Now
+Here1121 maxsat: 4
+After: 1290
+After: 1258
+After: 1256
+After: 1245
+After: 0
+Jcoooooooool: 1258 35
+After
+ic: 1381 inducedDeg[ic]: 8 satDeg[ic]: 1
+After
+ic: 1384 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1386 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1388 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1243 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1390 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+Now
+Here1121 maxsat: 4
+After: 1290
+After: 1250
+After: 1256
+After: 1245
+After: 0
+Jcoooooooool: 1250 36
+After
+ic: 1266 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1268 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 1270 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 1274 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1133 inducedDeg[ic]: 5 satDeg[ic]: 2
+After
+ic: 1272 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+Now
+Here1121 maxsat: 4
+After: 1290
+After: 1260
+After: 1256
+After: 1245
+After: 0
+Jcoooooooool: 1260 37
+After
+ic: 1396 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1394 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1392 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1387 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1283 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 1398 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+Now
+Here1121 maxsat: 4
+After: 1290
+After: 1262
+After: 1256
+After: 1245
+After: 0
+Jcoooooooool: 1262 38
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ic: 1389 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1402 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1285 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 1391 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1400 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1404 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+Now
+Here1121 maxsat: 4
+After: 1290
+After: 1256
+After: 1245
+After: 0
+Jcoooooooool: 1245 39
+ JJ : 3
+ic: 1119 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+ic: 1113 inducedDeg[ic]: 9 satDeg[ic]: 2
+ic: 1129 inducedDeg[ic]: 4 satDeg[ic]: 2
+After
+ic: 1244 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1242 inducedDeg[ic]: 6 satDeg[ic]: 2
+ JJ : 12
+ JJ : 13
+Now
+Here1121 maxsat: 4
+After: 1290
+After: 1256
+After: 0
+Jcoooooooool: 1121 40
+After
+ic: 1007 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+ic: 1120 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+ic: 1115 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+ic: 1124 inducedDeg[ic]: 3 satDeg[ic]: 2
+Now
+Here1151 maxsat: 4
+After: 1290
+After: 1256
+After: 0
+Jcoooooooool: 1151 41
+After
+ic: 1125 inducedDeg[ic]: 6 satDeg[ic]: 2
+ic: 1019 inducedDeg[ic]: 16 satDeg[ic]: 2
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ic: 1154 inducedDeg[ic]: 11 satDeg[ic]: 3
+ic: 1150 inducedDeg[ic]: 11 satDeg[ic]: 2
+ic: 1156 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1143 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 1029 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+Now
+Here1271 maxsat: 4
+After: 1290
+After: 1256
+After: 0
+Jcoooooooool: 1271 42
+After
+ic: 1274 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1133 inducedDeg[ic]: 4 satDeg[ic]: 3
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ic: 1266 inducedDeg[ic]: 11 satDeg[ic]: 3
+ic: 1249 inducedDeg[ic]: 5 satDeg[ic]: 3
+After
+ic: 1268 inducedDeg[ic]: 9 satDeg[ic]: 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ic: 1270 inducedDeg[ic]: 6 satDeg[ic]: 4
+Now
+Here1284 maxsat: 4
+After: 1290
+After: 1256
+After: 1268
+After: 1270
+After: 0
+Jcoooooooool: 1284 43
+After
+ic: 1398 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1396 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1259 inducedDeg[ic]: 6 satDeg[ic]: 2
+After
+ic: 1394 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1387 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1392 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+Now
+Here1288 maxsat: 4
+After: 1290
+After: 1256
+After: 1268
+After: 1270
+After: 0
+Jcoooooooool: 1288 44
+After
+ic: 1422 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1426 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1420 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1399 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1409 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1424 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+Now
+Here1286 maxsat: 4
+After: 1290
+After: 1256
+After: 1268
+After: 1270
+After: 0
+Jcoooooooool: 1286 45
+ JJ : 0
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ic: 1261 inducedDeg[ic]: 6 satDeg[ic]: 2
+After
+ic: 1389 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1402 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1400 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1391 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1404 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+Now
+Here1290 maxsat: 4
+After: 1256
+After: 1268
+After: 1270
+After: 0
+Jcoooooooool: 1290 46
+After
+ic: 1297 inducedDeg[ic]: 10 satDeg[ic]: 3
+ic: 1155 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1304 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1139 inducedDeg[ic]: 5 satDeg[ic]: 2
+ic: 1306 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1157 inducedDeg[ic]: 10 satDeg[ic]: 2
+Now
+Here1294 maxsat: 4
+After: 1256
+After: 1268
+After: 1270
+After: 0
+Jcoooooooool: 1294 47
+After
+ic: 1300 inducedDeg[ic]: 13 satDeg[ic]: 4
+After
+ic: 1153 inducedDeg[ic]: 14 satDeg[ic]: 4
+ic: 1145 inducedDeg[ic]: 14 satDeg[ic]: 4
+After
+ic: 1267 inducedDeg[ic]: 13 satDeg[ic]: 4
+After
+ic: 1298 inducedDeg[ic]: 13 satDeg[ic]: 4
+ JJ : 0
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ic: 1302 inducedDeg[ic]: 14 satDeg[ic]: 4
+ JJ : 0
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+Now
+Here1269 maxsat: 4
+After: 1256
+After: 1268
+After: 1270
+After: 1298
+After: 1302
+After: 0
+Jcoooooooool: 1302 48
+After
+ic: 1405 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1309 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1414 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1305 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1418 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1265 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1416 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+Now
+Here1269 maxsat: 4
+After: 1256
+After: 1268
+After: 1270
+After: 1298
+After: 1145
+After: 0
+Jcoooooooool: 1145 49
+After
+ic: 1148 inducedDeg[ic]: 6 satDeg[ic]: 3
+After
+ic: 1027 inducedDeg[ic]: 14 satDeg[ic]: 3
+ic: 1144 inducedDeg[ic]: 12 satDeg[ic]: 3
+ic: 1001 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 1111 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 1015 inducedDeg[ic]: 15 satDeg[ic]: 3
+ic: 1127 inducedDeg[ic]: 5 satDeg[ic]: 3
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+Now
+Here1269 maxsat: 4
+After: 1256
+After: 1268
+After: 1270
+After: 1298
+After: 1153
+After: 0
+Jcoooooooool: 1153 50
+ JJ : 5
+ic: 1029 inducedDeg[ic]: 14 satDeg[ic]: 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ic: 1143 inducedDeg[ic]: 12 satDeg[ic]: 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ic: 1156 inducedDeg[ic]: 11 satDeg[ic]: 3
+ic: 1150 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 1125 inducedDeg[ic]: 5 satDeg[ic]: 3
+After
+ic: 1019 inducedDeg[ic]: 15 satDeg[ic]: 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ic: 1152 inducedDeg[ic]: 6 satDeg[ic]: 3
+Now
+Here1269 maxsat: 4
+After: 1256
+After: 1268
+After: 1270
+After: 1298
+After: 0
+Jcoooooooool: 1298 51
+After
+ic: 1157 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 1304 inducedDeg[ic]: 13 satDeg[ic]: 3
+ JJ : 9
+ JJ : 10
+ic: 1289 inducedDeg[ic]: 5 satDeg[ic]: 3
+ic: 1306 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1155 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1139 inducedDeg[ic]: 4 satDeg[ic]: 3
+ JJ : 9
+Now
+Here1269 maxsat: 4
+After: 1256
+After: 1268
+After: 1270
+After: 1267
+After: 0
+Jcoooooooool: 1267 52
+After
+ic: 1133 inducedDeg[ic]: 3 satDeg[ic]: 4
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ic: 1272 inducedDeg[ic]: 3 satDeg[ic]: 4
+ic: 1266 inducedDeg[ic]: 10 satDeg[ic]: 4
+After
+ic: 1249 inducedDeg[ic]: 4 satDeg[ic]: 4
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ic: 1274 inducedDeg[ic]: 10 satDeg[ic]: 4
+After
+ic: 1270 inducedDeg[ic]: 3 satDeg[ic]: 5
+Now
+Here1270 maxsat: 5
+After: 0
+ newcolor : 6 maxgrp: 6 maxdeg: 24
+ Why now Maxgrp6
+Jcoooooooool: 1270 53
+ JJ : 0
+ic: 1273 inducedDeg[ic]: 10 satDeg[ic]: 4
+After
+ic: 1269 inducedDeg[ic]: 10 satDeg[ic]: 5
+ JJ : 0
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ic: 1265 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+Now
+Here1269 maxsat: 5
+After: 0
+Jcoooooooool: 1269 54
+ JJ : 0
+ic: 1274 inducedDeg[ic]: 9 satDeg[ic]: 5
+After
+ic: 1272 inducedDeg[ic]: 2 satDeg[ic]: 5
+After
+ic: 1133 inducedDeg[ic]: 2 satDeg[ic]: 5
+ JJ : 4
+ic: 1249 inducedDeg[ic]: 3 satDeg[ic]: 5
+ JJ : 2
+ JJ : 3
+ic: 1266 inducedDeg[ic]: 9 satDeg[ic]: 5
+After
+ic: 1268 inducedDeg[ic]: 3 satDeg[ic]: 5
+ JJ : 1
+ JJ : 2
+Now
+Here1266 maxsat: 5
+After: 1133
+After: 1268
+After: 0
+Jcoooooooool: 1266 55
+After
+ic: 1301 inducedDeg[ic]: 7 satDeg[ic]: 2
+After
+ic: 1416 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1309 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 1418 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1305 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1405 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 1414 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+Now
+Here1274 maxsat: 5
+After: 1133
+After: 1268
+After: 0
+Jcoooooooool: 1274 56
+ JJ : 0
+ JJ : 1
+ JJ : 2
+ic: 1410 inducedDeg[ic]: 10 satDeg[ic]: 4
+After
+ic: 1412 inducedDeg[ic]: 11 satDeg[ic]: 4
+After
+ic: 1291 inducedDeg[ic]: 4 satDeg[ic]: 4
+ic: 1277 inducedDeg[ic]: 4 satDeg[ic]: 4
+ic: 1408 inducedDeg[ic]: 10 satDeg[ic]: 4
+ic: 1247 inducedDeg[ic]: 5 satDeg[ic]: 4
+ic: 1406 inducedDeg[ic]: 11 satDeg[ic]: 4
+Now
+Here1133 maxsat: 5
+After: 1268
+After: 0
+Jcoooooooool: 1268 57
+After
+ic: 1300 inducedDeg[ic]: 12 satDeg[ic]: 5
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+Now
+Here1133 maxsat: 5
+After: 1249
+After: 1300
+After: 0
+Jcoooooooool: 1300 58
+ JJ : 2
+ic: 1436 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1407 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1311 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1429 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1415 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1438 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+Now
+Here1133 maxsat: 5
+After: 1249
+After: 0
+Jcoooooooool: 1249 59
+ JJ : 1
+ic: 1256 inducedDeg[ic]: 9 satDeg[ic]: 5
+Now
+Here1133 maxsat: 5
+After: 1256
+After: 0
+Jcoooooooool: 1256 60
+ JJ : 1
+ic: 1382 inducedDeg[ic]: 8 satDeg[ic]: 1
+After
+ic: 1241 inducedDeg[ic]: 7 satDeg[ic]: 1
+After
+Now
+Here1133 maxsat: 5
+After: 0
+Jcoooooooool: 1133 61
+After
+Now
+Here1272 maxsat: 5
+After: 0
+Jcoooooooool: 1272 62
+ JJ : 0
+Now
+Here1273 maxsat: 4
+After: 1408
+After: 1406
+After: 1277
+After: 1247
+After: 0
+Jcoooooooool: 1406 63
+After
+ic: 1416 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1305 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1265 inducedDeg[ic]: 5 satDeg[ic]: 3
+After
+ic: 1407 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1409 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1414 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 1309 inducedDeg[ic]: 14 satDeg[ic]: 3
+ JJ : 10
+ JJ : 11
+ic: 1405 inducedDeg[ic]: 12 satDeg[ic]: 3
+ JJ : 10
+ic: 1418 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1411 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 1301 inducedDeg[ic]: 5 satDeg[ic]: 3
+ JJ : 9
+ JJ : 10
+Now
+Here1273 maxsat: 4
+After: 1408
+After: 1412
+After: 1277
+After: 1247
+After: 0
+Jcoooooooool: 1412 64
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ic: 1419 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1432 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1275 inducedDeg[ic]: 6 satDeg[ic]: 2
+After
+ic: 1428 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 1430 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1413 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 1434 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+Now
+Here1273 maxsat: 4
+After: 1408
+After: 1277
+After: 1247
+After: 0
+Jcoooooooool: 1408 65
+After
+ic: 1415 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1299 inducedDeg[ic]: 5 satDeg[ic]: 2
+After
+ic: 1311 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1436 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1429 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1438 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+Now
+Here1273 maxsat: 4
+After: 1410
+After: 1277
+After: 1247
+After: 0
+Jcoooooooool: 1410 66
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ic: 1287 inducedDeg[ic]: 5 satDeg[ic]: 2
+After
+ic: 1424 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1399 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1420 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1426 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 1422 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+Now
+Here1273 maxsat: 4
+After: 1277
+After: 1247
+After: 0
+Jcoooooooool: 1273 67
+ JJ : 0
+ JJ : 1
+ JJ : 2
+Now
+Here1277 maxsat: 4
+After: 1247
+After: 0
+Jcoooooooool: 1277 68
+After
+Now
+Here1291 maxsat: 4
+After: 1247
+After: 0
+Jcoooooooool: 1291 69
+ JJ : 0
+ JJ : 1
+Now
+Here1247 maxsat: 4
+After: 0
+Jcoooooooool: 1247 70
+ JJ : 0
+Now
+Here1418 maxsat: 3
+After: 1405
+After: 1289
+After: 1139
+After: 1297
+After: 1301
+After: 1309
+After: 1150
+After: 1019
+After: 1157
+After: 1304
+After: 0
+Jcoooooooool: 1019 71
+After
+ic: 1020 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 975 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 1155 inducedDeg[ic]: 10 satDeg[ic]: 4
+After
+ic: 1010 inducedDeg[ic]: 18 satDeg[ic]: 2
+ic: 1030 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1014 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1016 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 999 inducedDeg[ic]: 14 satDeg[ic]: 2
+ic: 1022 inducedDeg[ic]: 20 satDeg[ic]: 2
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ic: 1144 inducedDeg[ic]: 11 satDeg[ic]: 4
+ic: 1018 inducedDeg[ic]: 9 satDeg[ic]: 2
+ic: 893 inducedDeg[ic]: 15 satDeg[ic]: 2
+ic: 1149 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 983 inducedDeg[ic]: 17 satDeg[ic]: 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ic: 1012 inducedDeg[ic]: 14 satDeg[ic]: 2
+Now
+Here1155 maxsat: 4
+After: 1144
+After: 0
+Jcoooooooool: 1144 72
+ JJ : 1
+ic: 1143 inducedDeg[ic]: 11 satDeg[ic]: 4
+ic: 1028 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1156 inducedDeg[ic]: 10 satDeg[ic]: 4
+After
+ic: 1029 inducedDeg[ic]: 13 satDeg[ic]: 4
+After
+ic: 1002 inducedDeg[ic]: 11 satDeg[ic]: 2
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ic: 1112 inducedDeg[ic]: 11 satDeg[ic]: 2
+ic: 1016 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+ic: 1152 inducedDeg[ic]: 4 satDeg[ic]: 4
+After
+ic: 1154 inducedDeg[ic]: 4 satDeg[ic]: 4
+After
+ic: 1150 inducedDeg[ic]: 9 satDeg[ic]: 4
+After
+ic: 1125 inducedDeg[ic]: 4 satDeg[ic]: 4
+After
+Now
+Here1156 maxsat: 4
+After: 1143
+After: 1029
+After: 1125
+After: 1150
+After: 0
+Jcoooooooool: 1029 73
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ic: 1032 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1026 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 985 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1028 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 895 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 993 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 977 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1024 inducedDeg[ic]: 20 satDeg[ic]: 1
+After
+ic: 1009 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+Now
+Here1156 maxsat: 4
+After: 1143
+After: 1125
+After: 1150
+After: 0
+Jcoooooooool: 1143 74
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ic: 1027 inducedDeg[ic]: 13 satDeg[ic]: 4
+ic: 1111 inducedDeg[ic]: 9 satDeg[ic]: 4
+After
+ic: 1001 inducedDeg[ic]: 9 satDeg[ic]: 4
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ic: 1127 inducedDeg[ic]: 4 satDeg[ic]: 4
+ic: 1015 inducedDeg[ic]: 14 satDeg[ic]: 4
+ic: 1146 inducedDeg[ic]: 4 satDeg[ic]: 4
+ic: 1148 inducedDeg[ic]: 4 satDeg[ic]: 4
+Now
+Here1156 maxsat: 4
+After: 1148
+After: 1001
+After: 1027
+After: 1015
+After: 0
+Jcoooooooool: 1015 75
+ JJ : 4
+ic: 975 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+ic: 999 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1014 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1022 inducedDeg[ic]: 19 satDeg[ic]: 3
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ic: 1018 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 983 inducedDeg[ic]: 16 satDeg[ic]: 3
+ JJ : 16
+ic: 893 inducedDeg[ic]: 14 satDeg[ic]: 3
+ic: 1012 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1010 inducedDeg[ic]: 17 satDeg[ic]: 3
+ JJ : 14
+ JJ : 15
+ic: 1020 inducedDeg[ic]: 13 satDeg[ic]: 3
+ JJ : 13
+ JJ : 14
+Now
+Here1156 maxsat: 4
+After: 1148
+After: 1001
+After: 1027
+After: 0
+Jcoooooooool: 1027 76
+ JJ : 3
+ic: 1032 inducedDeg[ic]: 13 satDeg[ic]: 2
+ic: 1026 inducedDeg[ic]: 13 satDeg[ic]: 2
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ic: 985 inducedDeg[ic]: 16 satDeg[ic]: 2
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ic: 1030 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 993 inducedDeg[ic]: 15 satDeg[ic]: 2
+ic: 977 inducedDeg[ic]: 15 satDeg[ic]: 2
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ic: 895 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1009 inducedDeg[ic]: 18 satDeg[ic]: 2
+ JJ : 11
+ic: 1024 inducedDeg[ic]: 19 satDeg[ic]: 2
+ JJ : 10
+Now
+Here1156 maxsat: 4
+After: 1148
+After: 1001
+After: 0
+Jcoooooooool: 1156 77
+After
+ic: 1306 inducedDeg[ic]: 10 satDeg[ic]: 4
+ic: 1297 inducedDeg[ic]: 3 satDeg[ic]: 4
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ic: 1289 inducedDeg[ic]: 3 satDeg[ic]: 4
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ic: 1139 inducedDeg[ic]: 3 satDeg[ic]: 4
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ic: 1157 inducedDeg[ic]: 8 satDeg[ic]: 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ic: 1304 inducedDeg[ic]: 12 satDeg[ic]: 4
+Now
+Here1155 maxsat: 4
+After: 1148
+After: 1001
+After: 1306
+After: 1139
+After: 1157
+After: 1304
+After: 0
+Jcoooooooool: 1304 78
+ JJ : 6
+ic: 1308 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1318 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 1310 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 1314 inducedDeg[ic]: 14 satDeg[ic]: 2
+ic: 1305 inducedDeg[ic]: 10 satDeg[ic]: 4
+After
+ic: 1159 inducedDeg[ic]: 13 satDeg[ic]: 2
+ic: 1316 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1303 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1223 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1312 inducedDeg[ic]: 14 satDeg[ic]: 2
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ic: 1158 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1295 inducedDeg[ic]: 8 satDeg[ic]: 2
+Now
+Here1155 maxsat: 4
+After: 1148
+After: 1001
+After: 1305
+After: 1139
+After: 1157
+After: 0
+Jcoooooooool: 1305 79
+After
+ic: 1413 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 1415 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1417 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1310 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+Now
+Here1155 maxsat: 4
+After: 1148
+After: 1001
+After: 1306
+After: 1139
+After: 1157
+After: 0
+Jcoooooooool: 1001 80
+After
+ic: 1004 inducedDeg[ic]: 4 satDeg[ic]: 2
+After
+ic: 1008 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+ic: 1006 inducedDeg[ic]: 9 satDeg[ic]: 2
+ic: 1000 inducedDeg[ic]: 14 satDeg[ic]: 2
+ic: 891 inducedDeg[ic]: 10 satDeg[ic]: 2
+Now
+Here1155 maxsat: 4
+After: 1148
+After: 1111
+After: 1306
+After: 1139
+After: 1157
+After: 0
+Jcoooooooool: 1111 81
+After
+ic: 1005 inducedDeg[ic]: 9 satDeg[ic]: 2
+ic: 1118 inducedDeg[ic]: 4 satDeg[ic]: 2
+ic: 1013 inducedDeg[ic]: 14 satDeg[ic]: 2
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ic: 1116 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+ic: 1114 inducedDeg[ic]: 9 satDeg[ic]: 2
+ JJ : 5
+ JJ : 6
+ JJ : 7
+Now
+Here1155 maxsat: 4
+After: 1148
+After: 1150
+After: 1306
+After: 1139
+After: 1157
+After: 0
+Jcoooooooool: 1150 82
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ic: 1031 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1158 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1160 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1162 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1105 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+Now
+Here1155 maxsat: 4
+After: 1148
+After: 1306
+After: 1139
+After: 1157
+After: 0
+Jcoooooooool: 1306 83
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ic: 1414 inducedDeg[ic]: 11 satDeg[ic]: 4
+ic: 1309 inducedDeg[ic]: 13 satDeg[ic]: 4
+ic: 1405 inducedDeg[ic]: 4 satDeg[ic]: 4
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ic: 1301 inducedDeg[ic]: 4 satDeg[ic]: 4
+After
+ic: 1418 inducedDeg[ic]: 10 satDeg[ic]: 4
+After
+ic: 1265 inducedDeg[ic]: 4 satDeg[ic]: 4
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ic: 1416 inducedDeg[ic]: 10 satDeg[ic]: 4
+Now
+Here1155 maxsat: 4
+After: 1265
+After: 1139
+After: 1157
+After: 1414
+After: 1309
+After: 1416
+After: 0
+Jcoooooooool: 1309 84
+ JJ : 5
+ JJ : 6
+ic: 1295 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 1308 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1223 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1318 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 1159 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 1314 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1316 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1303 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 1312 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+Now
+Here1155 maxsat: 4
+After: 1265
+After: 1139
+After: 1157
+After: 1414
+After: 1416
+After: 0
+Jcoooooooool: 1414 85
+ JJ : 4
+ JJ : 5
+ic: 1430 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1434 inducedDeg[ic]: 13 satDeg[ic]: 3
+ic: 1432 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 1419 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1275 inducedDeg[ic]: 5 satDeg[ic]: 3
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ic: 1428 inducedDeg[ic]: 12 satDeg[ic]: 3
+ic: 1411 inducedDeg[ic]: 5 satDeg[ic]: 3
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+Now
+Here1155 maxsat: 4
+After: 1265
+After: 1139
+After: 1157
+After: 1416
+After: 0
+Jcoooooooool: 1416 86
+After
+ic: 1299 inducedDeg[ic]: 4 satDeg[ic]: 3
+After
+ic: 1438 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1429 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1407 inducedDeg[ic]: 4 satDeg[ic]: 3
+After
+ic: 1436 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 1311 inducedDeg[ic]: 13 satDeg[ic]: 3
+Now
+Here1155 maxsat: 4
+After: 1265
+After: 1139
+After: 1157
+After: 1418
+After: 0
+Jcoooooooool: 1418 87
+ JJ : 4
+ic: 1442 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1369 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1444 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1435 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1313 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1440 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+Now
+Here1155 maxsat: 4
+After: 1265
+After: 1139
+After: 1157
+After: 0
+Jcoooooooool: 1157 88
+ JJ : 3
+ic: 1162 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1149 inducedDeg[ic]: 7 satDeg[ic]: 2
+After
+ic: 1031 inducedDeg[ic]: 13 satDeg[ic]: 2
+ic: 1160 inducedDeg[ic]: 13 satDeg[ic]: 2
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ic: 1105 inducedDeg[ic]: 15 satDeg[ic]: 2
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+Now
+Here1155 maxsat: 4
+After: 1265
+After: 1139
+After: 0
+Jcoooooooool: 1155 89
+ JJ : 0
+ JJ : 1
+ JJ : 2
+Now
+Here1265 maxsat: 4
+After: 1139
+After: 0
+Jcoooooooool: 1265 90
+After
+Now
+Here1301 maxsat: 4
+After: 1139
+After: 0
+Jcoooooooool: 1301 91
+After
+Now
+Here1405 maxsat: 4
+After: 1139
+After: 0
+Jcoooooooool: 1405 92
+After
+Now
+Here1148 maxsat: 4
+After: 1139
+After: 0
+Jcoooooooool: 1148 93
+After
+Now
+Here1146 maxsat: 4
+After: 1139
+After: 0
+Jcoooooooool: 1146 94
+After
+Now
+Here1127 maxsat: 4
+After: 1139
+After: 0
+Jcoooooooool: 1127 95
+After
+Now
+Here1125 maxsat: 4
+After: 1139
+After: 0
+Jcoooooooool: 1125 96
+After
+Now
+Here1154 maxsat: 4
+After: 1139
+After: 0
+Jcoooooooool: 1154 97
+After
+Now
+Here1152 maxsat: 4
+After: 1139
+After: 0
+Jcoooooooool: 1152 98
+ JJ : 0
+ JJ : 1
+Now
+Here1139 maxsat: 4
+After: 0
+Jcoooooooool: 1139 99
+After
+Now
+Here1289 maxsat: 4
+After: 0
+Jcoooooooool: 1289 100
+After
+Now
+Here1297 maxsat: 4
+After: 0
+Jcoooooooool: 1297 101
+ JJ : 0
+Now
+Here1432 maxsat: 3
+After: 1311
+After: 975
+After: 1428
+After: 1022
+After: 1018
+After: 983
+After: 1010
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 0
+Jcoooooooool: 1022 102
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ic: 1039 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+ic: 979 inducedDeg[ic]: 18 satDeg[ic]: 1
+After
+ic: 1102 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1000 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1009 inducedDeg[ic]: 17 satDeg[ic]: 3
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ic: 1021 inducedDeg[ic]: 21 satDeg[ic]: 1
+ JJ : 15
+ JJ : 16
+ic: 894 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1108 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1023 inducedDeg[ic]: 20 satDeg[ic]: 1
+ JJ : 15
+ic: 976 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 995 inducedDeg[ic]: 18 satDeg[ic]: 1
+After
+ic: 1011 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1106 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1110 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1104 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 987 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+ic: 1013 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 984 inducedDeg[ic]: 18 satDeg[ic]: 1
+After
+ic: 1099 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+Now
+Here1432 maxsat: 3
+After: 1013
+After: 975
+After: 1428
+After: 1018
+After: 983
+After: 1009
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 0
+Jcoooooooool: 1009 103
+After
+ic: 1031 inducedDeg[ic]: 12 satDeg[ic]: 3
+ic: 986 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 994 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1023 inducedDeg[ic]: 19 satDeg[ic]: 2
+ JJ : 15
+ic: 896 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1025 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 978 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+Now
+Here1432 maxsat: 3
+After: 1013
+After: 975
+After: 1031
+After: 1018
+After: 983
+After: 1010
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 0
+Jcoooooooool: 1010 104
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ic: 1028 inducedDeg[ic]: 7 satDeg[ic]: 3
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ic: 895 inducedDeg[ic]: 13 satDeg[ic]: 3
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ic: 1032 inducedDeg[ic]: 12 satDeg[ic]: 3
+ic: 985 inducedDeg[ic]: 15 satDeg[ic]: 3
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ic: 1026 inducedDeg[ic]: 12 satDeg[ic]: 3
+ic: 1024 inducedDeg[ic]: 18 satDeg[ic]: 3
+ic: 993 inducedDeg[ic]: 14 satDeg[ic]: 3
+ic: 1030 inducedDeg[ic]: 7 satDeg[ic]: 3
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ic: 977 inducedDeg[ic]: 14 satDeg[ic]: 3
+Now
+Here1432 maxsat: 3
+After: 895
+After: 977
+After: 1026
+After: 1030
+After: 985
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 1024
+After: 0
+Jcoooooooool: 1024 105
+ JJ : 11
+ic: 1110 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 987 inducedDeg[ic]: 18 satDeg[ic]: 2
+After
+ic: 1039 inducedDeg[ic]: 18 satDeg[ic]: 2
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ic: 979 inducedDeg[ic]: 17 satDeg[ic]: 2
+ic: 1102 inducedDeg[ic]: 15 satDeg[ic]: 2
+ic: 1108 inducedDeg[ic]: 16 satDeg[ic]: 2
+ic: 995 inducedDeg[ic]: 17 satDeg[ic]: 2
+ic: 1021 inducedDeg[ic]: 19 satDeg[ic]: 2
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ic: 1106 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 1104 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 1099 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+Now
+Here1432 maxsat: 3
+After: 895
+After: 977
+After: 1026
+After: 1030
+After: 985
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 0
+Jcoooooooool: 985 106
+After
+ic: 973 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 865 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 984 inducedDeg[ic]: 16 satDeg[ic]: 2
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ic: 867 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 982 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 990 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 988 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+ic: 873 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+Now
+Here1432 maxsat: 3
+After: 895
+After: 977
+After: 1026
+After: 1030
+After: 983
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 0
+Jcoooooooool: 983 107
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ic: 990 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 982 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 986 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 867 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 988 inducedDeg[ic]: 18 satDeg[ic]: 2
+ JJ : 13
+ic: 873 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 865 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 973 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+Now
+Here1432 maxsat: 3
+After: 895
+After: 977
+After: 1026
+After: 1030
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 0
+Jcoooooooool: 977 108
+After
+ic: 976 inducedDeg[ic]: 14 satDeg[ic]: 2
+ JJ : 11
+ JJ : 12
+ic: 855 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 889 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 980 inducedDeg[ic]: 18 satDeg[ic]: 1
+After
+ic: 974 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 863 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 972 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+Now
+Here1432 maxsat: 3
+After: 895
+After: 993
+After: 1026
+After: 1030
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 0
+Jcoooooooool: 993 109
+After
+ic: 981 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 998 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 971 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 996 inducedDeg[ic]: 18 satDeg[ic]: 1
+After
+ic: 875 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 992 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 881 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+Now
+Here1432 maxsat: 3
+After: 895
+After: 975
+After: 1026
+After: 1030
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 0
+Jcoooooooool: 975 110
+After
+ic: 855 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 978 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 889 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 980 inducedDeg[ic]: 17 satDeg[ic]: 2
+ic: 863 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 974 inducedDeg[ic]: 14 satDeg[ic]: 2
+ic: 972 inducedDeg[ic]: 13 satDeg[ic]: 2
+Now
+Here1432 maxsat: 3
+After: 895
+After: 1016
+After: 1026
+After: 1030
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 0
+Jcoooooooool: 895 111
+After
+ic: 890 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 892 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 853 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 861 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 894 inducedDeg[ic]: 12 satDeg[ic]: 2
+ic: 723 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+Now
+Here1432 maxsat: 3
+After: 1013
+After: 1016
+After: 1026
+After: 1030
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 0
+Jcoooooooool: 1026 112
+After
+ic: 989 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1100 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1011 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1037 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 997 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+Now
+Here1432 maxsat: 3
+After: 1013
+After: 1016
+After: 1032
+After: 1030
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 0
+Jcoooooooool: 1032 113
+After
+ic: 1105 inducedDeg[ic]: 14 satDeg[ic]: 3
+ic: 1158 inducedDeg[ic]: 3 satDeg[ic]: 3
+After
+ic: 1160 inducedDeg[ic]: 12 satDeg[ic]: 3
+ic: 1162 inducedDeg[ic]: 9 satDeg[ic]: 3
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ JJ : 19
+ JJ : 20
+ic: 1149 inducedDeg[ic]: 3 satDeg[ic]: 3
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ JJ : 19
+Now
+Here1162 maxsat: 3
+After: 1013
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 1105
+After: 1149
+After: 1160
+After: 0
+Jcoooooooool: 1105 114
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ic: 1161 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+Now
+Here1162 maxsat: 3
+After: 1013
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 1149
+After: 1160
+After: 0
+Jcoooooooool: 1160 115
+ JJ : 11
+Now
+Here1162 maxsat: 3
+After: 1013
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1429
+After: 1411
+After: 1407
+After: 1436
+After: 1149
+After: 0
+Jcoooooooool: 1429 116
+After
+ic: 1435 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1437 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+Now
+Here1162 maxsat: 3
+After: 1013
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1438
+After: 1411
+After: 1407
+After: 1436
+After: 1149
+After: 0
+Jcoooooooool: 1438 117
+After
+ic: 1439 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1504 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1497 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1506 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1502 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1427 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1449 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+Now
+Here1162 maxsat: 3
+After: 1013
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1419
+After: 1411
+After: 1407
+After: 1436
+After: 1149
+After: 0
+Jcoooooooool: 1013 118
+After
+ic: 1006 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+Now
+Here1162 maxsat: 3
+After: 1000
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1419
+After: 1411
+After: 1407
+After: 1436
+After: 1149
+After: 1006
+After: 0
+Jcoooooooool: 1000 119
+After
+ic: 1005 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 892 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+Now
+Here1162 maxsat: 3
+After: 1311
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1419
+After: 1411
+After: 1407
+After: 1436
+After: 1149
+After: 1005
+After: 0
+Jcoooooooool: 1311 120
+After
+Now
+Here1162 maxsat: 3
+After: 1434
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1419
+After: 1411
+After: 1407
+After: 1436
+After: 1149
+After: 1005
+After: 0
+Jcoooooooool: 1434 121
+After
+ic: 1570 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1501 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1487 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1420 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1551 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1433 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1427 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 1499 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1572 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1431 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1509 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1563 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+Now
+Here1162 maxsat: 3
+After: 1312
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1419
+After: 1411
+After: 1407
+After: 1436
+After: 1149
+After: 1005
+After: 1420
+After: 0
+Jcoooooooool: 1420 122
+ JJ : 12
+ic: 1421 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1423 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1425 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+Now
+Here1162 maxsat: 3
+After: 1312
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1419
+After: 1411
+After: 1407
+After: 1436
+After: 1149
+After: 1005
+After: 0
+Jcoooooooool: 1436 123
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ic: 1440 inducedDeg[ic]: 12 satDeg[ic]: 2
+ic: 1313 inducedDeg[ic]: 14 satDeg[ic]: 2
+ic: 1442 inducedDeg[ic]: 11 satDeg[ic]: 2
+ic: 1369 inducedDeg[ic]: 11 satDeg[ic]: 2
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ic: 1444 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1417 inducedDeg[ic]: 5 satDeg[ic]: 2
+After
+Now
+Here1162 maxsat: 3
+After: 1312
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1419
+After: 1411
+After: 1407
+After: 1149
+After: 1005
+After: 0
+Jcoooooooool: 1162 124
+After
+ic: 1224 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1228 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1107 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 1230 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1222 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1226 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+Now
+Here1432 maxsat: 3
+After: 1312
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1419
+After: 1411
+After: 1407
+After: 1149
+After: 1005
+After: 0
+Jcoooooooool: 1419 125
+After
+ic: 1422 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 1409 inducedDeg[ic]: 4 satDeg[ic]: 3
+After
+ic: 1426 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 1287 inducedDeg[ic]: 4 satDeg[ic]: 3
+After
+ic: 1424 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 1399 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+Now
+Here1432 maxsat: 3
+After: 1426
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 1399
+After: 0
+Jcoooooooool: 1399 126
+After
+Now
+Here1432 maxsat: 3
+After: 1426
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 1424
+After: 0
+Jcoooooooool: 1424 127
+ JJ : 11
+ic: 1494 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1496 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1492 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1483 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1490 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1488 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+Now
+Here1432 maxsat: 3
+After: 1426
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 0
+Jcoooooooool: 1426 128
+After
+ic: 1500 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1489 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1431 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 1498 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+Now
+Here1432 maxsat: 3
+After: 1422
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 0
+Jcoooooooool: 1422 129
+After
+ic: 1486 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1477 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+ic: 1484 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1403 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+Now
+Here1432 maxsat: 3
+After: 1312
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 0
+Jcoooooooool: 1312 130
+After
+ic: 1313 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1315 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1317 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1224 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1307 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+Now
+Here1432 maxsat: 3
+After: 1316
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 1313
+After: 0
+Jcoooooooool: 1313 131
+ JJ : 11
+ic: 1439 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1441 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1370 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1443 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+Now
+Here1432 maxsat: 3
+After: 1316
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 0
+Jcoooooooool: 1316 132
+After
+ic: 1372 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1376 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1225 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1368 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1374 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1370 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+Now
+Here1432 maxsat: 3
+After: 1314
+After: 1016
+After: 1031
+After: 1030
+After: 1295
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 0
+Jcoooooooool: 1314 133
+After
+ic: 1417 inducedDeg[ic]: 4 satDeg[ic]: 3
+After
+ic: 1442 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 1444 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 1435 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 1440 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1369 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+Now
+Here1435 maxsat: 3
+After: 1369
+After: 1016
+After: 1031
+After: 1030
+After: 1417
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 1444
+After: 1440
+After: 0
+Jcoooooooool: 1440 134
+ JJ : 12
+ic: 1504 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1506 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1502 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1497 inducedDeg[ic]: 10 satDeg[ic]: 2
+ic: 1449 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1437 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+Now
+Here1435 maxsat: 3
+After: 1369
+After: 1016
+After: 1031
+After: 1030
+After: 1417
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 1444
+After: 0
+Jcoooooooool: 1369 135
+After
+ic: 1374 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 1372 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1376 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1315 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1225 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1368 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+Now
+Here1435 maxsat: 3
+After: 1442
+After: 1016
+After: 1031
+After: 1030
+After: 1417
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 1444
+After: 0
+Jcoooooooool: 1442 136
+After
+ic: 1514 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1503 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1451 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1510 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1512 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1508 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+Now
+Here1435 maxsat: 3
+After: 1223
+After: 1016
+After: 1031
+After: 1030
+After: 1417
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 1444
+After: 0
+Jcoooooooool: 1223 137
+After
+ic: 1222 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1226 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1230 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1161 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+ic: 1228 inducedDeg[ic]: 10 satDeg[ic]: 2
+ic: 1107 inducedDeg[ic]: 16 satDeg[ic]: 2
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ JJ : 19
+Now
+Here1435 maxsat: 3
+After: 1308
+After: 1016
+After: 1031
+After: 1030
+After: 1417
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 1444
+After: 0
+Jcoooooooool: 1308 138
+After
+ic: 1322 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1320 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1326 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1235 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1324 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1229 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+Now
+Here1435 maxsat: 3
+After: 1310
+After: 1016
+After: 1031
+After: 1030
+After: 1417
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 1444
+After: 0
+Jcoooooooool: 1444 139
+ JJ : 11
+ic: 1452 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1371 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1450 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1454 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1448 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+Now
+Here1435 maxsat: 3
+After: 1310
+After: 1016
+After: 1031
+After: 1030
+After: 1417
+After: 1430
+After: 1411
+After: 1287
+After: 1149
+After: 1005
+After: 0
+Jcoooooooool: 1005 140
+After
+ic: 1006 inducedDeg[ic]: 7 satDeg[ic]: 4
+ JJ : 10
+ic: 1014 inducedDeg[ic]: 9 satDeg[ic]: 4
+After
+ic: 1004 inducedDeg[ic]: 3 satDeg[ic]: 3
+After
+ic: 1113 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 1002 inducedDeg[ic]: 3 satDeg[ic]: 3
+After
+ic: 1115 inducedDeg[ic]: 6 satDeg[ic]: 3
+After
+ic: 1008 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 891 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+Now
+Here1006 maxsat: 4
+After: 1014
+After: 0
+Jcoooooooool: 1014 141
+ JJ : 1
+ic: 984 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1118 inducedDeg[ic]: 3 satDeg[ic]: 3
+After
+ic: 1112 inducedDeg[ic]: 3 satDeg[ic]: 3
+After
+ic: 1116 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 1021 inducedDeg[ic]: 15 satDeg[ic]: 3
+ic: 894 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1011 inducedDeg[ic]: 10 satDeg[ic]: 3
+ic: 1114 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 976 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+Now
+Here1006 maxsat: 4
+After: 0
+Jcoooooooool: 1006 142
+ JJ : 0
+ic: 1007 inducedDeg[ic]: 6 satDeg[ic]: 3
+After
+ic: 892 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 999 inducedDeg[ic]: 9 satDeg[ic]: 4
+Now
+Here999 maxsat: 4
+After: 0
+Jcoooooooool: 999 143
+ JJ : 0
+Now
+Here1116 maxsat: 3
+After: 1310
+After: 1016
+After: 1031
+After: 1030
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 892
+After: 984
+After: 1021
+After: 894
+After: 1011
+After: 1114
+After: 976
+After: 0
+Jcoooooooool: 1021 144
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ic: 988 inducedDeg[ic]: 17 satDeg[ic]: 3
+After
+ic: 1107 inducedDeg[ic]: 15 satDeg[ic]: 3
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ic: 1109 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 996 inducedDeg[ic]: 17 satDeg[ic]: 2
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ic: 1100 inducedDeg[ic]: 15 satDeg[ic]: 2
+ic: 1101 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 980 inducedDeg[ic]: 16 satDeg[ic]: 3
+After
+ic: 1103 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 1040 inducedDeg[ic]: 19 satDeg[ic]: 1
+After
+Now
+Here1116 maxsat: 3
+After: 1310
+After: 1016
+After: 1031
+After: 1030
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 892
+After: 984
+After: 894
+After: 1011
+After: 1114
+After: 976
+After: 988
+After: 1107
+After: 980
+After: 0
+Jcoooooooool: 988 145
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ic: 987 inducedDeg[ic]: 16 satDeg[ic]: 3
+ic: 1102 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1099 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 981 inducedDeg[ic]: 14 satDeg[ic]: 2
+ic: 1106 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1108 inducedDeg[ic]: 14 satDeg[ic]: 3
+ic: 1023 inducedDeg[ic]: 10 satDeg[ic]: 3
+ic: 1110 inducedDeg[ic]: 13 satDeg[ic]: 3
+ic: 1104 inducedDeg[ic]: 13 satDeg[ic]: 3
+ic: 866 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 995 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+ic: 989 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1039 inducedDeg[ic]: 16 satDeg[ic]: 3
+ic: 868 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 874 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 979 inducedDeg[ic]: 15 satDeg[ic]: 3
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ JJ : 19
+ic: 974 inducedDeg[ic]: 13 satDeg[ic]: 3
+Now
+Here1116 maxsat: 3
+After: 1310
+After: 1016
+After: 1031
+After: 1030
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 892
+After: 984
+After: 1023
+After: 1011
+After: 1114
+After: 1106
+After: 979
+After: 1039
+After: 974
+After: 1108
+After: 0
+Jcoooooooool: 1039 146
+After
+ic: 1036 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 877 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1042 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1044 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1034 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 883 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 991 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 1038 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+Now
+Here1116 maxsat: 3
+After: 1310
+After: 1016
+After: 1031
+After: 1030
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 892
+After: 984
+After: 1023
+After: 1011
+After: 1114
+After: 1106
+After: 979
+After: 987
+After: 974
+After: 1108
+After: 0
+Jcoooooooool: 987 147
+After
+ic: 973 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 873 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 865 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 984 inducedDeg[ic]: 11 satDeg[ic]: 4
+ic: 986 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 867 inducedDeg[ic]: 12 satDeg[ic]: 3
+ic: 990 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 982 inducedDeg[ic]: 13 satDeg[ic]: 3
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+Now
+Here984 maxsat: 4
+After: 0
+Jcoooooooool: 984 148
+ JJ : 0
+Now
+Here1116 maxsat: 3
+After: 1310
+After: 1016
+After: 1031
+After: 1030
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 892
+After: 867
+After: 1023
+After: 1011
+After: 1114
+After: 990
+After: 979
+After: 980
+After: 982
+After: 1108
+After: 986
+After: 0
+Jcoooooooool: 979 149
+After
+ic: 863 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 976 inducedDeg[ic]: 10 satDeg[ic]: 4
+ic: 978 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 855 inducedDeg[ic]: 10 satDeg[ic]: 3
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ic: 889 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 974 inducedDeg[ic]: 11 satDeg[ic]: 4
+After
+ic: 972 inducedDeg[ic]: 12 satDeg[ic]: 3
+Now
+Here976 maxsat: 4
+After: 974
+After: 0
+Jcoooooooool: 974 150
+ JJ : 1
+ic: 973 inducedDeg[ic]: 12 satDeg[ic]: 4
+After
+ic: 982 inducedDeg[ic]: 12 satDeg[ic]: 4
+After
+ic: 890 inducedDeg[ic]: 12 satDeg[ic]: 2
+ic: 873 inducedDeg[ic]: 12 satDeg[ic]: 4
+After
+ic: 971 inducedDeg[ic]: 13 satDeg[ic]: 2
+ic: 856 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 864 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 865 inducedDeg[ic]: 11 satDeg[ic]: 4
+ic: 986 inducedDeg[ic]: 7 satDeg[ic]: 4
+ JJ : 20
+ic: 867 inducedDeg[ic]: 11 satDeg[ic]: 4
+ic: 990 inducedDeg[ic]: 10 satDeg[ic]: 4
+After
+Now
+Here990 maxsat: 4
+After: 873
+After: 867
+After: 986
+After: 0
+Jcoooooooool: 873 151
+After
+ic: 876 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 878 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 857 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 869 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 872 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 745 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 719 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+Now
+Here990 maxsat: 4
+After: 982
+After: 867
+After: 986
+After: 0
+Jcoooooooool: 982 152
+After
+ic: 971 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 994 inducedDeg[ic]: 8 satDeg[ic]: 2
+ic: 881 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 996 inducedDeg[ic]: 13 satDeg[ic]: 3
+ic: 992 inducedDeg[ic]: 14 satDeg[ic]: 2
+ic: 875 inducedDeg[ic]: 13 satDeg[ic]: 2
+ic: 998 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+Now
+Here990 maxsat: 4
+After: 973
+After: 867
+After: 986
+After: 0
+Jcoooooooool: 973 153
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ic: 855 inducedDeg[ic]: 9 satDeg[ic]: 4
+After
+ic: 978 inducedDeg[ic]: 6 satDeg[ic]: 4
+After
+ic: 889 inducedDeg[ic]: 10 satDeg[ic]: 4
+After
+ic: 980 inducedDeg[ic]: 12 satDeg[ic]: 4
+ic: 863 inducedDeg[ic]: 10 satDeg[ic]: 4
+After
+ic: 972 inducedDeg[ic]: 11 satDeg[ic]: 4
+ic: 976 inducedDeg[ic]: 9 satDeg[ic]: 5
+Now
+Here976 maxsat: 5
+After: 0
+Jcoooooooool: 976 154
+ JJ : 0
+ic: 856 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 864 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 890 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 971 inducedDeg[ic]: 11 satDeg[ic]: 4
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ JJ : 19
+ic: 1016 inducedDeg[ic]: 2 satDeg[ic]: 4
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ic: 1012 inducedDeg[ic]: 7 satDeg[ic]: 4
+ic: 1018 inducedDeg[ic]: 2 satDeg[ic]: 4
+ic: 893 inducedDeg[ic]: 8 satDeg[ic]: 4
+ic: 1020 inducedDeg[ic]: 2 satDeg[ic]: 4
+Now
+Here863 maxsat: 4
+After: 971
+After: 1012
+After: 855
+After: 978
+After: 980
+After: 1020
+After: 893
+After: 0
+Jcoooooooool: 980 155
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ic: 1102 inducedDeg[ic]: 12 satDeg[ic]: 4
+ic: 1099 inducedDeg[ic]: 12 satDeg[ic]: 4
+ic: 1106 inducedDeg[ic]: 10 satDeg[ic]: 4
+ic: 1108 inducedDeg[ic]: 13 satDeg[ic]: 4
+ JJ : 17
+ic: 1104 inducedDeg[ic]: 12 satDeg[ic]: 4
+After
+ic: 1110 inducedDeg[ic]: 12 satDeg[ic]: 4
+ JJ : 16
+ic: 995 inducedDeg[ic]: 14 satDeg[ic]: 4
+After
+ic: 1023 inducedDeg[ic]: 9 satDeg[ic]: 4
+After
+Now
+Here1106 maxsat: 4
+After: 971
+After: 1012
+After: 1023
+After: 978
+After: 1020
+After: 893
+After: 1110
+After: 1108
+After: 995
+After: 0
+Jcoooooooool: 995 156
+ JJ : 9
+ic: 981 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 971 inducedDeg[ic]: 9 satDeg[ic]: 5
+After
+ic: 998 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 994 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 881 inducedDeg[ic]: 13 satDeg[ic]: 3
+ic: 992 inducedDeg[ic]: 13 satDeg[ic]: 3
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ic: 875 inducedDeg[ic]: 12 satDeg[ic]: 3
+ JJ : 16
+Now
+Here971 maxsat: 5
+After: 0
+Jcoooooooool: 971 157
+ JJ : 0
+ic: 876 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 991 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 882 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 997 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+Now
+Here1106 maxsat: 4
+After: 972
+After: 1012
+After: 1023
+After: 978
+After: 1020
+After: 893
+After: 1110
+After: 1108
+After: 0
+Jcoooooooool: 1108 158
+ JJ : 8
+ic: 1228 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 1222 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 1230 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 1161 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 1226 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 1224 inducedDeg[ic]: 9 satDeg[ic]: 3
+Now
+Here1106 maxsat: 4
+After: 972
+After: 1012
+After: 1023
+After: 978
+After: 1020
+After: 893
+After: 1110
+After: 0
+Jcoooooooool: 1110 159
+After
+ic: 1165 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1232 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1234 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1221 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1236 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+Now
+Here1106 maxsat: 4
+After: 972
+After: 1012
+After: 1023
+After: 978
+After: 1020
+After: 893
+After: 1104
+After: 0
+Jcoooooooool: 1104 160
+After
+ic: 1166 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1041 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1170 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1164 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1168 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+Now
+Here1106 maxsat: 4
+After: 972
+After: 1012
+After: 1023
+After: 978
+After: 1020
+After: 893
+After: 1099
+After: 0
+Jcoooooooool: 1099 161
+After
+ic: 997 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 1037 inducedDeg[ic]: 12 satDeg[ic]: 2
+ic: 989 inducedDeg[ic]: 7 satDeg[ic]: 3
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ic: 1011 inducedDeg[ic]: 8 satDeg[ic]: 4
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ic: 1025 inducedDeg[ic]: 6 satDeg[ic]: 2
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ JJ : 19
+ JJ : 20
+Now
+Here1106 maxsat: 4
+After: 972
+After: 1012
+After: 1023
+After: 978
+After: 1020
+After: 1011
+After: 1102
+After: 0
+Jcoooooooool: 1102 162
+ JJ : 7
+ic: 1238 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1240 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1167 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1233 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1171 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+Now
+Here1106 maxsat: 4
+After: 972
+After: 1012
+After: 1023
+After: 978
+After: 1020
+After: 1011
+After: 0
+Jcoooooooool: 1106 163
+After
+Now
+Here863 maxsat: 4
+After: 972
+After: 1012
+After: 1023
+After: 978
+After: 1020
+After: 1011
+After: 0
+Jcoooooooool: 972 164
+After
+ic: 981 inducedDeg[ic]: 8 satDeg[ic]: 4
+After
+ic: 881 inducedDeg[ic]: 12 satDeg[ic]: 4
+ic: 994 inducedDeg[ic]: 6 satDeg[ic]: 4
+After
+ic: 996 inducedDeg[ic]: 5 satDeg[ic]: 4
+ic: 992 inducedDeg[ic]: 12 satDeg[ic]: 4
+ JJ : 15
+ic: 875 inducedDeg[ic]: 11 satDeg[ic]: 4
+ JJ : 14
+ic: 998 inducedDeg[ic]: 9 satDeg[ic]: 4
+After
+Now
+Here998 maxsat: 4
+After: 875
+After: 1012
+After: 1023
+After: 996
+After: 1020
+After: 981
+After: 992
+After: 994
+After: 0
+Jcoooooooool: 992 165
+After
+ic: 1038 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 883 inducedDeg[ic]: 15 satDeg[ic]: 2
+ JJ : 19
+ic: 877 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 1034 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1042 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 1044 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 1040 inducedDeg[ic]: 8 satDeg[ic]: 2
+ic: 1036 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+Now
+Here998 maxsat: 4
+After: 875
+After: 1012
+After: 1023
+After: 996
+After: 1020
+After: 981
+After: 881
+After: 994
+After: 0
+Jcoooooooool: 881 166
+ JJ : 7
+ JJ : 8
+ic: 884 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 747 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 886 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 871 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 721 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 729 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 888 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 880 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+Now
+Here998 maxsat: 4
+After: 875
+After: 1012
+After: 1023
+After: 996
+After: 1020
+After: 981
+After: 994
+After: 0
+Jcoooooooool: 875 167
+After
+ic: 719 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 874 inducedDeg[ic]: 10 satDeg[ic]: 2
+ JJ : 18
+ JJ : 19
+ JJ : 20
+ic: 878 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 857 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 869 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 872 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 745 inducedDeg[ic]: 15 satDeg[ic]: 2
+Now
+Here998 maxsat: 4
+After: 867
+After: 1012
+After: 1023
+After: 996
+After: 1020
+After: 981
+After: 994
+After: 0
+Jcoooooooool: 867 168
+After
+ic: 859 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 851 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 870 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 717 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 707 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 711 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+Now
+Here998 maxsat: 4
+After: 865
+After: 1012
+After: 1023
+After: 996
+After: 1020
+After: 981
+After: 994
+After: 0
+Jcoooooooool: 865 169
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ic: 849 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 864 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 862 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 705 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 860 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 858 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+Now
+Here998 maxsat: 4
+After: 1012
+After: 1023
+After: 996
+After: 1020
+After: 981
+After: 994
+After: 0
+Jcoooooooool: 998 170
+After
+ic: 1025 inducedDeg[ic]: 5 satDeg[ic]: 3
+ JJ : 17
+ JJ : 18
+ JJ : 19
+ic: 1037 inducedDeg[ic]: 11 satDeg[ic]: 3
+ic: 1100 inducedDeg[ic]: 4 satDeg[ic]: 3
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ic: 989 inducedDeg[ic]: 4 satDeg[ic]: 4
+After
+Now
+Here863 maxsat: 4
+After: 1012
+After: 1023
+After: 996
+After: 1020
+After: 981
+After: 994
+After: 989
+After: 0
+Jcoooooooool: 863 171
+After
+ic: 866 inducedDeg[ic]: 7 satDeg[ic]: 2
+After
+ic: 705 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 860 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 858 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 862 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 849 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+Now
+Here889 maxsat: 4
+After: 1012
+After: 1023
+After: 996
+After: 1020
+After: 981
+After: 994
+After: 989
+After: 0
+Jcoooooooool: 889 172
+After
+ic: 853 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 861 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 723 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 896 inducedDeg[ic]: 7 satDeg[ic]: 2
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ JJ : 19
+Now
+Here990 maxsat: 4
+After: 1012
+After: 1023
+After: 996
+After: 1020
+After: 981
+After: 994
+After: 989
+After: 0
+Jcoooooooool: 990 173
+ JJ : 0
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ic: 1037 inducedDeg[ic]: 10 satDeg[ic]: 4
+ JJ : 14
+ic: 1100 inducedDeg[ic]: 3 satDeg[ic]: 4
+After
+ic: 1025 inducedDeg[ic]: 4 satDeg[ic]: 4
+After
+ic: 1011 inducedDeg[ic]: 6 satDeg[ic]: 5
+After
+ic: 997 inducedDeg[ic]: 5 satDeg[ic]: 4
+After
+Now
+Here1011 maxsat: 5
+After: 0
+Jcoooooooool: 1011 174
+ JJ : 0
+ic: 1038 inducedDeg[ic]: 11 satDeg[ic]: 3
+ JJ : 15
+ JJ : 16
+ JJ : 17
+Now
+Here1012 maxsat: 4
+After: 1023
+After: 997
+After: 1020
+After: 981
+After: 994
+After: 989
+After: 1037
+After: 1100
+After: 1025
+After: 0
+Jcoooooooool: 1037 175
+ JJ : 7
+ JJ : 8
+ JJ : 9
+ic: 877 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1036 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1042 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1012 inducedDeg[ic]: 5 satDeg[ic]: 5
+After
+ic: 1040 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 1038 inducedDeg[ic]: 10 satDeg[ic]: 4
+ic: 883 inducedDeg[ic]: 14 satDeg[ic]: 3
+ic: 991 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 1034 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 1044 inducedDeg[ic]: 12 satDeg[ic]: 3
+Now
+Here1012 maxsat: 5
+After: 0
+Jcoooooooool: 1012 176
+ JJ : 0
+Now
+Here986 maxsat: 4
+After: 1023
+After: 997
+After: 1020
+After: 981
+After: 994
+After: 989
+After: 1100
+After: 1025
+After: 1038
+After: 0
+Jcoooooooool: 1038 177
+ JJ : 9
+ic: 1041 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 884 inducedDeg[ic]: 15 satDeg[ic]: 2
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ic: 1043 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1033 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 878 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 1035 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+Now
+Here986 maxsat: 4
+After: 1023
+After: 997
+After: 1020
+After: 981
+After: 994
+After: 989
+After: 1100
+After: 1025
+After: 0
+Jcoooooooool: 1023 178
+After
+Now
+Here986 maxsat: 4
+After: 855
+After: 997
+After: 1020
+After: 981
+After: 994
+After: 989
+After: 1100
+After: 1025
+After: 0
+Jcoooooooool: 855 179
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+ JJ : 8
+ic: 854 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 703 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 850 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 725 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 852 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+Now
+Here986 maxsat: 4
+After: 997
+After: 1020
+After: 981
+After: 994
+After: 989
+After: 1100
+After: 1025
+After: 0
+Jcoooooooool: 986 180
+ JJ : 0
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+ JJ : 7
+Now
+Here997 maxsat: 4
+After: 1020
+After: 981
+After: 994
+After: 989
+After: 1100
+After: 1025
+After: 0
+Jcoooooooool: 994 181
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ JJ : 6
+Now
+Here997 maxsat: 4
+After: 1020
+After: 981
+After: 989
+After: 1100
+After: 1025
+After: 0
+Jcoooooooool: 981 182
+After
+Now
+Here997 maxsat: 4
+After: 1020
+After: 893
+After: 989
+After: 1100
+After: 1025
+After: 0
+Jcoooooooool: 893 183
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ JJ : 5
+ic: 892 inducedDeg[ic]: 7 satDeg[ic]: 4
+After
+ic: 853 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 861 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 896 inducedDeg[ic]: 6 satDeg[ic]: 3
+After
+ic: 723 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 890 inducedDeg[ic]: 5 satDeg[ic]: 4
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ JJ : 19
+Now
+Here997 maxsat: 4
+After: 1020
+After: 989
+After: 1100
+After: 1025
+After: 892
+After: 890
+After: 0
+Jcoooooooool: 892 184
+ JJ : 5
+ JJ : 6
+ic: 724 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 854 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+Now
+Here997 maxsat: 4
+After: 1020
+After: 989
+After: 1100
+After: 1025
+After: 890
+After: 0
+Jcoooooooool: 890 185
+ JJ : 5
+ic: 724 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 854 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 862 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 891 inducedDeg[ic]: 6 satDeg[ic]: 4
+Now
+Here997 maxsat: 4
+After: 1020
+After: 989
+After: 1100
+After: 1025
+After: 891
+After: 0
+Jcoooooooool: 891 186
+ JJ : 5
+Now
+Here997 maxsat: 4
+After: 1020
+After: 989
+After: 1100
+After: 1025
+After: 0
+Jcoooooooool: 1025 187
+ JJ : 4
+ic: 1030 inducedDeg[ic]: 3 satDeg[ic]: 4
+After
+ic: 1028 inducedDeg[ic]: 3 satDeg[ic]: 4
+Now
+Here997 maxsat: 4
+After: 1020
+After: 989
+After: 1100
+After: 1028
+After: 0
+Jcoooooooool: 1028 188
+After
+Now
+Here997 maxsat: 4
+After: 1020
+After: 989
+After: 1100
+After: 1030
+After: 0
+Jcoooooooool: 1030 189
+ JJ : 4
+Now
+Here997 maxsat: 4
+After: 1020
+After: 989
+After: 1100
+After: 0
+Jcoooooooool: 997 190
+After
+Now
+Here996 maxsat: 4
+After: 1020
+After: 989
+After: 1100
+After: 0
+Jcoooooooool: 996 191
+After
+Now
+Here978 maxsat: 4
+After: 1020
+After: 989
+After: 1100
+After: 0
+Jcoooooooool: 978 192
+ JJ : 0
+ JJ : 1
+ JJ : 2
+ JJ : 3
+Now
+Here1020 maxsat: 4
+After: 989
+After: 1100
+After: 0
+Jcoooooooool: 1020 193
+After
+Now
+Here1018 maxsat: 4
+After: 989
+After: 1100
+After: 0
+Jcoooooooool: 1018 194
+After
+Now
+Here1016 maxsat: 4
+After: 989
+After: 1100
+After: 0
+Jcoooooooool: 1016 195
+ JJ : 0
+ JJ : 1
+ JJ : 2
+Now
+Here989 maxsat: 4
+After: 1100
+After: 0
+Jcoooooooool: 989 196
+ JJ : 0
+ JJ : 1
+Now
+Here1100 maxsat: 4
+After: 0
+Jcoooooooool: 1100 197
+ JJ : 0
+Now
+Here896 maxsat: 3
+After: 1310
+After: 1031
+After: 1040
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 1034
+After: 878
+After: 883
+After: 991
+After: 1044
+After: 862
+After: 0
+Jcoooooooool: 883 198
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ic: 880 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 747 inducedDeg[ic]: 16 satDeg[ic]: 2
+ JJ : 16
+ JJ : 17
+ic: 871 inducedDeg[ic]: 14 satDeg[ic]: 2
+ic: 886 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 882 inducedDeg[ic]: 7 satDeg[ic]: 2
+After
+ic: 729 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 888 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 721 inducedDeg[ic]: 14 satDeg[ic]: 2
+ JJ : 16
+Now
+Here896 maxsat: 3
+After: 1310
+After: 1031
+After: 1040
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 1034
+After: 878
+After: 991
+After: 1044
+After: 862
+After: 0
+Jcoooooooool: 878 199
+After
+ic: 720 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 746 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 858 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 870 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 871 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 1310
+After: 1031
+After: 1040
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 858
+After: 877
+After: 991
+After: 1044
+After: 862
+After: 871
+After: 0
+Jcoooooooool: 871 200
+ JJ : 18
+ic: 730 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 748 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 879 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 885 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 887 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 722 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 1310
+After: 1031
+After: 1040
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 858
+After: 877
+After: 991
+After: 1044
+After: 862
+After: 0
+Jcoooooooool: 877 201
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ic: 872 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 745 inducedDeg[ic]: 13 satDeg[ic]: 3
+ic: 876 inducedDeg[ic]: 4 satDeg[ic]: 3
+ic: 874 inducedDeg[ic]: 4 satDeg[ic]: 3
+After
+ic: 719 inducedDeg[ic]: 11 satDeg[ic]: 3
+ic: 857 inducedDeg[ic]: 10 satDeg[ic]: 3
+ic: 869 inducedDeg[ic]: 10 satDeg[ic]: 3
+Now
+Here896 maxsat: 3
+After: 874
+After: 1031
+After: 1040
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 719
+After: 991
+After: 1044
+After: 862
+After: 872
+After: 745
+After: 869
+After: 0
+Jcoooooooool: 745 202
+ JJ : 18
+ JJ : 19
+ic: 713 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 750 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 748 inducedDeg[ic]: 16 satDeg[ic]: 2
+ JJ : 19
+ic: 744 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 731 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 742 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 601 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 589 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 697 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 874
+After: 1031
+After: 1040
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 719
+After: 991
+After: 1044
+After: 862
+After: 872
+After: 869
+After: 0
+Jcoooooooool: 872 203
+ JJ : 17
+ JJ : 18
+ic: 886 inducedDeg[ic]: 11 satDeg[ic]: 3
+ic: 882 inducedDeg[ic]: 6 satDeg[ic]: 3
+ JJ : 19
+ic: 729 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 888 inducedDeg[ic]: 11 satDeg[ic]: 3
+ic: 721 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 880 inducedDeg[ic]: 12 satDeg[ic]: 3
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ic: 884 inducedDeg[ic]: 12 satDeg[ic]: 3
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ic: 747 inducedDeg[ic]: 15 satDeg[ic]: 3
+Now
+Here896 maxsat: 3
+After: 874
+After: 1031
+After: 1040
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 888
+After: 991
+After: 1044
+After: 862
+After: 869
+After: 882
+After: 721
+After: 884
+After: 747
+After: 0
+Jcoooooooool: 747 204
+ JJ : 21
+ic: 589 inducedDeg[ic]: 16 satDeg[ic]: 2
+After
+ic: 697 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 713 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 750 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 744 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 731 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 742 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 601 inducedDeg[ic]: 16 satDeg[ic]: 2
+ JJ : 19
+ic: 746 inducedDeg[ic]: 13 satDeg[ic]: 2
+ JJ : 17
+ JJ : 18
+Now
+Here896 maxsat: 3
+After: 874
+After: 1031
+After: 1040
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 888
+After: 991
+After: 1044
+After: 862
+After: 869
+After: 882
+After: 721
+After: 884
+After: 0
+Jcoooooooool: 721 205
+After
+ic: 718 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 720 inducedDeg[ic]: 11 satDeg[ic]: 2
+ic: 716 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 695 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 577 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 709 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 714 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 874
+After: 1031
+After: 1040
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 888
+After: 991
+After: 1044
+After: 862
+After: 869
+After: 882
+After: 729
+After: 884
+After: 0
+Jcoooooooool: 729 206
+ JJ : 19
+ JJ : 20
+ic: 587 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 734 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 728 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 732 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 599 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 693 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 715 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 874
+After: 1031
+After: 1040
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 888
+After: 991
+After: 1044
+After: 862
+After: 869
+After: 882
+After: 884
+After: 0
+Jcoooooooool: 884 207
+After
+ic: 1034 inducedDeg[ic]: 9 satDeg[ic]: 4
+After
+ic: 991 inducedDeg[ic]: 4 satDeg[ic]: 4
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ JJ : 19
+ic: 1040 inducedDeg[ic]: 4 satDeg[ic]: 4
+After
+ic: 1042 inducedDeg[ic]: 9 satDeg[ic]: 4
+After
+ic: 1036 inducedDeg[ic]: 9 satDeg[ic]: 4
+ic: 1044 inducedDeg[ic]: 10 satDeg[ic]: 4
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+Now
+Here1036 maxsat: 4
+After: 1040
+After: 1044
+After: 0
+Jcoooooooool: 1044 208
+ JJ : 2
+ic: 1174 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1176 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1047 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1172 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1163 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1053 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+Now
+Here1036 maxsat: 4
+After: 1040
+After: 0
+Jcoooooooool: 1036 209
+After
+ic: 1048 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 905 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 887 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+ic: 1046 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1050 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+Now
+Here1042 maxsat: 4
+After: 1040
+After: 0
+Jcoooooooool: 1042 210
+After
+ic: 1166 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 1103 inducedDeg[ic]: 4 satDeg[ic]: 2
+After
+ic: 1170 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1164 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1168 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+Now
+Here1034 maxsat: 4
+After: 1040
+After: 0
+Jcoooooooool: 1034 211
+ JJ : 0
+ JJ : 1
+ic: 1052 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1056 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+ic: 1054 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1049 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 885 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+Now
+Here1040 maxsat: 4
+After: 0
+Jcoooooooool: 1040 212
+After
+Now
+Here991 maxsat: 4
+After: 0
+Jcoooooooool: 991 213
+ JJ : 0
+Now
+Here896 maxsat: 3
+After: 874
+After: 1031
+After: 1161
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 888
+After: 862
+After: 869
+After: 882
+After: 880
+After: 0
+Jcoooooooool: 880 214
+ JJ : 17
+ic: 902 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 904 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 899 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 906 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 749 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 908 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 874
+After: 1031
+After: 1161
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 888
+After: 862
+After: 869
+After: 882
+After: 0
+Jcoooooooool: 888 215
+After
+ic: 1048 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1050 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 905 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1035 inducedDeg[ic]: 4 satDeg[ic]: 2
+After
+ic: 1046 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 874
+After: 1031
+After: 1161
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 886
+After: 862
+After: 869
+After: 882
+After: 0
+Jcoooooooool: 886 216
+After
+ic: 1033 inducedDeg[ic]: 4 satDeg[ic]: 2
+After
+ic: 1049 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 1054 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1052 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1056 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 874
+After: 1031
+After: 1161
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 719
+After: 862
+After: 869
+After: 882
+After: 0
+Jcoooooooool: 719 217
+After
+ic: 722 inducedDeg[ic]: 7 satDeg[ic]: 2
+After
+ic: 718 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 577 inducedDeg[ic]: 14 satDeg[ic]: 2
+ic: 716 inducedDeg[ic]: 13 satDeg[ic]: 2
+ic: 695 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 709 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 714 inducedDeg[ic]: 15 satDeg[ic]: 2
+Now
+Here896 maxsat: 3
+After: 874
+After: 1031
+After: 1161
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 858
+After: 862
+After: 869
+After: 882
+After: 0
+Jcoooooooool: 869 218
+After
+ic: 859 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 851 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 707 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 717 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 868 inducedDeg[ic]: 5 satDeg[ic]: 2
+After
+ic: 711 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 874
+After: 1031
+After: 1161
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 864
+After: 861
+After: 1114
+After: 1107
+After: 858
+After: 862
+After: 857
+After: 882
+After: 0
+Jcoooooooool: 857 219
+ JJ : 15
+ JJ : 16
+ic: 705 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 860 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 864 inducedDeg[ic]: 4 satDeg[ic]: 4
+After
+ic: 849 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 866 inducedDeg[ic]: 4 satDeg[ic]: 3
+After
+Now
+Here864 maxsat: 4
+After: 0
+Jcoooooooool: 864 220
+ JJ : 0
+ic: 850 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 859 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 706 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 866
+After: 1031
+After: 1161
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 849
+After: 705
+After: 1114
+After: 1107
+After: 858
+After: 862
+After: 882
+After: 859
+After: 0
+Jcoooooooool: 859 221
+After
+ic: 712 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 718 inducedDeg[ic]: 11 satDeg[ic]: 3
+ic: 705 inducedDeg[ic]: 8 satDeg[ic]: 4
+After
+ic: 852 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 862 inducedDeg[ic]: 7 satDeg[ic]: 4
+After
+ic: 858 inducedDeg[ic]: 5 satDeg[ic]: 4
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ic: 849 inducedDeg[ic]: 8 satDeg[ic]: 4
+After
+ic: 708 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 866 inducedDeg[ic]: 3 satDeg[ic]: 4
+After
+ic: 860 inducedDeg[ic]: 9 satDeg[ic]: 4
+ JJ : 15
+ JJ : 16
+Now
+Here849 maxsat: 4
+After: 862
+After: 858
+After: 866
+After: 860
+After: 0
+Jcoooooooool: 860 222
+ JJ : 4
+ic: 868 inducedDeg[ic]: 4 satDeg[ic]: 3
+After
+ic: 870 inducedDeg[ic]: 6 satDeg[ic]: 3
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ JJ : 19
+ JJ : 20
+ JJ : 21
+ JJ : 22
+ic: 717 inducedDeg[ic]: 11 satDeg[ic]: 3
+ JJ : 20
+ JJ : 21
+ic: 707 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 711 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 851 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+Now
+Here849 maxsat: 4
+After: 862
+After: 858
+After: 866
+After: 0
+Jcoooooooool: 849 223
+After
+ic: 725 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 703 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 856 inducedDeg[ic]: 4 satDeg[ic]: 3
+ JJ : 9
+ JJ : 10
+ JJ : 11
+ JJ : 12
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ JJ : 19
+ JJ : 20
+ic: 852 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 854 inducedDeg[ic]: 8 satDeg[ic]: 4
+After
+Now
+Here854 maxsat: 4
+After: 862
+After: 858
+After: 866
+After: 0
+Jcoooooooool: 854 224
+After
+ic: 704 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 726 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 851 inducedDeg[ic]: 8 satDeg[ic]: 4
+After
+Now
+Here851 maxsat: 4
+After: 862
+After: 858
+After: 866
+After: 0
+Jcoooooooool: 851 225
+After
+ic: 708 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 712 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 718 inducedDeg[ic]: 10 satDeg[ic]: 4
+Now
+Here705 maxsat: 4
+After: 862
+After: 858
+After: 866
+After: 718
+After: 0
+Jcoooooooool: 718 226
+ JJ : 4
+ic: 578 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 696 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 710 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 713 inducedDeg[ic]: 14 satDeg[ic]: 3
+ic: 715 inducedDeg[ic]: 13 satDeg[ic]: 2
+ JJ : 18
+ JJ : 19
+ JJ : 20
+Now
+Here705 maxsat: 4
+After: 862
+After: 858
+After: 866
+After: 0
+Jcoooooooool: 705 227
+ JJ : 0
+ JJ : 1
+ JJ : 2
+ JJ : 3
+ic: 700 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+ic: 704 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 689 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 702 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 708 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+Now
+Here862 maxsat: 4
+After: 858
+After: 866
+After: 0
+Jcoooooooool: 862 228
+ JJ : 0
+ JJ : 1
+ JJ : 2
+Now
+Here858 maxsat: 4
+After: 866
+After: 0
+Jcoooooooool: 858 229
+ JJ : 0
+ JJ : 1
+Now
+Here866 maxsat: 4
+After: 0
+Jcoooooooool: 866 230
+ JJ : 0
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 1161
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 852
+After: 861
+After: 1114
+After: 1107
+After: 723
+After: 870
+After: 717
+After: 711
+After: 713
+After: 708
+After: 0
+Jcoooooooool: 713 231
+ JJ : 17
+ JJ : 18
+ic: 590 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 741 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 577 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 743 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 602 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 749 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 709 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 698 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 695 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 716 inducedDeg[ic]: 12 satDeg[ic]: 3
+ic: 714 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+ic: 722 inducedDeg[ic]: 6 satDeg[ic]: 3
+ JJ : 18
+ JJ : 19
+ JJ : 20
+ic: 732 inducedDeg[ic]: 15 satDeg[ic]: 2
+ JJ : 19
+ JJ : 20
+ JJ : 21
+ic: 720 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 720
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 852
+After: 861
+After: 1114
+After: 1107
+After: 722
+After: 870
+After: 695
+After: 711
+After: 709
+After: 577
+After: 716
+After: 714
+After: 0
+Jcoooooooool: 714 232
+ JJ : 20
+ic: 601 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+ic: 742 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 731 inducedDeg[ic]: 14 satDeg[ic]: 3
+ic: 589 inducedDeg[ic]: 15 satDeg[ic]: 3
+After
+ic: 746 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 750 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 744 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 748 inducedDeg[ic]: 8 satDeg[ic]: 3
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ JJ : 19
+ic: 697 inducedDeg[ic]: 12 satDeg[ic]: 3
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 720
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 722
+After: 870
+After: 695
+After: 711
+After: 746
+After: 750
+After: 697
+After: 589
+After: 731
+After: 0
+Jcoooooooool: 589 233
+After
+ic: 588 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 447 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 586 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 592 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 582 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 461 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 584 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 571 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 720
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 722
+After: 870
+After: 695
+After: 711
+After: 746
+After: 750
+After: 697
+After: 601
+After: 731
+After: 0
+Jcoooooooool: 601 234
+ JJ : 20
+ JJ : 21
+ic: 600 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 596 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 598 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 606 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 581 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 604 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 463 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 594 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 720
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 722
+After: 870
+After: 695
+After: 711
+After: 746
+After: 750
+After: 697
+After: 731
+After: 0
+Jcoooooooool: 731 235
+ JJ : 20
+ic: 693 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 715 inducedDeg[ic]: 11 satDeg[ic]: 3
+ JJ : 16
+ JJ : 17
+ic: 587 inducedDeg[ic]: 14 satDeg[ic]: 2
+ic: 734 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 730 inducedDeg[ic]: 7 satDeg[ic]: 2
+ JJ : 17
+ JJ : 18
+ JJ : 19
+ JJ : 20
+ JJ : 21
+ JJ : 22
+ic: 728 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 599 inducedDeg[ic]: 14 satDeg[ic]: 2
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 720
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 722
+After: 870
+After: 695
+After: 711
+After: 746
+After: 750
+After: 697
+After: 715
+After: 0
+Jcoooooooool: 750 236
+After
+ic: 902 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 904 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 899 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 906 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 879 inducedDeg[ic]: 6 satDeg[ic]: 2
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ JJ : 19
+ JJ : 20
+ JJ : 21
+ic: 908 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 720
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 722
+After: 870
+After: 695
+After: 711
+After: 746
+After: 577
+After: 697
+After: 715
+After: 0
+Jcoooooooool: 577 237
+ JJ : 18
+ JJ : 19
+ JJ : 20
+ic: 580 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 576 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 574 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 445 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 567 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 459 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 439 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 572 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 720
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 722
+After: 870
+After: 695
+After: 711
+After: 746
+After: 697
+After: 715
+After: 0
+Jcoooooooool: 697 238
+After
+ic: 579 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 694 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 685 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 696 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 585 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 720
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 722
+After: 870
+After: 695
+After: 711
+After: 746
+After: 744
+After: 715
+After: 0
+Jcoooooooool: 744 239
+After
+ic: 727 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 752 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 591 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 603 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 754 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 720
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 722
+After: 870
+After: 695
+After: 711
+After: 746
+After: 742
+After: 715
+After: 0
+Jcoooooooool: 742 240
+After
+ic: 757 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 733 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 753 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 898 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+ic: 900 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 720
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 722
+After: 870
+After: 695
+After: 711
+After: 746
+After: 716
+After: 715
+After: 0
+Jcoooooooool: 716 241
+ JJ : 18
+ JJ : 19
+ic: 734 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 732 inducedDeg[ic]: 7 satDeg[ic]: 3
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ic: 730 inducedDeg[ic]: 6 satDeg[ic]: 3
+After
+ic: 728 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 587 inducedDeg[ic]: 13 satDeg[ic]: 3
+ic: 599 inducedDeg[ic]: 13 satDeg[ic]: 3
+ JJ : 16
+ JJ : 17
+ic: 693 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 732
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 730
+After: 870
+After: 693
+After: 711
+After: 746
+After: 715
+After: 599
+After: 0
+Jcoooooooool: 599 242
+After
+ic: 694 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 602 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 596 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 598 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 588 inducedDeg[ic]: 14 satDeg[ic]: 2
+ic: 606 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 581 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 604 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 463 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 600 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 727 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 594 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 733 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 732
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 730
+After: 870
+After: 693
+After: 711
+After: 746
+After: 715
+After: 587
+After: 0
+Jcoooooooool: 587 243
+ JJ : 19
+ic: 586 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 590 inducedDeg[ic]: 9 satDeg[ic]: 2
+ic: 582 inducedDeg[ic]: 15 satDeg[ic]: 2
+ JJ : 20
+ic: 447 inducedDeg[ic]: 14 satDeg[ic]: 2
+ic: 592 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 461 inducedDeg[ic]: 15 satDeg[ic]: 2
+ic: 584 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 571 inducedDeg[ic]: 15 satDeg[ic]: 2
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 732
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 730
+After: 870
+After: 693
+After: 711
+After: 746
+After: 715
+After: 0
+Jcoooooooool: 693 244
+After
+ic: 698 inducedDeg[ic]: 6 satDeg[ic]: 2
+After
+ic: 685 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 585 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 696 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 579 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 730
+After: 870
+After: 728
+After: 711
+After: 746
+After: 715
+After: 0
+Jcoooooooool: 728 245
+After
+ic: 591 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 754 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 743 inducedDeg[ic]: 6 satDeg[ic]: 2
+After
+ic: 603 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 752 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 730
+After: 870
+After: 734
+After: 711
+After: 746
+After: 715
+After: 0
+Jcoooooooool: 734 246
+After
+ic: 757 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 753 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 741 inducedDeg[ic]: 6 satDeg[ic]: 2
+ JJ : 18
+ JJ : 19
+ic: 898 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+ic: 900 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 1007
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 730
+After: 870
+After: 695
+After: 711
+After: 746
+After: 715
+After: 0
+Jcoooooooool: 695 247
+After
+ic: 698 inducedDeg[ic]: 5 satDeg[ic]: 3
+After
+ic: 694 inducedDeg[ic]: 6 satDeg[ic]: 3
+After
+ic: 685 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 585 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 579 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 717
+After: 711
+After: 685
+After: 715
+After: 579
+After: 0
+Jcoooooooool: 579 248
+After
+ic: 572 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 586 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 439 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 576 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 686 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 574 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 578 inducedDeg[ic]: 10 satDeg[ic]: 2
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ic: 567 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 459 inducedDeg[ic]: 15 satDeg[ic]: 2
+ JJ : 16
+ JJ : 17
+ic: 580 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 445 inducedDeg[ic]: 14 satDeg[ic]: 2
+ JJ : 16
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 717
+After: 711
+After: 685
+After: 715
+After: 586
+After: 0
+Jcoooooooool: 586 249
+After
+ic: 462 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 581 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+ic: 448 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 591 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 583 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 748
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 717
+After: 711
+After: 685
+After: 715
+After: 585
+After: 581
+After: 591
+After: 0
+Jcoooooooool: 581 250
+ JJ : 20
+ JJ : 21
+ic: 582 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+ic: 590 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 571 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+ic: 597 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 464 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 461 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+ic: 584 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 588 inducedDeg[ic]: 9 satDeg[ic]: 3
+ic: 593 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 603 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 447 inducedDeg[ic]: 13 satDeg[ic]: 3
+ic: 595 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 592 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 605 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 590
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 717
+After: 711
+After: 685
+After: 715
+After: 585
+After: 592
+After: 461
+After: 584
+After: 588
+After: 447
+After: 0
+Jcoooooooool: 461 251
+After
+ic: 458 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 313 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 331 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 456 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 460 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 464 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 454 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 441 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 590
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 717
+After: 711
+After: 685
+After: 715
+After: 585
+After: 592
+After: 571
+After: 584
+After: 588
+After: 447
+After: 0
+Jcoooooooool: 571 252
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 590
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 717
+After: 711
+After: 685
+After: 715
+After: 585
+After: 592
+After: 582
+After: 584
+After: 588
+After: 447
+After: 0
+Jcoooooooool: 582 253
+ JJ : 21
+ JJ : 22
+ JJ : 23
+ JJ : 24
+ic: 463 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+ic: 604 inducedDeg[ic]: 11 satDeg[ic]: 3
+ JJ : 20
+ JJ : 21
+ic: 600 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 602 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 606 inducedDeg[ic]: 13 satDeg[ic]: 3
+ic: 596 inducedDeg[ic]: 14 satDeg[ic]: 3
+ic: 598 inducedDeg[ic]: 12 satDeg[ic]: 3
+ic: 594 inducedDeg[ic]: 12 satDeg[ic]: 3
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 602
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 717
+After: 711
+After: 685
+After: 715
+After: 585
+After: 604
+After: 594
+After: 600
+After: 606
+After: 596
+After: 0
+Jcoooooooool: 596 254
+After
+ic: 609 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 477 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 614 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 616 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 505 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 453 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 612 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 473 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 602
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 717
+After: 711
+After: 685
+After: 715
+After: 585
+After: 604
+After: 594
+After: 600
+After: 606
+After: 463
+After: 0
+Jcoooooooool: 463 255
+ JJ : 24
+ic: 454 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 441 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 456 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 313 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 331 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 458 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 460 inducedDeg[ic]: 15 satDeg[ic]: 2
+After
+ic: 462 inducedDeg[ic]: 12 satDeg[ic]: 2
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 602
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 717
+After: 711
+After: 685
+After: 715
+After: 585
+After: 604
+After: 594
+After: 600
+After: 606
+After: 0
+Jcoooooooool: 606 256
+After
+ic: 613 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 760 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 751 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 735 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 758 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 756 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 762 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 602
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 717
+After: 711
+After: 685
+After: 715
+After: 585
+After: 604
+After: 594
+After: 600
+After: 447
+After: 0
+Jcoooooooool: 447 257
+ JJ : 23
+ic: 303 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 311 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 446 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 435 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 329 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 444 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 442 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 602
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 717
+After: 711
+After: 685
+After: 715
+After: 585
+After: 604
+After: 594
+After: 600
+After: 0
+Jcoooooooool: 594 258
+After
+ic: 740 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 615 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 738 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 607 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 736 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 647 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 602
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 717
+After: 711
+After: 685
+After: 715
+After: 585
+After: 604
+After: 598
+After: 600
+After: 0
+Jcoooooooool: 598 259
+After
+ic: 610 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 471 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 455 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 583 inducedDeg[ic]: 9 satDeg[ic]: 2
+ic: 608 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 465 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 602
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 717
+After: 711
+After: 685
+After: 715
+After: 585
+After: 604
+After: 584
+After: 600
+After: 0
+Jcoooooooool: 584 260
+ JJ : 21
+ JJ : 22
+ic: 610 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 597 inducedDeg[ic]: 8 satDeg[ic]: 2
+ic: 471 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 455 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 608 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 465 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 696
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 602
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 717
+After: 711
+After: 685
+After: 715
+After: 585
+After: 604
+After: 600
+After: 0
+Jcoooooooool: 604 261
+After
+ic: 754 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 727 inducedDeg[ic]: 6 satDeg[ic]: 3
+After
+ic: 743 inducedDeg[ic]: 5 satDeg[ic]: 3
+After
+ic: 752 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 591 inducedDeg[ic]: 5 satDeg[ic]: 4
+Now
+Here591 maxsat: 4
+After: 0
+Jcoooooooool: 591 262
+ JJ : 0
+ic: 588 inducedDeg[ic]: 8 satDeg[ic]: 4
+ic: 751 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 753 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 590 inducedDeg[ic]: 7 satDeg[ic]: 4
+After
+ic: 592 inducedDeg[ic]: 10 satDeg[ic]: 4
+After
+Now
+Here588 maxsat: 4
+After: 590
+After: 592
+After: 0
+Jcoooooooool: 592 263
+ JJ : 2
+ic: 754 inducedDeg[ic]: 7 satDeg[ic]: 4
+After
+ic: 752 inducedDeg[ic]: 9 satDeg[ic]: 4
+ JJ : 22
+ic: 603 inducedDeg[ic]: 4 satDeg[ic]: 4
+ JJ : 20
+ JJ : 21
+ic: 727 inducedDeg[ic]: 5 satDeg[ic]: 4
+After
+ic: 743 inducedDeg[ic]: 4 satDeg[ic]: 4
+After
+Now
+Here588 maxsat: 4
+After: 754
+After: 752
+After: 743
+After: 727
+After: 0
+Jcoooooooool: 752 264
+ JJ : 2
+ JJ : 3
+ JJ : 4
+ic: 605 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+ic: 613 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 760 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 758 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 762 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 756 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 735 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+Now
+Here588 maxsat: 4
+After: 754
+After: 743
+After: 727
+After: 0
+Jcoooooooool: 588 265
+ JJ : 0
+ JJ : 1
+ JJ : 2
+ JJ : 3
+Now
+Here754 maxsat: 4
+After: 743
+After: 727
+After: 0
+Jcoooooooool: 754 266
+After
+ic: 898 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 900 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 741 inducedDeg[ic]: 5 satDeg[ic]: 3
+After
+ic: 757 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 733 inducedDeg[ic]: 6 satDeg[ic]: 3
+After
+Now
+Here590 maxsat: 4
+After: 743
+After: 727
+After: 0
+Jcoooooooool: 590 267
+ JJ : 0
+ JJ : 1
+ JJ : 2
+Now
+Here743 maxsat: 4
+After: 727
+After: 0
+Jcoooooooool: 727 268
+ JJ : 1
+ic: 730 inducedDeg[ic]: 4 satDeg[ic]: 4
+After
+ic: 732 inducedDeg[ic]: 5 satDeg[ic]: 4
+After
+ic: 715 inducedDeg[ic]: 6 satDeg[ic]: 4
+ JJ : 18
+ JJ : 19
+ JJ : 20
+ JJ : 21
+Now
+Here730 maxsat: 4
+After: 732
+After: 715
+After: 0
+Jcoooooooool: 715 269
+ JJ : 2
+Now
+Here730 maxsat: 4
+After: 732
+After: 0
+Jcoooooooool: 732 270
+ JJ : 1
+Now
+Here730 maxsat: 4
+After: 0
+Jcoooooooool: 730 271
+After
+Now
+Here743 maxsat: 4
+After: 0
+Jcoooooooool: 743 272
+After
+ic: 748 inducedDeg[ic]: 5 satDeg[ic]: 4
+After
+ic: 746 inducedDeg[ic]: 6 satDeg[ic]: 4
+After
+Now
+Here603 maxsat: 4
+After: 748
+After: 746
+After: 0
+Jcoooooooool: 746 273
+ JJ : 2
+Now
+Here603 maxsat: 4
+After: 748
+After: 0
+Jcoooooooool: 748 274
+ JJ : 1
+Now
+Here603 maxsat: 4
+After: 0
+Jcoooooooool: 603 275
+ JJ : 0
+ic: 602 inducedDeg[ic]: 5 satDeg[ic]: 4
+After
+ic: 600 inducedDeg[ic]: 5 satDeg[ic]: 4
+Now
+Here600 maxsat: 4
+After: 0
+Jcoooooooool: 600 276
+After
+Now
+Here602 maxsat: 4
+After: 0
+Jcoooooooool: 602 277
+ JJ : 0
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 741
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 870
+After: 733
+After: 711
+After: 685
+After: 585
+After: 900
+After: 757
+After: 0
+Jcoooooooool: 757 278
+ JJ : 20
+ic: 735 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 897 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+ic: 613 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 605 inducedDeg[ic]: 5 satDeg[ic]: 3
+After
+ic: 899 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 760 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 751 inducedDeg[ic]: 5 satDeg[ic]: 3
+After
+ic: 756 inducedDeg[ic]: 11 satDeg[ic]: 3
+ JJ : 22
+ic: 758 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 762 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 741
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 685
+After: 585
+After: 760
+After: 756
+After: 613
+After: 762
+After: 0
+Jcoooooooool: 613 279
+ JJ : 21
+ JJ : 22
+ic: 595 inducedDeg[ic]: 7 satDeg[ic]: 2
+ic: 616 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 755 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 759 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 614 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 761 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 473 inducedDeg[ic]: 16 satDeg[ic]: 2
+ JJ : 19
+ic: 736 inducedDeg[ic]: 12 satDeg[ic]: 2
+After
+ic: 477 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 453 inducedDeg[ic]: 15 satDeg[ic]: 2
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ic: 609 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 612 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 505 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 741
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 685
+After: 585
+After: 760
+After: 756
+After: 762
+After: 0
+Jcoooooooool: 756 280
+After
+ic: 810 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 806 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 737 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 649 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 808 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 804 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 741
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 685
+After: 585
+After: 760
+After: 735
+After: 762
+After: 0
+Jcoooooooool: 735 281
+ JJ : 20
+ JJ : 21
+ic: 738 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 615 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 593 inducedDeg[ic]: 5 satDeg[ic]: 2
+ic: 607 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 647 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 740 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 741
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 685
+After: 585
+After: 760
+After: 762
+After: 0
+Jcoooooooool: 762 282
+After
+ic: 909 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+ic: 916 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 918 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 807 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 914 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 741
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 685
+After: 585
+After: 760
+After: 758
+After: 0
+Jcoooooooool: 758 283
+ JJ : 20
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 741
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 685
+After: 585
+After: 760
+After: 0
+Jcoooooooool: 760 284
+After
+ic: 903 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 897 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+ic: 910 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+ic: 912 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 741
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 685
+After: 585
+After: 899
+After: 0
+Jcoooooooool: 899 285
+After
+ic: 901 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 905 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 907 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 741
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 685
+After: 585
+After: 900
+After: 905
+After: 0
+Jcoooooooool: 905 286
+ JJ : 20
+ic: 1045 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1047 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1049 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 856
+After: 1031
+After: 741
+After: 1417
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 1049
+After: 585
+After: 900
+After: 0
+Jcoooooooool: 1049 287
+After
+ic: 1051 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1050 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 1053 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1048 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 1055 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+ic: 1035 inducedDeg[ic]: 3 satDeg[ic]: 3
+After
+ic: 1046 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 887 inducedDeg[ic]: 4 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 1035
+After: 1031
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 1050
+After: 585
+After: 900
+After: 1046
+After: 0
+Jcoooooooool: 1046 288
+After
+ic: 1058 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 907 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1051 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1064 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 1062 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1060 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 1035
+After: 1031
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 1050
+After: 585
+After: 900
+After: 1048
+After: 0
+Jcoooooooool: 1048 289
+ JJ : 20
+ic: 1176 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 1174 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1172 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1163 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1043 inducedDeg[ic]: 5 satDeg[ic]: 2
+After
+ic: 1053 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 1035
+After: 1031
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 1050
+After: 585
+After: 900
+After: 1053
+After: 0
+Jcoooooooool: 1053 290
+ JJ : 20
+ic: 1164 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 1171 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1173 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1175 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 1035
+After: 1031
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 1050
+After: 585
+After: 900
+After: 1164
+After: 0
+Jcoooooooool: 1164 291
+ JJ : 20
+ic: 1165 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 1167 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 1169 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 1035
+After: 1031
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 1050
+After: 585
+After: 900
+After: 0
+Jcoooooooool: 1050 292
+After
+ic: 1054 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 1056 inducedDeg[ic]: 6 satDeg[ic]: 3
+ic: 885 inducedDeg[ic]: 3 satDeg[ic]: 3
+After
+ic: 1052 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 1033 inducedDeg[ic]: 2 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 885
+After: 1033
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 1052
+After: 585
+After: 900
+After: 1056
+After: 0
+Jcoooooooool: 1052 293
+After
+ic: 1045 inducedDeg[ic]: 7 satDeg[ic]: 2
+After
+ic: 1058 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1064 inducedDeg[ic]: 12 satDeg[ic]: 2
+ JJ : 18
+ic: 1062 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 1060 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 885
+After: 1033
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 898
+After: 861
+After: 1114
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 1054
+After: 585
+After: 900
+After: 1056
+After: 0
+Jcoooooooool: 1054 294
+After
+ic: 1043 inducedDeg[ic]: 3 satDeg[ic]: 3
+After
+ic: 1176 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 1174 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 1047 inducedDeg[ic]: 5 satDeg[ic]: 3
+After
+ic: 1163 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 1172 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1033
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 1047
+After: 861
+After: 1176
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 1172
+After: 585
+After: 900
+After: 1056
+After: 1174
+After: 0
+Jcoooooooool: 1174 295
+ JJ : 21
+ic: 1330 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1169 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1177 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1237 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1328 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1185 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1033
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 1047
+After: 861
+After: 1176
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 1172
+After: 585
+After: 900
+After: 1056
+After: 0
+Jcoooooooool: 1172 296
+After
+ic: 1233 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 1238 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1240 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 1167 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 1101 inducedDeg[ic]: 4 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1033
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 1047
+After: 861
+After: 1176
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 1167
+After: 585
+After: 900
+After: 1056
+After: 0
+Jcoooooooool: 1167 297
+After
+ic: 1239 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 1234 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 1237 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1033
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 1047
+After: 861
+After: 1176
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 1163
+After: 585
+After: 900
+After: 1056
+After: 0
+Jcoooooooool: 1163 298
+After
+ic: 1168 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 1166 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 1170 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 1041 inducedDeg[ic]: 2 satDeg[ic]: 3
+ JJ : 13
+ JJ : 14
+ JJ : 15
+ JJ : 16
+ JJ : 17
+ JJ : 18
+ JJ : 19
+ JJ : 20
+ JJ : 21
+ JJ : 22
+ JJ : 23
+ JJ : 24
+ic: 1103 inducedDeg[ic]: 2 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 1047
+After: 861
+After: 1166
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 1170
+After: 585
+After: 900
+After: 1056
+After: 0
+Jcoooooooool: 1170 299
+After
+ic: 1177 inducedDeg[ic]: 9 satDeg[ic]: 2
+ JJ : 18
+ JJ : 19
+ic: 1237 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 1328 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 1185 inducedDeg[ic]: 12 satDeg[ic]: 2
+ JJ : 18
+ic: 1173 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+ic: 1330 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 1047
+After: 861
+After: 1166
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 685
+After: 585
+After: 900
+After: 1056
+After: 1237
+After: 0
+Jcoooooooool: 1237 300
+ JJ : 21
+ic: 1327 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 1329 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 1178 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 1186 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 1047
+After: 861
+After: 1166
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 685
+After: 585
+After: 900
+After: 1056
+After: 0
+Jcoooooooool: 685 301
+After
+ic: 569 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 690 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 688 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 565 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 692 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 573 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 1047
+After: 861
+After: 1166
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 709
+After: 585
+After: 900
+After: 1056
+After: 0
+Jcoooooooool: 709 302
+After
+ic: 575 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 691 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 712 inducedDeg[ic]: 8 satDeg[ic]: 3
+ic: 699 inducedDeg[ic]: 9 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 1047
+After: 861
+After: 1166
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 708
+After: 585
+After: 900
+After: 1056
+After: 712
+After: 0
+Jcoooooooool: 708 303
+ JJ : 17
+ JJ : 18
+ JJ : 19
+ JJ : 20
+ JJ : 21
+ic: 690 inducedDeg[ic]: 10 satDeg[ic]: 2
+After
+ic: 699 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+ic: 701 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 703 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 1047
+After: 861
+After: 703
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 585
+After: 900
+After: 1056
+After: 712
+After: 0
+Jcoooooooool: 712 304
+ JJ : 20
+ic: 692 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 700 inducedDeg[ic]: 8 satDeg[ic]: 2
+After
+ic: 576 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 1047
+After: 861
+After: 703
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 585
+After: 900
+After: 1056
+After: 576
+After: 0
+Jcoooooooool: 576 305
+ JJ : 20
+ic: 568 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 573 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 440 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 691 inducedDeg[ic]: 9 satDeg[ic]: 2
+After
+ic: 699 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+ic: 575 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 710 inducedDeg[ic]: 5 satDeg[ic]: 2
+After
+ic: 446 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 460 inducedDeg[ic]: 14 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 1047
+After: 861
+After: 699
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 585
+After: 900
+After: 1056
+After: 460
+After: 0
+Jcoooooooool: 460 306
+ JJ : 20
+ic: 442 inducedDeg[ic]: 14 satDeg[ic]: 2
+After
+ic: 572 inducedDeg[ic]: 5 satDeg[ic]: 3
+ic: 580 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 459 inducedDeg[ic]: 13 satDeg[ic]: 3
+ic: 445 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 567 inducedDeg[ic]: 10 satDeg[ic]: 3
+ic: 439 inducedDeg[ic]: 12 satDeg[ic]: 3
+ic: 455 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 574 inducedDeg[ic]: 11 satDeg[ic]: 3
+ic: 314 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 457 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 332 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 578 inducedDeg[ic]: 7 satDeg[ic]: 3
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 572
+After: 861
+After: 578
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 585
+After: 900
+After: 1056
+After: 580
+After: 459
+After: 455
+After: 567
+After: 574
+After: 0
+Jcoooooooool: 459 307
+ JJ : 21
+ JJ : 22
+ JJ : 23
+ JJ : 24
+ic: 458 inducedDeg[ic]: 10 satDeg[ic]: 3
+ic: 331 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 441 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 456 inducedDeg[ic]: 12 satDeg[ic]: 3
+ic: 454 inducedDeg[ic]: 14 satDeg[ic]: 3
+ic: 313 inducedDeg[ic]: 13 satDeg[ic]: 3
+After
+ic: 464 inducedDeg[ic]: 6 satDeg[ic]: 3
+ic: 462 inducedDeg[ic]: 6 satDeg[ic]: 3
+ JJ : 17
+ JJ : 18
+ JJ : 19
+ JJ : 20
+ JJ : 21
+ JJ : 22
+ JJ : 23
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 572
+After: 861
+After: 578
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 585
+After: 900
+After: 462
+After: 580
+After: 456
+After: 458
+After: 574
+After: 313
+After: 454
+After: 49
+After: 0
+Jcoooooooool: 454 308
+ JJ : 25
+ JJ : 26
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 572
+After: 861
+After: 578
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 585
+After: 900
+After: 462
+After: 580
+After: 456
+After: 458
+After: 574
+After: 313
+After: 49
+After: 0
+Jcoooooooool: 313 309
+After
+ic: 312 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 175 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 179 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 306 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 299 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 308 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 310 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 572
+After: 861
+After: 578
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 585
+After: 900
+After: 462
+After: 580
+After: 456
+After: 458
+After: 574
+After: 441
+After: 49
+After: 0
+Jcoooooooool: 441 310
+After
+ic: 446 inducedDeg[ic]: 12 satDeg[ic]: 3
+After
+ic: 329 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 311 inducedDeg[ic]: 13 satDeg[ic]: 2
+ic: 448 inducedDeg[ic]: 6 satDeg[ic]: 2
+ic: 303 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+ic: 435 inducedDeg[ic]: 13 satDeg[ic]: 2
+ic: 444 inducedDeg[ic]: 11 satDeg[ic]: 2
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 572
+After: 861
+After: 578
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 585
+After: 900
+After: 462
+After: 580
+After: 446
+After: 458
+After: 574
+After: 331
+After: 49
+After: 0
+Jcoooooooool: 331 311
+ JJ : 24
+ JJ : 25
+ic: 326 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 305 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 328 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 317 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 334 inducedDeg[ic]: 11 satDeg[ic]: 1
+After
+ic: 330 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 324 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 572
+After: 861
+After: 578
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 585
+After: 900
+After: 462
+After: 580
+After: 446
+After: 458
+After: 574
+After: 49
+After: 0
+Jcoooooooool: 446 312
+After
+ic: 443 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 304 inducedDeg[ic]: 12 satDeg[ic]: 1
+After
+ic: 312 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 330 inducedDeg[ic]: 13 satDeg[ic]: 2
+After
+ic: 436 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 887
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 572
+After: 861
+After: 578
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 585
+After: 900
+After: 462
+After: 580
+After: 456
+After: 458
+After: 574
+After: 49
+After: 0
+Jcoooooooool: 456 313
+After
+ic: 610 inducedDeg[ic]: 12 satDeg[ic]: 3
+ic: 583 inducedDeg[ic]: 4 satDeg[ic]: 3
+After
+ic: 465 inducedDeg[ic]: 8 satDeg[ic]: 3
+After
+ic: 597 inducedDeg[ic]: 4 satDeg[ic]: 3
+After
+ic: 471 inducedDeg[ic]: 13 satDeg[ic]: 3
+ic: 608 inducedDeg[ic]: 10 satDeg[ic]: 3
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 597
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 572
+After: 861
+After: 578
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 585
+After: 900
+After: 462
+After: 465
+After: 455
+After: 608
+After: 574
+After: 610
+After: 471
+After: 0
+Jcoooooooool: 471 314
+ JJ : 25
+ic: 343 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 353 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 607 inducedDeg[ic]: 10 satDeg[ic]: 3
+After
+ic: 470 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+ic: 359 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 339 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 609 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 472 inducedDeg[ic]: 15 satDeg[ic]: 1
+After
+ic: 466 inducedDeg[ic]: 10 satDeg[ic]: 1
+After
+ic: 323 inducedDeg[ic]: 16 satDeg[ic]: 1
+After
+ic: 474 inducedDeg[ic]: 17 satDeg[ic]: 1
+After
+ic: 449 inducedDeg[ic]: 14 satDeg[ic]: 1
+After
+ic: 467 inducedDeg[ic]: 13 satDeg[ic]: 1
+After
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 597
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 572
+After: 861
+After: 578
+After: 1107
+After: 694
+After: 751
+After: 733
+After: 711
+After: 585
+After: 900
+After: 462
+After: 465
+After: 455
+After: 607
+After: 574
+After: 610
+After: 609
+After: 0
+Jcoooooooool: 610 315
+After
+ic: 473 inducedDeg[ic]: 14 satDeg[ic]: 3
+ JJ : 20
+ JJ : 21
+ JJ : 22
+ JJ : 23
+ JJ : 24
+ic: 477 inducedDeg[ic]: 9 satDeg[ic]: 3
+After
+ic: 614 inducedDeg[ic]: 7 satDeg[ic]: 3
+ic: 612 inducedDeg[ic]: 11 satDeg[ic]: 3
+After
+ic: 453 inducedDeg[ic]: 8 satDeg[ic]: 3
+ JJ : 19
+ JJ : 20
+ JJ : 21
+ JJ : 22
+ JJ : 23
+ic: 505 inducedDeg[ic]: 12 satDeg[ic]: 3
+ic: 595 inducedDeg[ic]: 5 satDeg[ic]: 3
+After
+ic: 616 inducedDeg[ic]: 11 satDeg[ic]: 3
+Now
+Here896 maxsat: 3
+After: 1043
+After: 1103
+After: 741
+After: 597
+After: 698
+After: 1112
+After: 1287
+After: 1149
+After: 572
+After: 861
+After: 578
+After: 1107
+After: 694
+After: 595
+After: 733
+After: 711
+After: 585
+After: 614
+After: 462
+After: 453
+After: 455
+After: 477
+After: 574
+After: 505
+After: 609
+After: 473
+After: 616
+After: 25065760

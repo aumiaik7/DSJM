@@ -1,0 +1,40 @@
+/home/imtiaz/Desktop/benchmark/af23560.mtx,Search Length: 91106
+23560,23560,484256,SDO,0,0.07,43
+/home/imtiaz/Desktop/benchmark/cage11.mtx,Search Length: 1247819
+39082,39082,559722,SDO,0,0.13,59
+/home/imtiaz/Desktop/benchmark/cage12.mtx,Search Length: 6552448
+130228,130228,2032536,SDO,0,0.63,63
+/home/imtiaz/Desktop/benchmark/e30r2000.mtx,Search Length: 45371
+9661,9661,306356,SDO,0,0.07,69
+/home/imtiaz/Desktop/benchmark/e40r0100.mtx,Search Length: 79665
+17281,17281,553562,SDO,0,0.12,69
+/home/imtiaz/Desktop/benchmark/lhr10.mtx,Search Length: 170310
+10672,10672,232633,SDO,0,0.07,63
+/home/imtiaz/Desktop/benchmark/lhr14.mtx,Search Length: 223890
+14270,14270,307858,SDO,0,0.08,63
+/home/imtiaz/Desktop/benchmark/lhr34.mtx,Search Length: 548864
+35152,35152,764014,SDO,0,0.2,63
+/home/imtiaz/Desktop/benchmark/lhr71c.mtx,Search Length: 20589473
+70304,70304,1058754,SDO,0,0.32,63
+/home/imtiaz/Desktop/benchmark/lp_cre_a.mtx,Search Length: 208058
+3516,7248,18168,SDO,0,0.01,360
+/home/imtiaz/Desktop/benchmark/lp_cre_b.mtx,Search Length: 1650099
+9648,77137,260785,SDO,0,0.75,844
+/home/imtiaz/Desktop/benchmark/lp_cre_d.mtx,Search Length: 1461011
+8926,73948,246614,SDO,0,0.77,808
+/home/imtiaz/Desktop/benchmark/lp_dfl001.mtx,Search Length: 270682
+6071,12230,35632,SDO,0,0.02,228
+/home/imtiaz/Desktop/benchmark/lp_ken_11.mtx,Search Length: 584427
+14694,21349,49058,SDO,0,0.02,122
+/home/imtiaz/Desktop/benchmark/lp_ken_13.mtx,Search Length: 1494044
+28632,42659,97246,SDO,0,0.04,170
+/home/imtiaz/Desktop/benchmark/lp_ken_18.mtx,Search Length: 11533100
+105127,154699,358171,SDO,0,0.37,325
+/home/imtiaz/Desktop/benchmark/lp_maros_r7.mtx,Search Length: 1959721
+3136,9408,144848,SDO,0,0.04,90
+/home/imtiaz/Desktop/benchmark/lp_pds_10.mtx,Search Length: 318964
+16558,49932,107605,SDO,0,0.04,96
+/home/imtiaz/Desktop/benchmark/lp_pds_20.mtx,Search Length: 657642
+33874,108175,232647,SDO,0,0.08,96
+/home/imtiaz/Desktop/benchmark/lp_stocfor3.mtx,Search Length: 233649
+16675,23541,76473,SDO,0,0.01,15

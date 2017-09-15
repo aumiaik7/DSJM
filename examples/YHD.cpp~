@@ -1,0 +1,1044 @@
+#include <fstream>
+#include <algorithm> 
+#include <iostream>
+#include <cstdlib>
+#include <cmath>
+#include <ctime>
+#include "algorithm2.h"
+using namespace std;
+
+// Declare variables:
+int M, N, L, X;
+double **p;
+double **yr;
+double **S;
+int kc;
+double ab=(1)*pow(10,-12);
+int *Ii;
+int *Jj;
+double *valc;
+int cn=0;
+int main()
+{
+	 clock_t tStart = clock();
+	// "~/Downloads/dsjm_source_and_doc/dsjm/examples" is the location of DSJM project and '~/Documents/thesis_code" is the location of algorithm1
+	//system("cp Matrix.mtx ~/Documents/dsjm_source_and_doc/dsjm/examples && cd ~/Documents/dsjm_source_and_doc/dsjm/examples && ./gcolor -i Matrix.mtx -v && cp coloring.txt ~/Documents/thesis_code/code2/YHD");  
+
+	// Open the file:
+	ifstream fin("Matrix.mtx");
+
+	// Ignore headers and comments:
+	while (fin.peek() == '%') fin.ignore(2048, '\n');
+
+	// Read defining parameters:
+	fin >> M >> N >> L;
+	cout <<M<<" "<<N<<" "<<L<<std::endl;
+
+	// Create  matrix:
+	double* matrix;			     // Creates a pointer to the array
+	matrix = new double[M*N];	     // Creates the array of M*N size
+	fill(matrix, matrix + M*N, 0.);      // zeros all entries.
+	int *colptr;
+	int *rowptr;
+	colptr = new int[L];
+	rowptr = new int[L];
+	// Read the data
+	int ai=0;
+	int ia=0;
+	for (int l = 0; l < L; l++)
+	{
+			int m, n;
+			double data;
+			fin >> m >> n >> data;
+			//fin >> m >> n ;
+			colptr[l]=m;
+			if(n>ai){
+				rowptr[ia]=l+1;
+				ia++;}
+			ai=n;
+			//matrix[(m-1) + (n-1)*M] = data;
+			matrix[(m-1) + (n-1)*M] = 1.0;
+	}
+	rowptr[ia]=L;
+	fin.close();
+
+	int *color;
+	color = new int[N];
+
+	/*double Wi[N][N];
+	
+	cout<<"Ii: \n";
+	for (int l = 0; l < N+1; l++)
+		 cout << rowptr[l] << ' ';
+	cout<<"\n Ji: \n"<<endl;
+	for (int l = 0; l < L ; l++)
+		 cout << colptr[l] << ' ';
+	cout<<endl;
+
+/***********************/
+/* Step 2 */
+/***********************/
+	int nest=L-3*N;
+	if (nest<0)
+		nest=nest*(-1);
+	int nnzs=0;
+	S = new double*[N];
+	for (int i = 0; i < N; ++i) 
+  		S[i] = new double[N];
+	for (int m = 0; m < N; m++){
+    		for(int n = 0; n < N; n++){
+			if (m == n || m == n-1 ||m == n+1){
+				S[m][n]=1;
+				nnzs++;}
+			else
+        			S[m][n]=0;
+		}
+	}
+	/*cout<<"Trial Partial S : "<<endl;
+	for (int m = 0; m < N; m++)
+	{
+    		for(int n = 0; n < N; n++)
+        		cout << S[m][n] << ' ';
+    		cout << endl;
+	}
+/***********************/
+/* Step 3 */
+/***********************/
+	kc=0;
+	int k1=2;
+	int ax4;
+	cout<<"nest(L-3*N) and nnzs: "<<nest<<" "<<nnzs<<"\n";
+
+	if(nnzs > k1*nest){
+	//if(nnzs > k1){
+	cout<<"nnzs > k1*nest where k1=2\n";
+	for (int i = 0; i < N; ++i) 
+		color[i]=0;
+ 	//double i=1;
+	int j=1;
+	int n=0;
+	for (int m = 0; m < N; m++)
+	{
+		color[m]=j;
+        	//d[m][n]=i;
+		//i++;
+		//n++;
+		//if (n>2)
+			//n=0;
+		j++;
+		if (j>3)
+			j=1;
+	}
+	cout<<"color: \n";
+	for (int l = 0; l < N; l++)
+		 cout << color[l] << ' ';
+	ax4=3;
+	}
+	
+	int nnzr1=0;
+		int arr[N/2];
+		int arr1[N/2];
+		
+		srand((unsigned)time(0));
+		
+		double **R;
+		R = new double*[N];
+		for (int i = 0; i < N; ++i) 
+  			R[i] = new double[N];
+		for (int m = 0; m < N; m++)
+			for(int n = 0; n < N; n++)
+        			R[m][n]=0;	
+	if(nnzs <= k1*nest){
+	//if(nnzs <= k1){
+	cout<<"nnzs <= k1*nest where k1=2\n";
+		cout<<"calculating R0"<<endl;
+		
+			for (int t=0;t<N/4;t++)
+				arr[t]=rand()%(N/2)+1;
+				
+			for (int t=0;t<N/4;t++)
+				arr1[t]=rand()%((N-(N/2))+1)+(N/2);
+				
+			for (int i = 0; i < N/4; i++)
+			{	
+				R[i][arr[i]]=R[arr[i]][i]=1;
+				R[i][arr1[i]-1]=R[arr1[i]-1][i]=1;
+			}	
+		
+		for (int m = 0; m < N-1; m++)
+    			for(int n = 0; n < N-1-m; n++)
+					R[N-1-n][N-1-m]=R[m][n];
+		
+		//cout<<"Symmetric Partial R : "<<kc<<endl;
+		for (int m = 0; m < N; m++)
+		{
+    			for(int n = 0; n < N; n++){
+        			//cout << R[m][n] << ' ';
+				if (R[m][n]!=0)
+					nnzr1++;
+			}
+    			//cout << endl;
+		}
+	cout<<"nnzr: "<<nnzr1<<endl;
+		for (int i=0; i<N; i++)
+			for (int j=0; j<N; j++){
+				if (S[i][j]==1 || R[i][j]==1)	
+					S[i][j]=1;
+				/*else if (S[i][j]==1 && R[i][j]==1) 
+					S[i][j]=1;
+				else if (S[i][j]==0 && R[i][j]==1) 
+					S[i][j]=1;*/
+				else if (S[i][j]==0 && R[i][j]==0) 
+					S[i][j]=0;
+		}
+	//}
+	/*ofstream out7;
+		out7.open("syym.txt");
+	out7<<"checking\n%--------------------------------------------\n";
+	for (int m = 0; m < M; m++)
+	{
+   	 for(int n = 0; n < N; n++){
+		if(n>=m)
+		if (S[m][n]!=S[n][m])
+    	    //cout << matrix[m + n*M] << ' ';
+		out7<<"n: "<<n+1<<" m: "<<m+1<<" ";}
+    	//cout << endl;
+	}
+	out7.close();*/
+	//cout<<"The Sparse matrix S: "<<endl;
+	/*for (int i=0; i<N; i++){
+		for (int j=0; j<N; j++){		
+			cout<<S[i][j]<<" ";
+	}
+	cout<<endl;
+	}*/
+	
+		ofstream out;
+		out.open("Matrix1.mtx");
+		out<<"%%MatrixMarket matrix coordinate pattern general\n%--------------------------------------------\n%----------------------------------------------------\n";
+		out<<N<<' '<<N<<' '<<(N*N)<<"\n";
+		for (int i=0; i<N; i++)
+			for (int j=0; j<N; j++){
+				if (S[i][j]!=0)	
+					out<<j+1<<' '<<i+1<<"\n";		
+		}
+		out.close();
+		
+		system("./gcolor -i Matrix1.mtx -v");
+		//coloringalgo();
+		//cout<<"ax:"<<ax<<endl;
+		ifstream fin24("coloring.txt");
+
+	// Ignore headers and comments:
+	while (fin24.peek() == '%') fin24.ignore(2048, '\n');
+	// Read defining parameters:
+	fin24 >> ax4;
+	//cout <<"ax4:"<<ax4<<endl;
+	
+    		for (int i = 0; i < N; ++i) 
+		color[i]=0;
+	
+	for (int i = 0; i < N; i++)
+	{
+		int a, b;
+		fin24 >> a >> b ;
+		int j=b-1;
+      		//d4[i][j]=a;
+		color[i]=b;
+	}
+	fin24.close();
+
+	cout<<"color: \n";
+	for (int l = 0; l < N; l++)
+		 cout << color[l] << ' ';
+	}	
+		
+/***********************/
+/* Step 4 */
+/***********************/
+	double **fh;
+	double **fy;
+	p = new double*[N];
+	for (int i = 0; i < N; ++i) 
+  		p[i] = new double[N];
+	yr = new double*[N];
+	for (int i = 0; i < N; ++i) 
+  		yr[i] = new double[200*N];
+	fh = new double*[N];
+	for (int i = 0; i < N; ++i) 
+  		fh[i] = new double[200*N];
+	
+	fy = new double*[N];
+	for (int i = 0; i < N; ++i) 
+  		fy[i] = new double[200*N];
+	double **sp1;
+        sp1 = new double*[N];
+	for (int i = 0; i < N; ++i) 
+  		sp1[i] = new double[N];
+	double **pd;
+	pd = new double*[N];
+	for (int i = 0; i < N; ++i) 
+  		pd[i] = new double[N];
+
+	Ii = new int[N*N*100];
+    	Jj = new int[N*N*100];
+    	valc = new double[N*N];
+
+        double **y;
+	y = new double*[N];
+	for (int i = 0; i < N; ++i) 
+  		y[i] = new double[ax4];
+       
+	for (int i=0; i<N; i++)
+		for (int j=0; j<N; j++)
+			sp1[i][j]=0;
+	int nz1=0;	
+	for (int i=0; i<N; i++)
+		for (int j=0; j<N; j++){
+		if (matrix[i + j*M]!=0 && S[i][j]==0){
+			sp1[i][j]=ab;
+			nz1++;}
+		else if (matrix[i + j*M]!=0 && S[i][j]==1){
+			sp1[i][j]=1;
+			nz1++;}
+		else
+			sp1[i][j]=0;
+		}
+		
+
+	/*cout<<"The Sparse matrix S*: "<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<N; j++){		
+			cout<<sp1[i][j]<<" ";
+	}
+	cout<<endl;
+	}*/
+	
+	double *delta;
+	delta=new double[N];
+	for (int t=0;t<N;t++)
+		delta[t]=(2.5*rand()/RAND_MAX + 0.5);
+		
+	for (int t=0;t<N;t++)
+		delta[t]=delta[t]*pow(10, -6);
+	//for (int t=0;t<N;t++)
+		//cout<<delta[t]<<" ";
+	//cout<<endl;
+
+
+	for (int l = 0; l < nz1; l++){
+		Ii[l]=0;
+		Jj[l]=0;
+		valc[l]=0;}
+	for(int i=0;i<N;i++)
+            for(int j=0;j<ax4;j++)
+		y[i][j]=0;
+
+	int g=ax4;
+	CRS(Ii,Jj,valc,sp1,y,nz1,N,g,color, delta);
+	
+	/*cout<<"result: \n"; 
+		for (int k = 0; k < N; k++){
+			for (int l = 0; l < ax4; l++){
+		 		cout << y[k][l] << ' ';
+				
+			}
+			cout<<endl;
+		}*/
+
+	/*for (int i=0; i<N; i++)
+		for (int j=0; j<20000*N; j++)
+			yr[i][j]=0;
+
+	//cout<<"Vector Y (H*d = y) : "<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<ax4; j++){
+			yr[i][j]=y[i][j];			
+			//cout<<y[i][j]<<" ";
+			}
+		//cout<<endl;
+	}
+	cout<<endl;
+/***********************/
+//extra
+/***********************/
+	int nnzfh=0;
+	int nnzfy=0;
+	int nnzp=0;
+	int cc=0;
+	cout<<"calculating the flaws: "<<endl;
+	for (int i=0; i<N; i++)
+	for (int j=0; j<N; j++)
+		pd[i][j]=0;
+
+	flaws(fh,fy,matrix,S,y,yr,N,ax4,kc,kc,ab,color, delta, pd);
+	
+	//cout<<"The F^h matrix: "<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<N; j++){
+			if(fh[i][j]!=0)
+				nnzfh++;		
+			//cout<<fh[i][j]<<" ";
+		}
+	//cout<<endl;
+	}
+	
+	//cout<<"The F^y matrix: "<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<ax4; j++){
+			if(fy[i][j]!=0)
+				nnzfy++;			
+			//cout<<fy[i][j]<<" ";
+		}
+		//cout<<endl;
+	}	
+
+
+	cout<<"The nnz in F^y matrix: "<<nnzfy<<" The nnz in F^h matrix: "<<nnzfh<<endl;
+	nest=0; 
+	nest = nnzfy+nnzfh;
+		
+	cout<<"The value of nest: "<<nest<<endl;
+
+	for (int i=0; i<N; i++)
+			for (int j=0; j<N; j++)//{	
+				//p[i][j]=0;
+				p[i][j]=pd[i][j];
+				//fy1[i][j]=0;}
+		
+		//procedure4(fh,fy,p,N,d4,ax4,kc,bc, color);
+		//cout<<"K The P matrix: "<<kc<<endl;
+		for (int i=0; i<N; i++){
+			for (int j=0; j<N; j++){
+				if(p[i][j]!=0)
+					nnzp++;		
+				//cout<<p[i][j]<<" ";
+			}
+			//cout<<endl;
+		}
+		cout<<"The value of nnzp at kc: "<<nnzp<<" "<<kc<<endl;
+
+/***********************/
+/* Step 5 */
+/***********************/
+	int c;
+		double **si;
+		si = new double*[N];
+		for (int i = 0; i < N; ++i) 
+  			si[i] = new double[N];
+		
+		double **p1;
+		p1 = new double*[N];
+		for (int i = 0; i < N; ++i) 
+  			p1[i] = new double[N];
+		double **y1;
+	
+		double **sii;
+		sii = new double*[N];
+		for (int i = 0; i < N; ++i) 
+  			sii[i] = new double[N];
+		int wl;
+		if (N>500)
+			wl=2;
+		else if (N>50)
+			wl=N/2;
+		else 
+			wl=N;
+	
+		ll3: for (int i=0; i<N; i++)
+			for (int j=0; j<N; j++){
+				if (S[i][j]!=0)
+					si[i][j]=1;
+				else 
+					si[i][j]=0;
+		}
+		/*cout<<"The Sparse matrix Si: "<<endl;
+		for (int i=0; i<N; i++){
+			for (int j=0; j<N; j++){		
+				cout<<si[i][j]<<" ";
+				}
+			cout<<endl;
+			}*/
+		//while (1){
+		while (nnzp>nest){
+		//int np=nnzp;
+		ll11: int lo=N/wl;
+		cout<<"kc: "<<kc<<endl;
+		kc=kc+1;
+		//cout<<"kc"<<kc<<endl;
+		for (int m = 0; m < N; m++)
+    			for(int n = 0; n < kc*N; n++){
+        			fh[m][n]=0;
+				fy[m][n]=0;
+		}
+		for (int m = 0; m < N; m++)
+    			for(int n = 0; n < N; n++)
+        			R[m][n]=0;
+		
+		for(int i=0;i<lo;i++){
+			for (int t=0;t<N/2;t++)
+				arr[t]=rand()%(N/2)+1;
+				
+			for (int t=0;t<N/2;t++)
+				arr1[t]=rand()%((N-(N/2))+1)+(N/2);
+				
+			for (int i = 0; i < N/2; i++)
+			{	
+				R[i][arr[i]]=R[arr[i]][i]=1;
+				R[i][arr1[i]-1]=R[arr1[i]-1][i]=1;
+			}	
+		}
+
+		for (int m = 0; m < N-1; m++)
+    			for(int n = 0; n < N-1-m; n++)
+					R[N-1-n][N-1-m]=R[m][n];
+		//int nnzr=0;
+		/*cout<<"Symmetric Partial R : "<<kc<<endl;
+		for (int m = 0; m < N; m++)
+		{
+    			for(int n = 0; n < N; n++){
+        			cout << R[m][n] << ' ';
+				//nnzr++;
+					}
+    			cout << endl;
+		}*/
+		//cout<<"nnzrR : "<<nnzr<<endl;
+
+		for (int i=0; i<N; i++)
+			for (int j=0; j<N; j++){
+				if (si[i][j]!=0 || R[i][j]==1)	
+					si[i][j]=1;
+				/*else if (si[i][j]!=0 && R[i][j]==1) 
+					si[i][j]=1;
+				else if (si[i][j]==0 && R[i][j]==1) 
+					si[i][j]=1;*/
+				else if (si[i][j]==0 && R[i][j]==0) 
+					si[i][j]=0;}
+	ofstream out7;
+	out7.open("syym.txt");
+	out7<<"checking\n%--------------------------------------------\n";
+	for (int m = 0; m < M; m++)
+	  	 for(int n = 0; n < N; n++){
+			if(n>=m)
+				if (si[m][n]!=si[n][m]){
+				out7<<"n: "<<n+1<<" m: "<<m+1<<" ";
+					if (si[m][n]==0 || si[n][m]==0)
+						si[m][n]=si[n][m]=0;}
+			}
+
+	for (int m = 0; m < N; m++){
+    		for(int n = 0; n < N; n++){
+        		//cout << si[m][n] << ' ';
+			out7<<si[m][n]<<" ";}	
+    		//cout << endl;
+		out7 << endl;
+		}
+	out7.close();
+
+		for (int m = 0; m < N; m++)
+    			for(int n = 0; n < N; n++)
+        			sii[m][n]=0;
+		//int nz2=0;
+		for (int i=0; i<N; i++)
+			for (int j=0; j<N; j++){
+			if (matrix[i + j*M]!=0 && si[i][j]==0){
+				sii[i][j]=ab;
+				//nz2++;
+				}
+			else if (matrix[i + j*M]!=0 && si[i][j]==1){
+				sii[i][j]=1;
+				//nz2++;
+				}
+			/*else if (matrix[i + j*M]==0 && si[i][j]==1){
+				sii[i][j]=ab;
+				//nz2++;
+				}*/
+			else
+				sii[i][j]=0;		
+			}
+
+
+		//cout<<"sii \n";
+		int nz2=0;
+		ofstream out1;
+		out1.open("Matrix1.mtx");
+		out1<<"%%MatrixMarket matrix coordinate pattern general\n%--------------------------------------------\n%----------------------------------------------------\n";
+		out1<<N<<' '<<N<<' '<<(N*N)<<"\n";
+		for (int i=0; i<N; i++){
+			for (int j=0; j<N; j++){
+				if (sii[i][j]!=0){
+				//out1<<j+1<<' '<<i+1<<"\n";
+				nz2++;
+				}
+				if (si[i][j]!=0)
+					out1<<j+1<<' '<<i+1<<"\n";
+						
+		//cout<<sii[i][j]<<" ";		
+		}
+		//cout<<endl;
+		}
+		out1.close();
+		/*clock_t endwait;
+		endwait = clock() + 5 * CLOCKS_PER_SEC;
+		while (clock() < endwait) {}
+		//system("cp Matrix1.mtx ~/Documents/dsjm_source_and_doc/dsjm/examples");
+		
+		/***cout<<"The Sparse matrix Sk: "<<kc<<endl;
+		for (int i=0; i<N; i++){
+			for (int j=0; j<N; j++){		
+				cout<<si[i][j]<<" ";
+			}
+			cout<<endl;
+		}	
+	
+/* calculating the Y vector*/
+		for (int i = 0; i < N; ++i) 
+			color[i]=0;
+		for (int t=0;t<N;t++)
+			delta[t]=0;
+
+		for (int t=0;t<N;t++)
+			delta[t]=(2.5*rand()/RAND_MAX + 0.5);
+				
+		for (int t=0;t<N;t++)
+			delta[t]=delta[t]*pow(10, -6);
+
+		system("./gcolor -i Matrix1.mtx -v");
+		//coloringalgo();
+		//cout<<"ax:"<<ax<<endl;
+		ifstream fin2("coloring.txt");
+
+	// Ignore headers and comments:
+	while (fin2.peek() == '%') fin2.ignore(2048, '\n');
+	int ax;
+	// Read defining parameters:
+	fin2 >> ax;
+	//cout <<"ax:"<<ax<<endl;
+    	
+	for (int i = 0; i < N; i++)
+	{
+		int a, b;
+		fin2 >> a >> b ;
+		int j=b-1;
+      		//d2[i][j]=a;
+		color[i]=b;
+	}
+	fin2.close();
+	
+	y1 = new double*[N];
+	for (int i = 0; i < N; ++i) 
+  		y1[i] = new double[ax];
+	
+	//for (int t=0;t<N;t++)
+		//cout<<delta[t]<<" ";
+	//cout<<endl;
+	for (int l = 0; l < nz2; l++){
+		Ii[l]=0;
+		Jj[l]=0;
+		valc[l]=0;}
+	for(int i=0;i<N;i++)
+            for(int j=0;j<ax;j++)
+		y1[i][j]=0;
+	CRS(Ii,Jj,valc,sii,y1,nz2,N,ax, color, delta);
+
+	/*cout<<"Vector Yk (H*d = y) : "<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<ax; j++)			
+			cout<<y1[i][j]<<" ";
+		cout<<endl;
+	}*/
+	cout<<endl;
+	/*for (int i=0; i<N; i++){
+			int j=0;
+		for (int k=kc*N; k<ax+(kc*N); k++){
+				yr[i][k]=y1[i][j];
+				j++;
+				}
+		//cout<<endl;
+	}
+	/*cout<<"Vector Yk (H*d = y) : "<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<ax+(kc*N); j++)			
+			cout<<yr[i][j]<<" ";
+		cout<<endl;
+	}
+
+
+	/* calculating the flaws*/
+	nnzfh=0;
+	nnzfy=0;
+	int a=ax;
+	int sat=kc*N;
+	cout<<"calculating the flaws: "<<endl;
+	
+	flaws(fh,fy,matrix,si,y1,yr,N,a,kc,sat,ab,color, delta, pd);
+	
+	//cout<<"The F^h matrix: "<<endl;
+	for (int i=0; i<N; i++){
+		//for (int j=0; j<kc*N+N; j++){
+		for (int j=0; j<N; j++){
+			if(fh[i][j]!=0)
+				nnzfh++;		
+			//cout<<fh[i][j]<<" ";
+		}
+	//cout<<endl;
+	}
+	
+	//cout<<"The F^y matrix: "<<endl;
+	for (int i=0; i<N; i++){
+		//for (int j=0; j<kc*ax; j++){
+			for (int j=0; j<ax; j++){
+			if(fy[i][j]!=0)
+				nnzfy++;			
+			//cout<<fy[i][j]<<" ";
+		}
+		//cout<<endl;
+	}	
+
+	cout<<"The nnz in F^y matrix: "<<nnzfy<<" The nnz in F^h matrix: "<<nnzfh<<endl;
+	//nest=0; 
+	nest = nnzfy+nnzfh;
+	cout<<"The value of nest: "<<nest<<endl;
+	
+	/*if (kc==1){
+		nnzp=0;
+		procedure4(fh,fy,p,N,d2,ax,kc,bc, color);
+		//cout<<"The possibilities matrix P: "<<kc<<endl;
+		
+		/*cout<<"K The P matrix: "<<kc<<endl;
+		for (int i=0; i<N; i++){
+			for (int j=0; j<N; j++){
+				if(p[i][j]!=0)
+					nnzp++;		
+				cout<<p[i][j]<<" ";
+			}
+			cout<<endl;
+		}
+		cout<<"K The value of nnzp: "<<kc<<" "<<nnzp<<endl;
+	}*/
+	if (kc<2)
+		goto ll11;
+	/*calculating the possibilities*/
+	nnzp=0;
+	c=ax;
+	for (int i=0; i<N; i++)
+			for (int j=0; j<N; j++)
+				//p1[i][j]=0;
+				p1[i][j]=pd[i][j];
+	
+	//procedure4(fh,fy,p1,N,d2,c,kc,bc, color);
+
+	//cout<<"The possibilities matrix P1: "<<kc<<endl;
+		for (int i=0; i<N; i++){
+			for (int j=0; j<N; j++){
+			   if (p[i][j]==25 && p1[i][j]==25)		
+				p[i][j]=25;
+			   else
+				p[i][j]=0; 	
+			//cout<<p1[i][j]<<" ";
+			}
+			//cout<<endl;
+		}
+
+	//}
+	
+	//cout<<"K The P matrix: "<<kc<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<N; j++){
+			if(p[i][j]!=0)
+				nnzp++;		
+			//cout<<p[i][j]<<" ";
+	}
+	//cout<<endl;
+	}
+
+	/*for (int i=0;i<nnzp; i++)
+			for (int j=0;j<np; j++){
+				if (prow[j]==prow1[i]  && pcol[j]==pcol1[i]){
+					prow[i]=prow1[i];
+					pcol[i]=pcol1[i];}
+				else {prow[i]=0;
+					pcol[i]=0;}
+			}
+	for (int i=0;i<nnzp; i++)
+		cout<<"prow: and pcol: "<<prow[i]<<" / "<<pcol[i]<<"#";*/
+	cout<<"The value of nnzp at kc: "<<nnzp<<" "<<kc<<endl;
+	
+	}
+
+/***********************/
+/* Step 9 */
+/***********************/
+	
+	/*cout<<"The So matrix: "<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<N; j++){		
+			cout<<S[i][j]<<" ";
+	}
+	cout<<endl;
+	}*/
+	double **sz;
+	sz = new double*[N];
+	for (int i = 0; i < N; ++i) 
+  		sz[i] = new double[N];
+		
+	
+	for (int i=0; i<N; i++)
+		for (int j=0; j<N; j++){		
+				S[i][j]=S[i][j]+p[i][j];
+		}	
+	//cout<<"The Sp matrix: "<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<N; j++){
+			//cout<<S[i][j]<<" ";
+			if (S[i][j]!=0)
+				S[i][j]=1;		
+	}
+	//cout<<endl;
+	}
+
+	double **sp2;
+	sp2 = new double*[N];
+	for (int i = 0; i < N; ++i) 
+  		sp2[i] = new double[N];
+	for (int i=0; i<N; i++)
+		for (int j=0; j<N; j++)
+			sp2[i][j]=0;
+	//int nz3=0;	
+	for (int i=0; i<N; i++)
+		for (int j=0; j<N; j++){
+		if (matrix[i + j*M]==1 && S[i][j]!=0){
+			sp2[i][j]=1;
+			//nz3++;
+			}
+		/*else if (matrix[i + j*M]==0 && S[i][j]!=0){
+			sp2[i][j]=ab;
+			//nz3++;
+			}*/	
+		else if (matrix[i + j*M]==1 && S[i][j]==0){
+			sp2[i][j]=ab;
+			//nz3++;
+			}
+		else 	
+			sp2[i][j]=0;	
+	}
+	/*cout<<"The Sparse matrix Sk#: "<<kc<<endl;
+		for (int i=0; i<N; i++){
+			for (int j=0; j<N; j++){		
+				cout<<sp2[i][j]<<" ";
+			}
+			cout<<endl;
+		}
+/**********************************/
+		int nz3=0;
+		ofstream out2;
+		out2.open("Matrix1.mtx");
+		out2<<"%%MatrixMarket matrix coordinate pattern general\n%--------------------------------------------\n%----------------------------------------------------\n";
+		out2<<N<<' '<<N<<' '<<(N*N)<<"\n";
+		for (int i=0; i<N; i++)
+			for (int j=0; j<N; j++){
+				if (sp2[i][j]!=0){	
+					//out2<<j+1<<' '<<i+1<<"\n";
+					nz3++;
+					}
+				if (S[i][j]!=0)	
+					out2<<j+1<<' '<<i+1<<"\n";
+							
+		}
+		out2.close();
+		
+		/*cout<<"The Sparse matrix Sk#: "<<kc<<endl;
+		for (int i=0; i<N; i++){
+			for (int j=0; j<N; j++){		
+				cout<<sp2[i][j]<<" ";
+			}
+			cout<<endl;
+		}*/	
+		system("./gcolor -i Matrix1.mtx -v");
+		//coloringalgo();
+		ifstream fin3("coloring.txt");
+
+	// Ignore headers and comments:
+	while (fin3.peek() == '%') fin3.ignore(2048, '\n');
+	int ax1;
+	// Read defining parameters:
+	fin3 >> ax1;
+	//cout <<"ax1:"<<ax1<<endl;
+	
+	for (int i = 0; i < N; ++i) 
+		color[i]=0;
+	for (int i = 0; i < N; i++)
+	{
+		int a, b;
+		fin3 >> a >> b ;
+		int j=b-1;
+      		//d3[i][j]=a;
+		color[i]=b;
+	}
+	fin3.close();
+		
+/**********************************/
+	/*cout<<"The Sp#1 matrix: "<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<N; j++){		
+			cout<<sp2[i][j]<<" ";
+	}
+	cout<<endl;
+	}*/
+
+	/* calculating new H */
+	double **y3;
+	y3 = new double*[N];
+	for (int i = 0; i < N; ++i) 
+  		y3[i] = new double[N];
+
+	for (int t=0;t<N;t++)
+		delta[t]=0;
+
+	for (int t=0;t<N;t++)
+		delta[t]=(2.5*rand()/RAND_MAX + 0.5);
+				
+	for (int t=0;t<N;t++)
+		delta[t]=delta[t]*pow(10, -6);
+	/*for (int t=0;t<N;t++)
+		cout<<delta[t]<<" ";
+	cout<<endl;*/
+
+	for (int l = 0; l < nz3; l++){
+		Ii[l]=0;
+		Jj[l]=0;
+		valc[l]=0;}
+	for(int i=0;i<N;i++)
+            for(int j=0;j<ax1;j++)
+		y3[i][j]=0;
+	CRS(Ii,Jj,valc,sp2,y3,nz3,N,ax1, color, delta);
+	
+
+	/*cout<<"Vector Y3 (H*d = y) : "<<endl;
+	cout<<"######################################what?"<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<ax1; j++)			
+			cout<<y3[i][j]<<" ";
+		cout<<endl;
+	}
+/***********************/
+/* Step 10 */
+/***********************/
+	for (int m = 0; m < N; m++)
+    			for(int n = 0; n < N; n++){
+        			fh[m][n]=0;
+				fy[m][n]=0;
+				pd[m][n]=0;}
+	kc=0;
+	nnzfh=0;
+	nnzfy=0;
+	int a=ax1;
+	//cout<< "a: "<<a<<"kc: "<<kc<<endl;
+	//for (int i=0;i<N*N;i++)
+		//prow[i]=pcol[i]=0;
+	//cc=0;
+	flaws(fh,fy,matrix,S,y3,yr,N,a,kc,kc,ab,color,delta,pd);
+	
+	//cout<<"The F^h matrix: "<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<N; j++){
+			if(fh[i][j]!=0)
+				nnzfh++;		
+			//cout<<fh[i][j]<<" ";
+		}
+	//cout<<endl;
+	}
+	
+	//cout<<"The F^y matrix: "<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<a; j++){
+			if(fy[i][j]!=0)
+				nnzfy++;			
+			//cout<<fy[i][j]<<" ";
+		}
+		//cout<<endl;
+	}
+
+	cout<<"The nnz in F^y matrix: "<<nnzfy<<" The nnz in F^h matrix: "<<nnzfh<<endl;
+	nest = nnzfy+nnzfh;
+	cout<<"The value of nest: "<<nest<<endl;
+/***********************/
+/* Step 10 */
+/***********************/
+	
+	double **sz1;
+	sz1 = new double*[N];
+	for (int i = 0; i < N; ++i) 
+  		sz1[i] = new double[N];
+
+	
+	procedure2(sz1,S,y3,N,ax1,ab,delta);
+
+	/*cout<<"The Sz matrix: "<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<N; j++)		
+			cout<<sz1[i][j]<<" ";
+	cout<<endl;
+	}
+	*/
+
+	/*cout<<"The Final S matrix: "<<endl;
+	for (int i=0; i<N; i++){
+		for (int j=0; j<N; j++)		
+			cout<<S[i][j]<<" ";
+	cout<<endl;
+	}*/	
+	//cout<<"L and wl and nnzs and nnzr and count: "<<L<<" "<<wl<<" "<<nnzs<<" "<<nnzr1<<" "<<cn<<endl;
+	cout<<"count: "<<cn<<endl;
+	if (nest!=0){
+		cout<<" nest !=0 ; goto 6(a)"<<endl ;
+		for (int i=0; i<N; i++)
+			for (int j=0; j<N; j++)	
+				//p[i][j]=0;
+				p[i][j]=pd[i][j];
+				
+		//procedure4(fh,fy,p,N,d3,ax1,kc,bc, color);
+		//cout<<"K The P matrix: "<<kc<<endl;
+		for (int i=0; i<N; i++){
+			for (int j=0; j<N; j++){
+				if(p[i][j]!=0)
+					nnzp++;		
+				//cout<<p[i][j]<<" ";
+			}
+			//cout<<endl;
+		}
+		cout<<"The value of nnzp at kc: "<<nnzp<<" "<<kc<<" "<<cc<<endl;
+		cn++;
+		goto ll3;}
+
+		ofstream out3;
+		out3.open("Matrixout.txt");
+		out3<<N<<' '<<N<<' '<<L<<"\n";
+		for (int i=0; i<N; i++)
+			for (int j=0; j<N; j++){
+				if (S[i][j]!=0)	
+					out3<<j+1<<' '<<i+1<<"\n";		
+		}
+		out3.close();
+
+		/*cout<<"The Final S matrix: "<<endl;
+		for (int i=0; i<N; i++){
+			for (int j=0; j<N; j++)		
+				cout<<S[i][j]<<" ";
+			cout<<endl;
+		}*/
+
+	delete [] Ii;
+	delete [] Jj;
+	delete [] valc; 
+	delete []  S ;
+	delete []  p ;
+	delete []  pd ;
+	delete [] yr;
+	delete []  R ;
+  	delete []  fh ;
+ 	delete []  fy ;
+
+ 	cout<<"\nTime taken: "<<(double)(clock() - tStart)/CLOCKS_PER_SEC<<" s\n";
+	return 0;
+}

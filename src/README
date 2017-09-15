@@ -1,0 +1,127 @@
+List of Files :
+
+gcolor.cpp
+----------------------------------------
+-> Contains the main() method for the application.
+-> Parses the command line arguments.
+-> Reads data from the file and invokes ordering method on them.
+-> Displays the result.
+
+CLI.cpp
+CLI.h
+----------------------------------------
+Defines and declares the Constants necessary for Command Line
+Interface.
+
+
+Matrix.cpp
+Matrix.h
+----------------------------------------
+Defines a class Matrix. We can populate this matrix from file, and
+then using member functions we can do different orderings and
+colorings on the columns of the matrix.
+
+mmio.cpp
+mmioh
+----------------------------------------
+Contains the Utility methods to perform input output from the Matrix
+Market format file.
+
+BucketPQ.hh
+----------------------------------------------------------------------
+Priority queue implementation based on buckets.
+
+HeapPQ.hh
+----------------------------------------------------------------------
+Priority queue implementation based on Heap data struture.
+
+
+CSegMatrix.cpp
+CSegMatrix.hh
+----------------------------------------------------------------------
+Implementation of Ordering and coloring algorithms for a Column Segmented Matrix.
+
+driver.hh
+driver.cc
+----------------------------------------------------------------------
+Used to run experiments on target matrices. Not a part of the Matrix
+Package, but useful to run experiments.
+
+gcolor.hh
+gcolor.cpp
+----------------------------------------------------------------------
+It contains the main() functions to the appliation which is used to
+run experiments on matrix data files.
+
+IDO.hh
+RLF.hh
+LFO.hh
+SLO.hh
+----------------------------------------------------------------------
+These classes wraps the ordering algorithms inside a class, so that
+they can be used in the different combinations of mixed ordering
+methods.
+
+IMatrix.hh
+IMatrix.cc
+----------------------------------------------------------------------
+Interface class for Matrix Data Structure.
+
+IRowColumnDS.hh
+IRowColumnDS.cc
+----------------------------------------------------------------------
+Implementation class for Compressed Column Compressed Row data
+strucuture for storing sparse matrices.
+
+NNZTag.cc
+NNZTag.hh
+----------------------------------------------------------------------
+This class acts as a tagging/working array for the experimental
+ordering algorithm based on some profit function for the column
+segmented matrix.
+
+NullOrdermingMethod.hh
+----------------------------------------------------------------------
+This class acts as an ordering method which actually does not perform
+any operation. It is used as mixedordermingmethod always require a
+OrderingMethod class.
+
+PartitionLoader.cc
+PartitionLoader.hh
+----------------------------------------------------------------------
+This class populates the partitioning information for column segmented
+matrix in some fixed ways.
+
+ProfitPartitionMatrix.cc
+ProfitPartitionMatrix.hh
+----------------------------------------------------------------------
+This class contains the Profit based Ordering method for Column
+Segmented matrix.
+
+Result.hh
+----------------------------------------------------------------------
+Utililty class to store and print the experimenation data.
+
+seq_functor.hh
+----------------------------------------------------------------------
+Functor class needed for the RLF algorithm in Column Segmented
+matrix.
+
+SimplePartitionedMatrix.hh
+SimplePartitionedMatrix.cc
+----------------------------------------------------------------------
+This is the base class for Partitioned or Column Segmented Matrix.
+
+Timer.cpp
+Timer.h
+----------------------------------------------------------------------
+Timer class keeps track of the running time of different algorithms
+conducted as in experiments.
+
+Utility.c
+Utility.h
+----------------------------------------------------------------------
+Utility functions for DSJM toolkit.
+
+
+

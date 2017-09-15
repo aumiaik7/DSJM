@@ -1,0 +1,11 @@
+- 
+    commandLine: Not Given
+    inputFile: data/sherman1.mtx
+    segmented: no
+    method: SLO
+    matrix_M: 1000
+    matrix_N: 1000
+    matrix_NNZ: 3750
+    totalColors: 9
+    ordering_time: 0.01
+    coloring_time: 0

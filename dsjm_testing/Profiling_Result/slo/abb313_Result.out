@@ -1,0 +1,11 @@
+- 
+    commandLine: Not Given
+    inputFile: data/abb313.mtx
+    segmented: no
+    method: SLO
+    matrix_M: 313
+    matrix_N: 176
+    matrix_NNZ: 1557
+    totalColors: 10
+    ordering_time: 0
+    coloring_time: 0

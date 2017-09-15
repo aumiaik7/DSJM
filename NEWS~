@@ -1,0 +1,59 @@
+//examples folder
+1.deleted cseg parts from processCommandLineParameters(), gcolor.cc
+2.Deleted cseg related methods from runOrderingAndColoringAlgorithm()  driver.cc
+	 else if ( configuration->oMethod == CLI::RLF_SLO)
+        { ,driver.cc
+3.Deleted cseg related methods from run() after    IMatrix *matrix = NULL;
+    try
+    {..., driver.cc
+4. deleted 2 if else after if ( configuration->statistics_only == true)
+        {, driver.cc
+5. deleted 2 if else inside  if(configuration->verify)
+        {
+            writeGraphDescription(configuration,matrix);
+6. #include "CSegMatrix.hh" from gcolor, driver
+7.#include "PartitionLoader.hh" 
+//#include "NNZTag.hh"
+//#include "SimplePartitionedMatrix.hh"
+//#include "ProfitPartitionMatrix.hh" from driver
+7.PartitionLoader *partitionLoader after FILE *pf;
+    char line[MAXLINE+1]; ,,
+8, $(top_srcdir)/src/PartitionLoader.cc $(top_srcdir)/src/CSegMatrix.cpp $(top_srcdir)/src/NNZTag.cc $(top_srcdir)/src/SimplePartitionedMatrix.cc $(top_srcdir)/src/ProfitPartitionMatrix.cc
+
+//src folders
+1.
+//#include "NNZTag.hh"
+//#include "HeapPQ.hh"
+//#include "SLO.hh"
+//#include "IDO.hh"
+//#include "LFO.hh"
+//#include "CLI.h"
+//#include "NullOrderingMethod.hh", Matrix.cpp
+2. Matrix::decide(int ic) to void Matrix::rlf_mixup(CLI::ordering_method oMethod, int *ngrp)
+all methods, Matrix.cpp
+3.  
+public:
+void rlf_slo(int *ngrp);
+    void rlf_ido(int *ngrp);
+    void rlf_lfo(int *ngrp);
+    void slo_rlf(int *ngrp);
+    void ido_rlf(int *ngrp);
+    void lfo_rlf(int *ngrp);
+
+    template <typename FirstOrderingMethod, typename SecondOrderingMethod>
+    void mixedOrderingMethod(int *ngrp);
+
+
+
+    int cseg_rlf_profit(int *ngrp); from Matrix.hh 
+
+private:
+ bool decide(int ic);
+    void rlf_mixup(CLI::ordering_method, int *ngrp);
+
+4. PartitionLoader.cc CSegMatrix.cpp NNZTag.cc SimplePartitionedMatrix.cc, Makefile.am
+
+
+//test/src
+1.$(top_srcdir)/src/CSegMatrix.cpp $(top_srcdir)/src/NNZTag.cc $(top_srcdir)/src/SimplePartitionedMatrix.cc $(top_srcdir)/src/PartitionLoader.cc
+

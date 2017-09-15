@@ -1,0 +1,11 @@
+- 
+    commandLine: Not Given
+    inputFile: data/bcsstk29.mtx
+    segmented: no
+    method: SLO
+    matrix_M: 13992
+    matrix_N: 13992
+    matrix_NNZ: 619488
+    totalColors: 72
+    ordering_time: 0.68
+    coloring_time: 0.11

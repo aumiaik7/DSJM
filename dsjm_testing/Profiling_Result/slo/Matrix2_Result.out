@@ -1,0 +1,11 @@
+- 
+    commandLine: Not Given
+    inputFile: data/Matrix2.mtx
+    segmented: no
+    method: SLO
+    matrix_M: 180
+    matrix_N: 180
+    matrix_NNZ: 625
+    totalColors: 9
+    ordering_time: 0
+    coloring_time: 0

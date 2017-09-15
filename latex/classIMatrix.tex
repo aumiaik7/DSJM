@@ -1,0 +1,117 @@
+\hypertarget{classIMatrix}{
+\section{IMatrix Class Reference}
+\label{classIMatrix}\index{IMatrix@{IMatrix}}
+}
+Inheritance diagram for IMatrix::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classIMatrix}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIMatrix_afe2001929e7328d988dc1d85c0d18c27}{IMatrix} (int M, int N, int nz, bool value)
+\item 
+virtual bool \hyperlink{classIMatrix_ad6d689b7a38120b6463f1965915f7163}{slo} (int $\ast$order)=0
+\item 
+virtual bool \hyperlink{classIMatrix_a8e0f3a1062786b6a20548e847de1109b}{ido} (int $\ast$order)=0
+\item 
+\hypertarget{classIMatrix_a3e7d104e9d2f662b59e59d84b60b1260}{
+virtual bool {\bfseries lfo} (int $\ast$order)=0}
+\label{classIMatrix_a3e7d104e9d2f662b59e59d84b60b1260}
+
+\item 
+\hypertarget{classIMatrix_adba40eab9af7ad22f2519493dc2cc50d}{
+virtual bool {\bfseries computedegree} ()=0}
+\label{classIMatrix_adba40eab9af7ad22f2519493dc2cc50d}
+
+\item 
+\hypertarget{classIMatrix_afa61e6e0a0baf59bd5c898ef759fc5f0}{
+virtual int {\bfseries greedycolor} (int $\ast$list, int $\ast$ngrp)=0}
+\label{classIMatrix_afa61e6e0a0baf59bd5c898ef759fc5f0}
+
+\item 
+\hypertarget{classIMatrix_a48855671733fe3f89e96f3c9a606d04f}{
+virtual int {\bfseries rlf} (int $\ast$ngrp)=0}
+\label{classIMatrix_a48855671733fe3f89e96f3c9a606d04f}
+
+\item 
+\hypertarget{classIMatrix_aa62c5ede68855fb7a3cf5332767b9699}{
+void {\bfseries setVerify} (bool v)}
+\label{classIMatrix_aa62c5ede68855fb7a3cf5332767b9699}
+
+\item 
+\hypertarget{classIMatrix_af112ae04ef11c8e780b9e11196442eb0}{
+bool {\bfseries getVerify} ()}
+\label{classIMatrix_af112ae04ef11c8e780b9e11196442eb0}
+
+\item 
+\hypertarget{classIMatrix_ac866b3b6ae6ed3802207617cbe083636}{
+void {\bfseries buildPriorityQueue} (int n, int $\ast$ndeg, int $\ast$head, int $\ast$next, int $\ast$previous)}
+\label{classIMatrix_ac866b3b6ae6ed3802207617cbe083636}
+
+\item 
+void \hyperlink{classIMatrix_adef00da9cba0f17ec0d64d688a3ebc58}{deleteColumn} (int $\ast$head, int $\ast$next, int $\ast$previous, int numdeg, int jcol)
+\item 
+void \hyperlink{classIMatrix_adfe1c1b95399cadb8d07a17d10ea6118}{addColumn} (int $\ast$head, int $\ast$next, int $\ast$previous, int numdeg, int jcol)
+\item 
+\hypertarget{classIMatrix_a43dbfcf605af6de605db7c5c95cecca4}{
+void {\bfseries initializeDegreesToUVertices} (int n, int $\ast$tag, int $\ast$u\_\-head, int $\ast$u\_\-next, int $\ast$u\_\-previous, int $\ast$u\_\-list, bool $\ast$f\_\-added, int $\ast$f\_\-tag)}
+\label{classIMatrix_a43dbfcf605af6de605db7c5c95cecca4}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classIMatrix_a131c3e77ce7a03f2655a633b147c07f9}{
+bool {\bfseries shouldVerify}}
+\label{classIMatrix_a131c3e77ce7a03f2655a633b147c07f9}
+
+\item 
+\hypertarget{classIMatrix_a64cd0699662ea81465c3b356e84cceab}{
+int {\bfseries maxdeg}}
+\label{classIMatrix_a64cd0699662ea81465c3b356e84cceab}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classIMatrix_afe2001929e7328d988dc1d85c0d18c27}{
+\index{IMatrix@{IMatrix}!IMatrix@{IMatrix}}
+\index{IMatrix@{IMatrix}!IMatrix@{IMatrix}}
+\subsubsection[{IMatrix}]{\setlength{\rightskip}{0pt plus 5cm}IMatrix::IMatrix (int {\em M}, \/  int {\em N}, \/  int {\em nz}, \/  bool {\em value})}}
+\label{classIMatrix_afe2001929e7328d988dc1d85c0d18c27}
+: This functions  Date: 20.06.2009 
+
+\subsection{Member Function Documentation}
+\hypertarget{classIMatrix_adfe1c1b95399cadb8d07a17d10ea6118}{
+\index{IMatrix@{IMatrix}!addColumn@{addColumn}}
+\index{addColumn@{addColumn}!IMatrix@{IMatrix}}
+\subsubsection[{addColumn}]{\setlength{\rightskip}{0pt plus 5cm}void IMatrix::addColumn (int $\ast$ {\em head}, \/  int $\ast$ {\em next}, \/  int $\ast$ {\em previous}, \/  int {\em numdeg}, \/  int {\em jcol})}}
+\label{classIMatrix_adfe1c1b95399cadb8d07a17d10ea6118}
+Constant Operation \hypertarget{classIMatrix_adef00da9cba0f17ec0d64d688a3ebc58}{
+\index{IMatrix@{IMatrix}!deleteColumn@{deleteColumn}}
+\index{deleteColumn@{deleteColumn}!IMatrix@{IMatrix}}
+\subsubsection[{deleteColumn}]{\setlength{\rightskip}{0pt plus 5cm}void IMatrix::deleteColumn (int $\ast$ {\em head}, \/  int $\ast$ {\em next}, \/  int $\ast$ {\em previous}, \/  int {\em numdeg}, \/  int {\em jcol})}}
+\label{classIMatrix_adef00da9cba0f17ec0d64d688a3ebc58}
+Constant Operation \hypertarget{classIMatrix_a8e0f3a1062786b6a20548e847de1109b}{
+\index{IMatrix@{IMatrix}!ido@{ido}}
+\index{ido@{ido}!IMatrix@{IMatrix}}
+\subsubsection[{ido}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool IMatrix::ido (int $\ast$ {\em order})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classIMatrix_a8e0f3a1062786b6a20548e847de1109b}
+Method \hyperlink{classIMatrix_a8e0f3a1062786b6a20548e847de1109b}{ido()} 
+
+Implemented in \hyperlink{classMatrix_ab9bef57c1115e601cdeb493ecb381b82}{Matrix}.\hypertarget{classIMatrix_ad6d689b7a38120b6463f1965915f7163}{
+\index{IMatrix@{IMatrix}!slo@{slo}}
+\index{slo@{slo}!IMatrix@{IMatrix}}
+\subsubsection[{slo}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool IMatrix::slo (int $\ast$ {\em order})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classIMatrix_ad6d689b7a38120b6463f1965915f7163}
+Method \hyperlink{classIMatrix_ad6d689b7a38120b6463f1965915f7163}{slo()} 
+
+Implemented in \hyperlink{classMatrix_ac7e287f032e1296c51ce29704a0af704}{Matrix}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/IMatrix.hh\item 
+src/IMatrix.cc\end{DoxyCompactItemize}

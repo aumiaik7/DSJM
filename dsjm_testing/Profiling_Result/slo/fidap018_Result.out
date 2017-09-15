@@ -1,0 +1,11 @@
+- 
+    commandLine: Not Given
+    inputFile: data/fidap018.mtx
+    segmented: no
+    method: SLO
+    matrix_M: 5773
+    matrix_N: 5773
+    matrix_NNZ: 69335
+    totalColors: 22
+    ordering_time: 0.04
+    coloring_time: 0.01

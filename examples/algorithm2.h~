@@ -1,0 +1,15 @@
+#ifndef ALGORITHM2_H
+#define ALGORITHM2_H
+
+using namespace std;
+
+     //void possibilities(double **fh, double**fy, double **p, int N, double **d);
+	//void flaws(double **fh, double**fy, double *matrix, double **v, int **z, double **w, int N, int a, int t, int sta, int ab, int bc);
+	void flaws(double **fh,double**fy, double *matrix, double **v, double **z, double **w, int N, int a, int t, int sta, double ab, int *color, double *delta, double **abc, int *pro, int *pco, int cc);
+	void procedure2(double **sz, double**St, double **rt, int N, int a, double ab, double *delta);
+	void procedure4(double **fh, double**fy, double **pt, int N, double **e, int c, int kt, double bc, int *color);
+	void CRS(int *Ii, int *Jj, double *valc, double **sp1, double **res, int nz1, int N, int g, int *color, double *delta);
+	void coloringalgo();
+#endif
+
+

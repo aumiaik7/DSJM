@@ -1,0 +1,722 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00   450466     0.00     0.00  std::vector<int, std::allocator<int> >::operator[](unsigned long)
+  0.00      0.00     0.00    25143     0.00     0.00  MinQueue::opt(int, int)
+  0.00      0.00     0.00    24826     0.00     0.00  int const& std::max<int>(int const&, int const&)
+  0.00      0.00     0.00    12730     0.00     0.00  PriorityQueueItem::PriorityQueueItem(int, int)
+  0.00      0.00     0.00    12730     0.00     0.00  BucketPQ<MinQueue>::insert(int, int)
+  0.00      0.00     0.00    12730     0.00     0.00  BucketPQ<MinQueue>::remove(int)
+  0.00      0.00     0.00    12730     0.00     0.00  int const& std::min<int>(int const&, int const&)
+  0.00      0.00     0.00    12413     0.00     0.00  BucketPQ<MinQueue>::get(int)
+  0.00      0.00     0.00    12413     0.00     0.00  BucketPQ<MinQueue>::change(int, int)
+  0.00      0.00     0.00    12413     0.00     0.00  BucketPQ<MinQueue>::decrease(int)
+  0.00      0.00     0.00     7327     0.00     0.00  IRowColumnDS::setIndColEntry(int, int)
+  0.00      0.00     0.00     7327     0.00     0.00  IRowColumnDS::setIndRowEntry(int, int)
+  0.00      0.00     0.00     7327     0.00     0.00  IRowColumnDS::max(int, int)
+  0.00      0.00     0.00      317     0.00     0.00  BucketPQ<MinQueue>::pop()
+  0.00      0.00     0.00      317     0.00     0.00  BucketPQ<MinQueue>::top()
+  0.00      0.00     0.00      207     0.00     0.00  MinQueue::next_op(int)
+  0.00      0.00     0.00       15     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+  0.00      0.00     0.00       15     0.00     0.00  std::__niter_base<int*, false>::__b(int*)
+  0.00      0.00     0.00       10     0.00     0.00  __gnu_cxx::new_allocator<int>::max_size() const
+  0.00      0.00     0.00       10     0.00     0.00  void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+  0.00      0.00     0.00       10     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long)
+  0.00      0.00     0.00       10     0.00     0.00  std::__miter_base<int*, false>::__b(int*)
+  0.00      0.00     0.00       10     0.00     0.00  void std::_Destroy<int*>(int*, int*)
+  0.00      0.00     0.00       10     0.00     0.00  void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+  0.00      0.00     0.00        5     0.00     0.00  __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long)
+  0.00      0.00     0.00        5     0.00     0.00  __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*)
+  0.00      0.00     0.00        5     0.00     0.00  __gnu_cxx::new_allocator<int>::new_allocator()
+  0.00      0.00     0.00        5     0.00     0.00  __gnu_cxx::new_allocator<int>::~new_allocator()
+  0.00      0.00     0.00        5     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const
+  0.00      0.00     0.00        5     0.00     0.00  std::vector<int, std::allocator<int> >::size() const
+  0.00      0.00     0.00        5     0.00     0.00  std::vector<int, std::allocator<int> >::capacity() const
+  0.00      0.00     0.00        5     0.00     0.00  std::vector<int, std::allocator<int> >::max_size() const
+  0.00      0.00     0.00        5     0.00     0.00  std::allocator<int>::allocator()
+  0.00      0.00     0.00        5     0.00     0.00  std::allocator<int>::~allocator()
+  0.00      0.00     0.00        5     0.00     0.00  int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*)
+  0.00      0.00     0.00        5     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long)
+  0.00      0.00     0.00        5     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00        5     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00        5     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_base()
+  0.00      0.00     0.00        5     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  0.00      0.00     0.00        5     0.00     0.00  int* std::__uninitialized_copy<true>::uninitialized_copy<int*, int*>(int*, int*, int*)
+  0.00      0.00     0.00        5     0.00     0.00  int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<int*>(unsigned long, int*, int*)
+  0.00      0.00     0.00        5     0.00     0.00  std::vector<int, std::allocator<int> >::reserve(unsigned long)
+  0.00      0.00     0.00        5     0.00     0.00  std::vector<int, std::allocator<int> >::vector()
+  0.00      0.00     0.00        5     0.00     0.00  std::vector<int, std::allocator<int> >::~vector()
+  0.00      0.00     0.00        5     0.00     0.00  int* std::__copy_move_a<false, int*, int*>(int*, int*, int*)
+  0.00      0.00     0.00        5     0.00     0.00  int* std::__copy_move_a2<false, int*, int*>(int*, int*, int*)
+  0.00      0.00     0.00        5     0.00     0.00  int* std::uninitialized_copy<int*, int*>(int*, int*, int*)
+  0.00      0.00     0.00        5     0.00     0.00  int* std::__uninitialized_copy_a<int*, int*, int>(int*, int*, int*, std::allocator<int>&)
+  0.00      0.00     0.00        5     0.00     0.00  int* std::copy<int*, int*>(int*, int*, int*)
+  0.00      0.00     0.00        2     0.00     0.00  ColPack::Timer::GetWallTime()
+  0.00      0.00     0.00        2     0.00     0.00  ColPack::Timer::Stop()
+  0.00      0.00     0.00        2     0.00     0.00  ColPack::Timer::Start()
+  0.00      0.00     0.00        1     0.00     0.00  global constructors keyed to _Z13display_usagev
+  0.00      0.00     0.00        1     0.00     0.00  global constructors keyed to _Z16gcolor_getrusageR6rusage
+  0.00      0.00     0.00        1     0.00     0.00  global constructors keyed to _ZN12IRowColumnDSC2Eiiib
+  0.00      0.00     0.00        1     0.00     0.00  global constructors keyed to _ZN13MatrixUtility10loadMatrixESsP6Matrix
+  0.00      0.00     0.00        1     0.00     0.00  global constructors keyed to _ZN6MatrixC2Eiiib
+  0.00      0.00     0.00        1     0.00     0.00  global constructors keyed to _ZN7ColPack5TimerC2Ev
+  0.00      0.00     0.00        1     0.00     0.00  global constructors keyed to _ZN7IMatrixC2Eiiib
+  0.00      0.00     0.00        1     0.00     0.00  readBanner(Configuration*)
+  0.00      0.00     0.00        1     0.00     0.00  canReadFile(Configuration*)
+  0.00      0.00     0.00        1     0.00     0.00  mm_read_banner(_IO_FILE*, char (*) [4])
+  0.00      0.00     0.00        1     0.00     0.00  mm_read_mtx_crd_size(_IO_FILE*, int*, int*, int*)
+  0.00      0.00     0.00        1     0.00     0.00  processCommandLineParameters(int, char**, Configuration*)
+  0.00      0.00     0.00        1     0.00     0.00  RunningTimeInfo runOrderingAndColoringAlgorithm<IMatrix, ColPack::Timer>(Configuration*, IMatrix*, ColPack::Timer&)
+  0.00      0.00     0.00        1     0.00     0.00  run(Configuration*)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  void readData<IMatrix>(Configuration*, _IO_FILE*, IMatrix*)
+  0.00      0.00     0.00        1     0.00     0.00  IRowColumnDS::computeCCS()
+  0.00      0.00     0.00        1     0.00     0.00  IRowColumnDS::computeCRS()
+  0.00      0.00     0.00        1     0.00     0.00  IRowColumnDS::compress()
+  0.00      0.00     0.00        1     0.00     0.00  IRowColumnDS::IRowColumnDS(int, int, int, bool)
+  0.00      0.00     0.00        1     0.00     0.00  IRowColumnDS::~IRowColumnDS()
+  0.00      0.00     0.00        1     0.00     0.00  Configuration::Configuration()
+  0.00      0.00     0.00        1     0.00     0.00  Configuration::~Configuration()
+  0.00      0.00     0.00        1     0.00     0.00  Configuration::~Configuration()
+  0.00      0.00     0.00        1     0.00     0.00  RunningTimeInfo::RunningTimeInfo(int, double, double, int*)
+  0.00      0.00     0.00        1     0.00     0.00  CLI::parseMethod(char*)
+  0.00      0.00     0.00        1     0.00     0.00  CLI::method_to_string(CLI::ordering_method)
+  0.00      0.00     0.00        1     0.00     0.00  Matrix::greedycolor(int*, int*)
+  0.00      0.00     0.00        1     0.00     0.00  Matrix::computedegree()
+  0.00      0.00     0.00        1     0.00     0.00  Matrix::slo(int*)
+  0.00      0.00     0.00        1     0.00     0.00  Matrix::Matrix(int, int, int, bool)
+  0.00      0.00     0.00        1     0.00     0.00  Matrix::~Matrix()
+  0.00      0.00     0.00        1     0.00     0.00  Matrix::~Matrix()
+  0.00      0.00     0.00        1     0.00     0.00  Result::printResult()
+  0.00      0.00     0.00        1     0.00     0.00  Result::printMatrixInfo()
+  0.00      0.00     0.00        1     0.00     0.00  Result::printInfo()
+  0.00      0.00     0.00        1     0.00     0.00  Result::Result()
+  0.00      0.00     0.00        1     0.00     0.00  Result::~Result()
+  0.00      0.00     0.00        1     0.00     0.00  ColPack::Timer::Timer()
+  0.00      0.00     0.00        1     0.00     0.00  ColPack::Timer::~Timer()
+  0.00      0.00     0.00        1     0.00     0.00  IMatrix::setVerify(bool)
+  0.00      0.00     0.00        1     0.00     0.00  IMatrix::IMatrix(int, int, int, bool)
+  0.00      0.00     0.00        1     0.00     0.00  IMatrix::~IMatrix()
+  0.00      0.00     0.00        1     0.00     0.00  BucketPQ<MinQueue>::make_empty()
+  0.00      0.00     0.00        1     0.00     0.00  BucketPQ<MinQueue>::BucketPQ(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  BucketPQ<MinQueue>::~BucketPQ()
+  0.00      0.00     0.00        1     0.00     0.00  MinQueue::opt_init_value(int)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00     317/450466      BucketPQ<MinQueue>::pop() [19]
+                0.00    0.00     810/450466      BucketPQ<MinQueue>::make_empty() [108]
+                0.00    0.00    1158/450466      BucketPQ<MinQueue>::top() [20]
+                0.00    0.00   12413/450466      BucketPQ<MinQueue>::get(int) [13]
+                0.00    0.00   24826/450466      BucketPQ<MinQueue>::decrease(int) [15]
+                0.00    0.00   81653/450466      BucketPQ<MinQueue>::remove(int) [11]
+                0.00    0.00   99230/450466      BucketPQ<MinQueue>::insert(int, int) [10]
+                0.00    0.00  230059/450466      Matrix::slo(int*) [94]
+[6]      0.0    0.00    0.00  450466         std::vector<int, std::allocator<int> >::operator[](unsigned long) [6]
+-----------------------------------------------
+                0.00    0.00   12413/25143       BucketPQ<MinQueue>::decrease(int) [15]
+                0.00    0.00   12730/25143       BucketPQ<MinQueue>::insert(int, int) [10]
+[7]      0.0    0.00    0.00   25143         MinQueue::opt(int, int) [7]
+-----------------------------------------------
+                0.00    0.00   24826/24826       Matrix::computedegree() [93]
+[8]      0.0    0.00    0.00   24826         int const& std::max<int>(int const&, int const&) [8]
+-----------------------------------------------
+                0.00    0.00     317/12730       BucketPQ<MinQueue>::top() [20]
+                0.00    0.00   12413/12730       BucketPQ<MinQueue>::get(int) [13]
+[9]      0.0    0.00    0.00   12730         PriorityQueueItem::PriorityQueueItem(int, int) [9]
+-----------------------------------------------
+                0.00    0.00     317/12730       Matrix::slo(int*) [94]
+                0.00    0.00   12413/12730       BucketPQ<MinQueue>::change(int, int) [14]
+[10]     0.0    0.00    0.00   12730         BucketPQ<MinQueue>::insert(int, int) [10]
+                0.00    0.00   99230/450466      std::vector<int, std::allocator<int> >::operator[](unsigned long) [6]
+                0.00    0.00   12730/25143       MinQueue::opt(int, int) [7]
+-----------------------------------------------
+                0.00    0.00     317/12730       BucketPQ<MinQueue>::pop() [19]
+                0.00    0.00   12413/12730       BucketPQ<MinQueue>::change(int, int) [14]
+[11]     0.0    0.00    0.00   12730         BucketPQ<MinQueue>::remove(int) [11]
+                0.00    0.00   81653/450466      std::vector<int, std::allocator<int> >::operator[](unsigned long) [6]
+-----------------------------------------------
+                0.00    0.00   12730/12730       Matrix::slo(int*) [94]
+[12]     0.0    0.00    0.00   12730         int const& std::min<int>(int const&, int const&) [12]
+-----------------------------------------------
+                0.00    0.00   12413/12413       Matrix::slo(int*) [94]
+[13]     0.0    0.00    0.00   12413         BucketPQ<MinQueue>::get(int) [13]
+                0.00    0.00   12413/450466      std::vector<int, std::allocator<int> >::operator[](unsigned long) [6]
+                0.00    0.00   12413/12730       PriorityQueueItem::PriorityQueueItem(int, int) [9]
+-----------------------------------------------
+                0.00    0.00   12413/12413       BucketPQ<MinQueue>::decrease(int) [15]
+[14]     0.0    0.00    0.00   12413         BucketPQ<MinQueue>::change(int, int) [14]
+                0.00    0.00   12413/12730       BucketPQ<MinQueue>::remove(int) [11]
+                0.00    0.00   12413/12730       BucketPQ<MinQueue>::insert(int, int) [10]
+-----------------------------------------------
+                0.00    0.00   12413/12413       Matrix::slo(int*) [94]
+[15]     0.0    0.00    0.00   12413         BucketPQ<MinQueue>::decrease(int) [15]
+                0.00    0.00   24826/450466      std::vector<int, std::allocator<int> >::operator[](unsigned long) [6]
+                0.00    0.00   12413/25143       MinQueue::opt(int, int) [7]
+                0.00    0.00   12413/12413       BucketPQ<MinQueue>::change(int, int) [14]
+-----------------------------------------------
+                0.00    0.00    7327/7327        void readData<IMatrix>(Configuration*, _IO_FILE*, IMatrix*) [80]
+[16]     0.0    0.00    0.00    7327         IRowColumnDS::setIndColEntry(int, int) [16]
+-----------------------------------------------
+                0.00    0.00    7327/7327        void readData<IMatrix>(Configuration*, _IO_FILE*, IMatrix*) [80]
+[17]     0.0    0.00    0.00    7327         IRowColumnDS::setIndRowEntry(int, int) [17]
+-----------------------------------------------
+                0.00    0.00    7327/7327        IRowColumnDS::computeCCS() [81]
+[18]     0.0    0.00    0.00    7327         IRowColumnDS::max(int, int) [18]
+-----------------------------------------------
+                0.00    0.00     317/317         Matrix::slo(int*) [94]
+[19]     0.0    0.00    0.00     317         BucketPQ<MinQueue>::pop() [19]
+                0.00    0.00     317/450466      std::vector<int, std::allocator<int> >::operator[](unsigned long) [6]
+                0.00    0.00     317/12730       BucketPQ<MinQueue>::remove(int) [11]
+-----------------------------------------------
+                0.00    0.00     317/317         Matrix::slo(int*) [94]
+[20]     0.0    0.00    0.00     317         BucketPQ<MinQueue>::top() [20]
+                0.00    0.00    1158/450466      std::vector<int, std::allocator<int> >::operator[](unsigned long) [6]
+                0.00    0.00     317/12730       PriorityQueueItem::PriorityQueueItem(int, int) [9]
+                0.00    0.00     207/207         MinQueue::next_op(int) [21]
+-----------------------------------------------
+                0.00    0.00     207/207         BucketPQ<MinQueue>::top() [20]
+[21]     0.0    0.00    0.00     207         MinQueue::next_op(int) [21]
+-----------------------------------------------
+                0.00    0.00       5/15          std::vector<int, std::allocator<int> >::~vector() [50]
+                0.00    0.00       5/15          std::vector<int, std::allocator<int> >::reserve(unsigned long) [48]
+                0.00    0.00       5/15          int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<int*>(unsigned long, int*, int*) [47]
+[22]     0.0    0.00    0.00      15         std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [22]
+-----------------------------------------------
+                0.00    0.00      15/15          int* std::__copy_move_a2<false, int*, int*>(int*, int*, int*) [52]
+[23]     0.0    0.00    0.00      15         std::__niter_base<int*, false>::__b(int*) [23]
+-----------------------------------------------
+                0.00    0.00       5/10          std::vector<int, std::allocator<int> >::max_size() const [37]
+                0.00    0.00       5/10          __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [31]
+[24]     0.0    0.00    0.00      10         __gnu_cxx::new_allocator<int>::max_size() const [24]
+-----------------------------------------------
+                0.00    0.00      10/10          void std::_Destroy<int*>(int*, int*) [28]
+[25]     0.0    0.00    0.00      10         void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [25]
+-----------------------------------------------
+                0.00    0.00       5/10          std::vector<int, std::allocator<int> >::reserve(unsigned long) [48]
+                0.00    0.00       5/10          std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [45]
+[26]     0.0    0.00    0.00      10         std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [26]
+                0.00    0.00       5/5           __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [30]
+-----------------------------------------------
+                0.00    0.00      10/10          int* std::copy<int*, int*>(int*, int*, int*) [55]
+[27]     0.0    0.00    0.00      10         std::__miter_base<int*, false>::__b(int*) [27]
+-----------------------------------------------
+                0.00    0.00      10/10          void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [29]
+[28]     0.0    0.00    0.00      10         void std::_Destroy<int*>(int*, int*) [28]
+                0.00    0.00      10/10          void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [25]
+-----------------------------------------------
+                0.00    0.00       5/10          std::vector<int, std::allocator<int> >::~vector() [50]
+                0.00    0.00       5/10          std::vector<int, std::allocator<int> >::reserve(unsigned long) [48]
+[29]     0.0    0.00    0.00      10         void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [29]
+                0.00    0.00      10/10          void std::_Destroy<int*>(int*, int*) [28]
+-----------------------------------------------
+                0.00    0.00       5/5           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [26]
+[30]     0.0    0.00    0.00       5         __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [30]
+-----------------------------------------------
+                0.00    0.00       5/5           std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [41]
+[31]     0.0    0.00    0.00       5         __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [31]
+                0.00    0.00       5/10          __gnu_cxx::new_allocator<int>::max_size() const [24]
+-----------------------------------------------
+                0.00    0.00       5/5           std::allocator<int>::allocator() [38]
+[32]     0.0    0.00    0.00       5         __gnu_cxx::new_allocator<int>::new_allocator() [32]
+-----------------------------------------------
+                0.00    0.00       5/5           std::allocator<int>::~allocator() [39]
+[33]     0.0    0.00    0.00       5         __gnu_cxx::new_allocator<int>::~new_allocator() [33]
+-----------------------------------------------
+                0.00    0.00       5/5           std::vector<int, std::allocator<int> >::max_size() const [37]
+[34]     0.0    0.00    0.00       5         std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const [34]
+-----------------------------------------------
+                0.00    0.00       5/5           std::vector<int, std::allocator<int> >::reserve(unsigned long) [48]
+[35]     0.0    0.00    0.00       5         std::vector<int, std::allocator<int> >::size() const [35]
+-----------------------------------------------
+                0.00    0.00       5/5           std::vector<int, std::allocator<int> >::reserve(unsigned long) [48]
+[36]     0.0    0.00    0.00       5         std::vector<int, std::allocator<int> >::capacity() const [36]
+-----------------------------------------------
+                0.00    0.00       5/5           std::vector<int, std::allocator<int> >::reserve(unsigned long) [48]
+[37]     0.0    0.00    0.00       5         std::vector<int, std::allocator<int> >::max_size() const [37]
+                0.00    0.00       5/5           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const [34]
+                0.00    0.00       5/10          __gnu_cxx::new_allocator<int>::max_size() const [24]
+-----------------------------------------------
+                0.00    0.00       5/5           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [42]
+[38]     0.0    0.00    0.00       5         std::allocator<int>::allocator() [38]
+                0.00    0.00       5/5           __gnu_cxx::new_allocator<int>::new_allocator() [32]
+-----------------------------------------------
+                0.00    0.00       5/5           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [43]
+[39]     0.0    0.00    0.00       5         std::allocator<int>::~allocator() [39]
+                0.00    0.00       5/5           __gnu_cxx::new_allocator<int>::~new_allocator() [33]
+-----------------------------------------------
+                0.00    0.00       5/5           int* std::__copy_move_a<false, int*, int*>(int*, int*, int*) [51]
+[40]     0.0    0.00    0.00       5         int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*) [40]
+-----------------------------------------------
+                0.00    0.00       5/5           int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<int*>(unsigned long, int*, int*) [47]
+[41]     0.0    0.00    0.00       5         std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [41]
+                0.00    0.00       5/5           __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [31]
+-----------------------------------------------
+                0.00    0.00       5/5           std::_Vector_base<int, std::allocator<int> >::_Vector_base() [44]
+[42]     0.0    0.00    0.00       5         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [42]
+                0.00    0.00       5/5           std::allocator<int>::allocator() [38]
+-----------------------------------------------
+                0.00    0.00       5/5           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [45]
+[43]     0.0    0.00    0.00       5         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [43]
+                0.00    0.00       5/5           std::allocator<int>::~allocator() [39]
+-----------------------------------------------
+                0.00    0.00       5/5           std::vector<int, std::allocator<int> >::vector() [49]
+[44]     0.0    0.00    0.00       5         std::_Vector_base<int, std::allocator<int> >::_Vector_base() [44]
+                0.00    0.00       5/5           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [42]
+-----------------------------------------------
+                0.00    0.00       5/5           std::vector<int, std::allocator<int> >::~vector() [50]
+[45]     0.0    0.00    0.00       5         std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [45]
+                0.00    0.00       5/10          std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [26]
+                0.00    0.00       5/5           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [43]
+-----------------------------------------------
+                0.00    0.00       5/5           int* std::uninitialized_copy<int*, int*>(int*, int*, int*) [53]
+[46]     0.0    0.00    0.00       5         int* std::__uninitialized_copy<true>::uninitialized_copy<int*, int*>(int*, int*, int*) [46]
+                0.00    0.00       5/5           int* std::copy<int*, int*>(int*, int*, int*) [55]
+-----------------------------------------------
+                0.00    0.00       5/5           std::vector<int, std::allocator<int> >::reserve(unsigned long) [48]
+[47]     0.0    0.00    0.00       5         int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<int*>(unsigned long, int*, int*) [47]
+                0.00    0.00       5/5           std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [41]
+                0.00    0.00       5/15          std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [22]
+                0.00    0.00       5/5           int* std::__uninitialized_copy_a<int*, int*, int>(int*, int*, int*, std::allocator<int>&) [54]
+-----------------------------------------------
+                0.00    0.00       1/5           Matrix::slo(int*) [94]
+                0.00    0.00       4/5           BucketPQ<MinQueue>::BucketPQ(int, int) [109]
+[48]     0.0    0.00    0.00       5         std::vector<int, std::allocator<int> >::reserve(unsigned long) [48]
+                0.00    0.00       5/5           std::vector<int, std::allocator<int> >::max_size() const [37]
+                0.00    0.00       5/5           std::vector<int, std::allocator<int> >::capacity() const [36]
+                0.00    0.00       5/5           std::vector<int, std::allocator<int> >::size() const [35]
+                0.00    0.00       5/5           int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<int*>(unsigned long, int*, int*) [47]
+                0.00    0.00       5/15          std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [22]
+                0.00    0.00       5/10          void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [29]
+                0.00    0.00       5/10          std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [26]
+-----------------------------------------------
+                0.00    0.00       1/5           Matrix::slo(int*) [94]
+                0.00    0.00       4/5           BucketPQ<MinQueue>::BucketPQ(int, int) [109]
+[49]     0.0    0.00    0.00       5         std::vector<int, std::allocator<int> >::vector() [49]
+                0.00    0.00       5/5           std::_Vector_base<int, std::allocator<int> >::_Vector_base() [44]
+-----------------------------------------------
+                0.00    0.00       1/5           Matrix::slo(int*) [94]
+                0.00    0.00       4/5           BucketPQ<MinQueue>::~BucketPQ() [110]
+[50]     0.0    0.00    0.00       5         std::vector<int, std::allocator<int> >::~vector() [50]
+                0.00    0.00       5/15          std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [22]
+                0.00    0.00       5/10          void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [29]
+                0.00    0.00       5/5           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [45]
+-----------------------------------------------
+                0.00    0.00       5/5           int* std::__copy_move_a2<false, int*, int*>(int*, int*, int*) [52]
+[51]     0.0    0.00    0.00       5         int* std::__copy_move_a<false, int*, int*>(int*, int*, int*) [51]
+                0.00    0.00       5/5           int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*) [40]
+-----------------------------------------------
+                0.00    0.00       5/5           int* std::copy<int*, int*>(int*, int*, int*) [55]
+[52]     0.0    0.00    0.00       5         int* std::__copy_move_a2<false, int*, int*>(int*, int*, int*) [52]
+                0.00    0.00      15/15          std::__niter_base<int*, false>::__b(int*) [23]
+                0.00    0.00       5/5           int* std::__copy_move_a<false, int*, int*>(int*, int*, int*) [51]
+-----------------------------------------------
+                0.00    0.00       5/5           int* std::__uninitialized_copy_a<int*, int*, int>(int*, int*, int*, std::allocator<int>&) [54]
+[53]     0.0    0.00    0.00       5         int* std::uninitialized_copy<int*, int*>(int*, int*, int*) [53]
+                0.00    0.00       5/5           int* std::__uninitialized_copy<true>::uninitialized_copy<int*, int*>(int*, int*, int*) [46]
+-----------------------------------------------
+                0.00    0.00       5/5           int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<int*>(unsigned long, int*, int*) [47]
+[54]     0.0    0.00    0.00       5         int* std::__uninitialized_copy_a<int*, int*, int>(int*, int*, int*, std::allocator<int>&) [54]
+                0.00    0.00       5/5           int* std::uninitialized_copy<int*, int*>(int*, int*, int*) [53]
+-----------------------------------------------
+                0.00    0.00       5/5           int* std::__uninitialized_copy<true>::uninitialized_copy<int*, int*>(int*, int*, int*) [46]
+[55]     0.0    0.00    0.00       5         int* std::copy<int*, int*>(int*, int*, int*) [55]
+                0.00    0.00      10/10          std::__miter_base<int*, false>::__b(int*) [27]
+                0.00    0.00       5/5           int* std::__copy_move_a2<false, int*, int*>(int*, int*, int*) [52]
+-----------------------------------------------
+                0.00    0.00       2/2           RunningTimeInfo runOrderingAndColoringAlgorithm<IMatrix, ColPack::Timer>(Configuration*, IMatrix*, ColPack::Timer&) [71]
+[56]     0.0    0.00    0.00       2         ColPack::Timer::GetWallTime() [56]
+-----------------------------------------------
+                0.00    0.00       2/2           RunningTimeInfo runOrderingAndColoringAlgorithm<IMatrix, ColPack::Timer>(Configuration*, IMatrix*, ColPack::Timer&) [71]
+[57]     0.0    0.00    0.00       2         ColPack::Timer::Stop() [57]
+-----------------------------------------------
+                0.00    0.00       1/2           run(Configuration*) [72]
+                0.00    0.00       1/2           RunningTimeInfo runOrderingAndColoringAlgorithm<IMatrix, ColPack::Timer>(Configuration*, IMatrix*, ColPack::Timer&) [71]
+[58]     0.0    0.00    0.00       2         ColPack::Timer::Start() [58]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [192]
+[59]     0.0    0.00    0.00       1         global constructors keyed to _Z13display_usagev [59]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [73]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [192]
+[60]     0.0    0.00    0.00       1         global constructors keyed to _Z16gcolor_getrusageR6rusage [60]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [74]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [192]
+[61]     0.0    0.00    0.00       1         global constructors keyed to _ZN12IRowColumnDSC2Eiiib [61]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [79]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [192]
+[62]     0.0    0.00    0.00       1         global constructors keyed to _ZN13MatrixUtility10loadMatrixESsP6Matrix [62]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [76]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [192]
+[63]     0.0    0.00    0.00       1         global constructors keyed to _ZN6MatrixC2Eiiib [63]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [75]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [192]
+[64]     0.0    0.00    0.00       1         global constructors keyed to _ZN7ColPack5TimerC2Ev [64]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [77]
+-----------------------------------------------
+                0.00    0.00       1/1           __do_global_ctors_aux [192]
+[65]     0.0    0.00    0.00       1         global constructors keyed to _ZN7IMatrixC2Eiiib [65]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [78]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[66]     0.0    0.00    0.00       1         readBanner(Configuration*) [66]
+                0.00    0.00       1/1           mm_read_banner(_IO_FILE*, char (*) [4]) [68]
+                0.00    0.00       1/1           mm_read_mtx_crd_size(_IO_FILE*, int*, int*, int*) [69]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[67]     0.0    0.00    0.00       1         canReadFile(Configuration*) [67]
+-----------------------------------------------
+                0.00    0.00       1/1           readBanner(Configuration*) [66]
+[68]     0.0    0.00    0.00       1         mm_read_banner(_IO_FILE*, char (*) [4]) [68]
+-----------------------------------------------
+                0.00    0.00       1/1           readBanner(Configuration*) [66]
+[69]     0.0    0.00    0.00       1         mm_read_mtx_crd_size(_IO_FILE*, int*, int*, int*) [69]
+-----------------------------------------------
+                0.00    0.00       1/1           main [5]
+[70]     0.0    0.00    0.00       1         processCommandLineParameters(int, char**, Configuration*) [70]
+                0.00    0.00       1/1           CLI::parseMethod(char*) [90]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[71]     0.0    0.00    0.00       1         RunningTimeInfo runOrderingAndColoringAlgorithm<IMatrix, ColPack::Timer>(Configuration*, IMatrix*, ColPack::Timer&) [71]
+                0.00    0.00       2/2           ColPack::Timer::Stop() [57]
+                0.00    0.00       2/2           ColPack::Timer::GetWallTime() [56]
+                0.00    0.00       1/1           Matrix::slo(int*) [94]
+                0.00    0.00       1/2           ColPack::Timer::Start() [58]
+                0.00    0.00       1/1           Matrix::greedycolor(int*, int*) [92]
+                0.00    0.00       1/1           RunningTimeInfo::RunningTimeInfo(int, double, double, int*) [89]
+-----------------------------------------------
+                0.00    0.00       1/1           main [5]
+[72]     0.0    0.00    0.00       1         run(Configuration*) [72]
+                0.00    0.00       1/1           Result::Result() [101]
+                0.00    0.00       1/1           canReadFile(Configuration*) [67]
+                0.00    0.00       1/1           Result::printInfo() [100]
+                0.00    0.00       1/1           readBanner(Configuration*) [66]
+                0.00    0.00       1/1           Matrix::Matrix(int, int, int, bool) [95]
+                0.00    0.00       1/1           IMatrix::setVerify(bool) [105]
+                0.00    0.00       1/1           ColPack::Timer::Timer() [103]
+                0.00    0.00       1/1           void readData<IMatrix>(Configuration*, _IO_FILE*, IMatrix*) [80]
+                0.00    0.00       1/2           ColPack::Timer::Start() [58]
+                0.00    0.00       1/1           IRowColumnDS::compress() [83]
+                0.00    0.00       1/1           IRowColumnDS::computeCCS() [81]
+                0.00    0.00       1/1           IRowColumnDS::computeCRS() [82]
+                0.00    0.00       1/1           Matrix::computedegree() [93]
+                0.00    0.00       1/1           RunningTimeInfo runOrderingAndColoringAlgorithm<IMatrix, ColPack::Timer>(Configuration*, IMatrix*, ColPack::Timer&) [71]
+                0.00    0.00       1/1           Result::printMatrixInfo() [99]
+                0.00    0.00       1/1           Result::printResult() [98]
+                0.00    0.00       1/1           Matrix::~Matrix() [96]
+                0.00    0.00       1/1           ColPack::Timer::~Timer() [104]
+                0.00    0.00       1/1           Result::~Result() [102]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _Z13display_usagev [59]
+[73]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [73]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _Z16gcolor_getrusageR6rusage [60]
+[74]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [74]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN6MatrixC2Eiiib [63]
+[75]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [75]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN13MatrixUtility10loadMatrixESsP6Matrix [62]
+[76]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [76]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN7ColPack5TimerC2Ev [64]
+[77]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [77]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN7IMatrixC2Eiiib [65]
+[78]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [78]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to _ZN12IRowColumnDSC2Eiiib [61]
+[79]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [79]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[80]     0.0    0.00    0.00       1         void readData<IMatrix>(Configuration*, _IO_FILE*, IMatrix*) [80]
+                0.00    0.00    7327/7327        IRowColumnDS::setIndRowEntry(int, int) [17]
+                0.00    0.00    7327/7327        IRowColumnDS::setIndColEntry(int, int) [16]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[81]     0.0    0.00    0.00       1         IRowColumnDS::computeCCS() [81]
+                0.00    0.00    7327/7327        IRowColumnDS::max(int, int) [18]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[82]     0.0    0.00    0.00       1         IRowColumnDS::computeCRS() [82]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[83]     0.0    0.00    0.00       1         IRowColumnDS::compress() [83]
+-----------------------------------------------
+                0.00    0.00       1/1           IMatrix::IMatrix(int, int, int, bool) [106]
+[84]     0.0    0.00    0.00       1         IRowColumnDS::IRowColumnDS(int, int, int, bool) [84]
+-----------------------------------------------
+                0.00    0.00       1/1           IMatrix::~IMatrix() [107]
+[85]     0.0    0.00    0.00       1         IRowColumnDS::~IRowColumnDS() [85]
+-----------------------------------------------
+                0.00    0.00       1/1           main [5]
+[86]     0.0    0.00    0.00       1         Configuration::Configuration() [86]
+-----------------------------------------------
+                0.00    0.00       1/1           main [5]
+[87]     0.0    0.00    0.00       1         Configuration::~Configuration() [87]
+                0.00    0.00       1/1           Configuration::~Configuration() [88]
+-----------------------------------------------
+                0.00    0.00       1/1           Configuration::~Configuration() [87]
+[88]     0.0    0.00    0.00       1         Configuration::~Configuration() [88]
+-----------------------------------------------
+                0.00    0.00       1/1           RunningTimeInfo runOrderingAndColoringAlgorithm<IMatrix, ColPack::Timer>(Configuration*, IMatrix*, ColPack::Timer&) [71]
+[89]     0.0    0.00    0.00       1         RunningTimeInfo::RunningTimeInfo(int, double, double, int*) [89]
+-----------------------------------------------
+                0.00    0.00       1/1           processCommandLineParameters(int, char**, Configuration*) [70]
+[90]     0.0    0.00    0.00       1         CLI::parseMethod(char*) [90]
+-----------------------------------------------
+                0.00    0.00       1/1           Result::printInfo() [100]
+[91]     0.0    0.00    0.00       1         CLI::method_to_string(CLI::ordering_method) [91]
+-----------------------------------------------
+                0.00    0.00       1/1           RunningTimeInfo runOrderingAndColoringAlgorithm<IMatrix, ColPack::Timer>(Configuration*, IMatrix*, ColPack::Timer&) [71]
+[92]     0.0    0.00    0.00       1         Matrix::greedycolor(int*, int*) [92]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[93]     0.0    0.00    0.00       1         Matrix::computedegree() [93]
+                0.00    0.00   24826/24826       int const& std::max<int>(int const&, int const&) [8]
+-----------------------------------------------
+                0.00    0.00       1/1           RunningTimeInfo runOrderingAndColoringAlgorithm<IMatrix, ColPack::Timer>(Configuration*, IMatrix*, ColPack::Timer&) [71]
+[94]     0.0    0.00    0.00       1         Matrix::slo(int*) [94]
+                0.00    0.00  230059/450466      std::vector<int, std::allocator<int> >::operator[](unsigned long) [6]
+                0.00    0.00   12730/12730       int const& std::min<int>(int const&, int const&) [12]
+                0.00    0.00   12413/12413       BucketPQ<MinQueue>::decrease(int) [15]
+                0.00    0.00   12413/12413       BucketPQ<MinQueue>::get(int) [13]
+                0.00    0.00     317/12730       BucketPQ<MinQueue>::insert(int, int) [10]
+                0.00    0.00     317/317         BucketPQ<MinQueue>::top() [20]
+                0.00    0.00     317/317         BucketPQ<MinQueue>::pop() [19]
+                0.00    0.00       1/5           std::vector<int, std::allocator<int> >::vector() [49]
+                0.00    0.00       1/5           std::vector<int, std::allocator<int> >::reserve(unsigned long) [48]
+                0.00    0.00       1/1           BucketPQ<MinQueue>::BucketPQ(int, int) [109]
+                0.00    0.00       1/1           BucketPQ<MinQueue>::~BucketPQ() [110]
+                0.00    0.00       1/5           std::vector<int, std::allocator<int> >::~vector() [50]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[95]     0.0    0.00    0.00       1         Matrix::Matrix(int, int, int, bool) [95]
+                0.00    0.00       1/1           IMatrix::IMatrix(int, int, int, bool) [106]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[96]     0.0    0.00    0.00       1         Matrix::~Matrix() [96]
+                0.00    0.00       1/1           Matrix::~Matrix() [97]
+-----------------------------------------------
+                0.00    0.00       1/1           Matrix::~Matrix() [96]
+[97]     0.0    0.00    0.00       1         Matrix::~Matrix() [97]
+                0.00    0.00       1/1           IMatrix::~IMatrix() [107]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[98]     0.0    0.00    0.00       1         Result::printResult() [98]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[99]     0.0    0.00    0.00       1         Result::printMatrixInfo() [99]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[100]    0.0    0.00    0.00       1         Result::printInfo() [100]
+                0.00    0.00       1/1           CLI::method_to_string(CLI::ordering_method) [91]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[101]    0.0    0.00    0.00       1         Result::Result() [101]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[102]    0.0    0.00    0.00       1         Result::~Result() [102]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[103]    0.0    0.00    0.00       1         ColPack::Timer::Timer() [103]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[104]    0.0    0.00    0.00       1         ColPack::Timer::~Timer() [104]
+-----------------------------------------------
+                0.00    0.00       1/1           run(Configuration*) [72]
+[105]    0.0    0.00    0.00       1         IMatrix::setVerify(bool) [105]
+-----------------------------------------------
+                0.00    0.00       1/1           Matrix::Matrix(int, int, int, bool) [95]
+[106]    0.0    0.00    0.00       1         IMatrix::IMatrix(int, int, int, bool) [106]
+                0.00    0.00       1/1           IRowColumnDS::IRowColumnDS(int, int, int, bool) [84]
+-----------------------------------------------
+                0.00    0.00       1/1           Matrix::~Matrix() [97]
+[107]    0.0    0.00    0.00       1         IMatrix::~IMatrix() [107]
+                0.00    0.00       1/1           IRowColumnDS::~IRowColumnDS() [85]
+-----------------------------------------------
+                0.00    0.00       1/1           BucketPQ<MinQueue>::BucketPQ(int, int) [109]
+[108]    0.0    0.00    0.00       1         BucketPQ<MinQueue>::make_empty() [108]
+                0.00    0.00     810/450466      std::vector<int, std::allocator<int> >::operator[](unsigned long) [6]
+-----------------------------------------------
+                0.00    0.00       1/1           Matrix::slo(int*) [94]
+[109]    0.0    0.00    0.00       1         BucketPQ<MinQueue>::BucketPQ(int, int) [109]
+                0.00    0.00       4/5           std::vector<int, std::allocator<int> >::vector() [49]
+                0.00    0.00       4/5           std::vector<int, std::allocator<int> >::reserve(unsigned long) [48]
+                0.00    0.00       1/1           MinQueue::opt_init_value(int) [111]
+                0.00    0.00       1/1           BucketPQ<MinQueue>::make_empty() [108]
+-----------------------------------------------
+                0.00    0.00       1/1           Matrix::slo(int*) [94]
+[110]    0.0    0.00    0.00       1         BucketPQ<MinQueue>::~BucketPQ() [110]
+                0.00    0.00       4/5           std::vector<int, std::allocator<int> >::~vector() [50]
+-----------------------------------------------
+                0.00    0.00       1/1           BucketPQ<MinQueue>::BucketPQ(int, int) [109]
+[111]    0.0    0.00    0.00       1         MinQueue::opt_init_value(int) [111]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [59] global constructors keyed to _Z13display_usagev [91] CLI::method_to_string(CLI::ordering_method) [33] __gnu_cxx::new_allocator<int>::~new_allocator()
+  [60] global constructors keyed to _Z16gcolor_getrusageR6rusage [92] Matrix::greedycolor(int*, int*) [24] __gnu_cxx::new_allocator<int>::max_size() const
+  [61] global constructors keyed to _ZN12IRowColumnDSC2Eiiib [93] Matrix::computedegree() [34] std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const
+  [62] global constructors keyed to _ZN13MatrixUtility10loadMatrixESsP6Matrix [94] Matrix::slo(int*) [35] std::vector<int, std::allocator<int> >::size() const
+  [63] global constructors keyed to _ZN6MatrixC2Eiiib [95] Matrix::Matrix(int, int, int, bool) [36] std::vector<int, std::allocator<int> >::capacity() const
+  [64] global constructors keyed to _ZN7ColPack5TimerC2Ev [96] Matrix::~Matrix() [37] std::vector<int, std::allocator<int> >::max_size() const
+  [65] global constructors keyed to _ZN7IMatrixC2Eiiib [97] Matrix::~Matrix() [38] std::allocator<int>::allocator()
+  [66] readBanner(Configuration*) [98] Result::printResult() [39] std::allocator<int>::~allocator()
+  [67] canReadFile(Configuration*) [99] Result::printMatrixInfo() [40] int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*)
+  [68] mm_read_banner(_IO_FILE*, char (*) [4]) [100] Result::printInfo() [25] void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+  [69] mm_read_mtx_crd_size(_IO_FILE*, int*, int*, int*) [101] Result::Result() [41] std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long)
+  [70] processCommandLineParameters(int, char**, Configuration*) [102] Result::~Result() [42] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl()
+  [71] RunningTimeInfo runOrderingAndColoringAlgorithm<IMatrix, ColPack::Timer>(Configuration*, IMatrix*, ColPack::Timer&) [56] ColPack::Timer::GetWallTime() [43] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+  [72] run(Configuration*)    [57] ColPack::Timer::Stop() [26] std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long)
+  [73] __static_initialization_and_destruction_0(int, int) [58] ColPack::Timer::Start() [22] std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+  [74] __static_initialization_and_destruction_0(int, int) [103] ColPack::Timer::Timer() [44] std::_Vector_base<int, std::allocator<int> >::_Vector_base()
+  [75] __static_initialization_and_destruction_0(int, int) [104] ColPack::Timer::~Timer() [45] std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  [76] __static_initialization_and_destruction_0(int, int) [105] IMatrix::setVerify(bool) [27] std::__miter_base<int*, false>::__b(int*)
+  [77] __static_initialization_and_destruction_0(int, int) [106] IMatrix::IMatrix(int, int, int, bool) [23] std::__niter_base<int*, false>::__b(int*)
+  [78] __static_initialization_and_destruction_0(int, int) [107] IMatrix::~IMatrix() [46] int* std::__uninitialized_copy<true>::uninitialized_copy<int*, int*>(int*, int*, int*)
+  [79] __static_initialization_and_destruction_0(int, int) [108] BucketPQ<MinQueue>::make_empty() [47] int* std::vector<int, std::allocator<int> >::_M_allocate_and_copy<int*>(unsigned long, int*, int*)
+  [80] void readData<IMatrix>(Configuration*, _IO_FILE*, IMatrix*) [13] BucketPQ<MinQueue>::get(int) [48] std::vector<int, std::allocator<int> >::reserve(unsigned long)
+  [81] IRowColumnDS::computeCCS() [19] BucketPQ<MinQueue>::pop() [49] std::vector<int, std::allocator<int> >::vector()
+  [82] IRowColumnDS::computeCRS() [20] BucketPQ<MinQueue>::top() [50] std::vector<int, std::allocator<int> >::~vector()
+  [16] IRowColumnDS::setIndColEntry(int, int) [14] BucketPQ<MinQueue>::change(int, int) [6] std::vector<int, std::allocator<int> >::operator[](unsigned long)
+  [17] IRowColumnDS::setIndRowEntry(int, int) [10] BucketPQ<MinQueue>::insert(int, int) [51] int* std::__copy_move_a<false, int*, int*>(int*, int*, int*)
+  [18] IRowColumnDS::max(int, int) [11] BucketPQ<MinQueue>::remove(int) [52] int* std::__copy_move_a2<false, int*, int*>(int*, int*, int*)
+  [83] IRowColumnDS::compress() [15] BucketPQ<MinQueue>::decrease(int) [53] int* std::uninitialized_copy<int*, int*>(int*, int*, int*)
+  [84] IRowColumnDS::IRowColumnDS(int, int, int, bool) [109] BucketPQ<MinQueue>::BucketPQ(int, int) [54] int* std::__uninitialized_copy_a<int*, int*, int>(int*, int*, int*, std::allocator<int>&)
+  [85] IRowColumnDS::~IRowColumnDS() [110] BucketPQ<MinQueue>::~BucketPQ() [8] int const& std::max<int>(int const&, int const&)
+  [86] Configuration::Configuration() [111] MinQueue::opt_init_value(int) [12] int const& std::min<int>(int const&, int const&)
+  [87] Configuration::~Configuration() [7] MinQueue::opt(int, int) [55] int* std::copy<int*, int*>(int*, int*, int*)
+  [88] Configuration::~Configuration() [21] MinQueue::next_op(int) [28] void std::_Destroy<int*>(int*, int*)
+  [89] RunningTimeInfo::RunningTimeInfo(int, double, double, int*) [30] __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [29] void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+   [9] PriorityQueueItem::PriorityQueueItem(int, int) [31] __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*)
+  [90] CLI::parseMethod(char*) [32] __gnu_cxx::new_allocator<int>::new_allocator()

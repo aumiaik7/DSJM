@@ -1,0 +1,11 @@
+- 
+    commandLine: Not Given
+    inputFile: data/e30r1000.mtx
+    segmented: no
+    method: SLO
+    matrix_M: 9661
+    matrix_N: 9661
+    matrix_NNZ: 306356
+    totalColors: 71
+    ordering_time: 0.34
+    coloring_time: 0.04

@@ -1,0 +1,10 @@
+- 
+    commandLine: Not Given
+    inputFile: data/e30r1000.mtx
+    segmented: no
+    method: RLF
+    matrix_M: 9661
+    matrix_N: 9661
+    matrix_NNZ: 306356
+    totalColors: 66
+    coloring_time: 3.89

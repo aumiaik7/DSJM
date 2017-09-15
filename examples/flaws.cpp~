@@ -1,0 +1,201 @@
+/* Step 5 */
+#include "algorithm2.h"
+#include <iostream>
+#include <cstdlib>
+#include <cmath>
+using namespace std;
+
+/*Calculate the flaws */
+void flaws(double **fh, double**fy, double *matrix, double **v, double **z, double **w, int N, int a, int t, int sta, double ab, int *color ,double *delta, double **abc, int *pro, int *pco, int cc){
+
+int cnt;
+int en=sta+N;
+double o1;
+int fr[N+5];
+int fp[N+5];
+int gi[N*N*100];
+int fry[N+5];
+int fpy[N+5];
+int giy[N*N*100];
+int l=0;
+int g=0;
+int tp=0;
+fr[-1]=-1;
+for (int i=1;i<N+5;i++){
+	fr[i]=0;
+	fp[i]=0;}
+/*
+if(t!=0){
+	for (int i=0;i<N;i++){			
+		for (int j=sta;j<en;j++){
+			cnt=0;
+			if (w[i][j]!=0){
+				for (int ji=0;ji<N;ji++)
+					if (delta[ji]==w[i][j] || delta[ji]==w[i][j]/ab)
+						goto ll;
+			for (int lj=0;lj<N;lj++){
+				if (v[i][lj]==1 && color[lj]-1==j){
+				
+				for (int k=i;k<en;k++){
+					if (w[i][k]!=0){
+				
+				int q1=j%N;
+				int q2=k%N;
+
+				if(i==q1 && i==q2){
+					if(w[i][j]-w[i][k] < (1)*pow(10,-6)*(w[i][k]+w[i][j])){
+					//if(w[i][k] == w[i][i]){
+						cnt ++;
+						if (cnt>t/2)
+							fh[i][i]=v[i][i];
+						else
+							fh[i][i]=v[i][i];
+						if (i!=fr[l-1]){
+							fr[l]=i;
+							fp[l]=tp;
+							l++;}
+						gi[tp]=j%N;
+						tp++;}
+					}
+							
+			}}
+			if (lj>i){
+				fh[i][lj]=1;
+				fh[lj][i]=1;
+				if (i!=fr[l-1]){
+					fr[l]=i;
+					fp[l]=tp;
+					l++;}
+				gi[tp]=j%N;
+				tp++;}
+			}}}		
+		ll: cout<<"";	
+		} 
+		
+	}
+	fp[l]=tp;
+}
+if (t==0){*/
+for (int i=0; i<N; i++)
+	for (int k=0; k<a; k++){
+			if (z[i][k]!=0 ){
+				for (int j=0;j<N;j++)
+				//if (delta[j]==z[i][k])
+				if (delta[j]==z[i][k] || delta[j]==z[i][k]/ab)
+					goto l1;
+			
+				//o1=z[i][k]/ab;
+			
+				//for (int j=0;j<N;j++)
+				//if (delta[j]==o1)
+					//goto l1;
+			for (int j=0;j<N;j++){
+				if (v[i][j]==1){
+					if (color[j]-1==k){
+					if (i!=fr[l-1]){
+							fr[l]=i;
+							fp[l]=tp;
+							l++;}
+						gi[tp]=k;
+						tp++;	
+					//cout<<"color: "<<color[j]<<"i: "<<i<<"j: "<<j<<"k: "<<k<< " \n";
+						if (i==j)
+							fh[i][j]=1;
+					
+						else if (j>i){
+							fh[i][j]=1;
+							fh[j][i]=1;}	
+						}
+					}
+				}
+			l1: cout<<"";
+			}
+		}
+
+	fp[l]=tp;
+//}
+/*cout<<"fr: "<<endl;
+for (int i=0;i<l+1;i++)
+	cout<<fr[i]<<" ";
+cout<<"\ngi: "<<endl;
+for (int i=0;i<t+1;i++)
+	cout<<gi[i]<<" ";
+cout<<"\nfp: "<<endl;
+for (int i=0;i<l+1;i++)
+	cout<<fp[i]<<" ";
+cout<<" l:"<<l<<"\n";*/
+int aa=0;
+
+for (int i=0; i<N; i++)
+	for (int j=0; j<N; j++)
+		abc[i][j]=0;
+if(l>0){
+	for (int i=0; i<l+1; i++)
+			for (int k=fp[i];k<fp[i+1];k++)
+				for (int l1=0; l1<N; l1++)
+					if (gi[k]==color[l1]-1 && l1!=fp[i]){
+						abc[fr[i]][l1]=25;
+						abc[l1][fr[i]]=25;
+						/*pro[aa]=fr[i];
+						pco[aa]=l1;
+						aa++;
+						if(fr[i]!=l1){
+						pro[aa]=l1;
+						pco[aa]=fr[i];
+						aa++;}*/
+						}
+	}
+l=0;
+g=0;
+tp=0;
+fry[-1]=-1;
+for (int i=1;i<N+5;i++){
+	fry[i]=0;
+	fpy[i]=0;}
+	for (int i=0; i<N; i++)
+		for (int j=0; j<a; j++)
+			if (z[i][j]!=0 && z[i][j]!=delta[i]){
+					double o1=z[i][j]/ab;
+				for (int k=0;k<N;k++)
+					if (delta[k]==o1){	
+					//for (int l=0;l<N;l++)
+						//if(v[i][l]==0 && color[l]-1==j)
+						fy[i][j]=z[i][j];
+						if (i!=fry[l-1]){
+							fry[l]=i;
+							fpy[l]=tp;
+							l++;}
+						giy[tp]=j;
+						tp++;}
+				}
+			fpy[l]=tp;
+/*cout<<"\nfry: "<<endl;
+for (int i=0;i<l+1;i++)
+	cout<<fry[i]<<" ";
+cout<<"\ngiy: "<<endl;
+for (int i=0;i<t+1;i++)
+	cout<<giy[i]<<" ";
+cout<<"\nfpy: "<<endl;
+for (int i=0;i<l+1;i++)
+	cout<<fpy[i]<<" ";
+cout<<" l:"<<l<<"\n";*/
+	for (int i=0; i<l+1; i++)
+			for (int k=fpy[i];k<fpy[i+1];k++){
+				for (int l1=0; l1<N; l1++)
+					if (giy[k]==color[l1]-1){
+						abc[fry[i]][l1]=25;
+						abc[l1][fry[i]]=25;
+						/*pro[aa]=fry[i];
+						pco[aa]=l1;
+						aa++;
+						if(fr[i]!=l1){
+						pro[aa]=l1;
+						pco[aa]=fry[i];
+						aa++;}*/
+						}
+			}
+/*cc=aa;
+cout<<"cc: "<<cc<<"\n";	
+for (int i=0;i<cc; i++)
+	cout<<"pro: and pco: "<<pro[i]<<" / "<<pco[i]<<"#";*/
+}

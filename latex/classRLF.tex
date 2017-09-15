@@ -1,0 +1,99 @@
+\hypertarget{classRLF}{
+\section{RLF Class Reference}
+\label{classRLF}\index{RLF@{RLF}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRLF_a5d1fd0749544610d7573ab3cb2fecf1a}{
+{\footnotesize template$<$typename PreviousOrderingMethod $>$ }\\{\bfseries RLF} (int M\_\-, int N\_\-, int $\ast$ndeg\_\-, int $\ast$jpntr\_\-, int $\ast$indRow\_\-, int $\ast$ipntr\_\-, int $\ast$indCol\_\-, int $\ast$list\_\-, int $\ast$ngrp\_\-, int maxBucket\_\-, PreviousOrderingMethod \&previousOrderingMethod, int howMany\_\-)}
+\label{classRLF_a5d1fd0749544610d7573ab3cb2fecf1a}
+
+\item 
+int \hyperlink{classRLF_a327af9b44d25f836502b0184a98e673d}{work} ()
+\item 
+\hypertarget{classRLF_acde1c9e75affce9be79796b065b71d29}{
+int {\bfseries getDeg} (int jcol)}
+\label{classRLF_acde1c9e75affce9be79796b065b71d29}
+
+\item 
+\hypertarget{classRLF_acfd8a03e49e1122927b297de5d2e5aca}{
+int {\bfseries getNumOrd} ()}
+\label{classRLF_acfd8a03e49e1122927b297de5d2e5aca}
+
+\item 
+\hypertarget{classRLF_a188650f31e55c11f0dbbc2fc53697ec6}{
+void {\bfseries tagit} (int jcol)}
+\label{classRLF_a188650f31e55c11f0dbbc2fc53697ec6}
+
+\item 
+\hypertarget{classRLF_a1aef590b0a66b214e48378c9b8618d6f}{
+void {\bfseries tagit} (int jcol, int value)}
+\label{classRLF_a1aef590b0a66b214e48378c9b8618d6f}
+
+\item 
+\hypertarget{classRLF_a5c45cecd023ceff0279a6155b26fc0ce}{
+void {\bfseries untagit} (int jcol)}
+\label{classRLF_a5c45cecd023ceff0279a6155b26fc0ce}
+
+\item 
+\hypertarget{classRLF_aefb3a2f842f26794c5f9dff02dd79dd7}{
+bool {\bfseries isTagged} (int jcol)}
+\label{classRLF_aefb3a2f842f26794c5f9dff02dd79dd7}
+
+\item 
+\hypertarget{classRLF_a83954f50be5700233af332d0e3a36ca4}{
+int {\bfseries getNumOrd} () const }
+\label{classRLF_a83954f50be5700233af332d0e3a36ca4}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRLF_a601cf7fff1ba0d4725723739ac4ca7a4}{
+{\footnotesize template$<$typename T\_\-PriorityQueue , typename Tag $>$ }\\static int {\bfseries pq\_\-updateDegreesToUVertices} (int n, int jcol, int maxdeg, int $\ast$jpntr, int $\ast$indRow, int $\ast$ipntr, int $\ast$indCol, bool $\ast$inU, Tag \&tag, int $\ast$u\_\-tag, T\_\-PriorityQueue \&u\_\-queue, int $\ast$blackList, const int q)}
+\label{classRLF_a601cf7fff1ba0d4725723739ac4ca7a4}
+
+\item 
+\hypertarget{classRLF_a03f1d1159fba88ffcf071ccf3b7e26b2}{
+{\footnotesize template$<$typename T\_\-PriorityQueue , typename Tag $>$ }\\static void {\bfseries pq\_\-initializeDegreesToUVertices} (int n, Tag \&tag, T\_\-PriorityQueue \&u\_\-queue, bool $\ast$inU, int $\ast$u\_\-tag)}
+\label{classRLF_a03f1d1159fba88ffcf071ccf3b7e26b2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRLF_a281dd488844b24d24d5bc86a1e9c04ab}{
+const OrderingMethod::ordering\_\-direction {\bfseries ord\_\-direction}}
+\label{classRLF_a281dd488844b24d24d5bc86a1e9c04ab}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRLF_a327af9b44d25f836502b0184a98e673d}{
+\index{RLF@{RLF}!work@{work}}
+\index{work@{work}!RLF@{RLF}}
+\subsubsection[{work}]{\setlength{\rightskip}{0pt plus 5cm}int RLF::work ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classRLF_a327af9b44d25f836502b0184a98e673d}
+
+
+Choose a column jcol of maximal degree mindeg.
+
+Choose a column jcol that has maximal degree in set U.
+
+Tag the column, as it has been colored.
+
+Find All Columns adjacent to column jcol. Determine all positions (ir,jcol) which correspond to non-\/zeroes in the matrix.
+
+For each row ir, determine all positions (ir,ic) which correspond to non-\/zeroes in the matrix.
+
+Array tag marks columns whch are adjacent to column jcol
+
+We found the solution
+
+We are supposed to initialize V, U
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/RLF.hh\end{DoxyCompactItemize}

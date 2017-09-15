@@ -1,0 +1,11 @@
+- 
+    commandLine: Not Given
+    inputFile: data/e20r0000.mtx
+    segmented: no
+    method: SLO
+    matrix_M: 4241
+    matrix_N: 4241
+    matrix_NNZ: 131556
+    totalColors: 70
+    ordering_time: 0.14
+    coloring_time: 0.01

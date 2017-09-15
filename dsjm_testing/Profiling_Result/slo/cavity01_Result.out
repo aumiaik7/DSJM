@@ -1,0 +1,11 @@
+- 
+    commandLine: Not Given
+    inputFile: data/cavity01.mtx
+    segmented: no
+    method: SLO
+    matrix_M: 317
+    matrix_N: 317
+    matrix_NNZ: 7327
+    totalColors: 62
+    ordering_time: 0
+    coloring_time: 0.01

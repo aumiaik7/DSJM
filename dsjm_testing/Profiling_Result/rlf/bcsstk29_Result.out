@@ -1,0 +1,10 @@
+- 
+    commandLine: Not Given
+    inputFile: data/bcsstk29.mtx
+    segmented: no
+    method: RLF
+    matrix_M: 13992
+    matrix_N: 13992
+    matrix_NNZ: 619488
+    totalColors: 72
+    coloring_time: 7

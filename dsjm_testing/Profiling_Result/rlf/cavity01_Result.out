@@ -1,0 +1,10 @@
+- 
+    commandLine: Not Given
+    inputFile: data/cavity01.mtx
+    segmented: no
+    method: RLF
+    matrix_M: 317
+    matrix_N: 317
+    matrix_NNZ: 7327
+    totalColors: 62
+    coloring_time: 0.05
