@@ -1,0 +1,17 @@
+DSJM: A software toolkit for determination of sparse jacobian matrices
+======================================================================
+
+How to Compile
+----------------------------------------
+1. ./configure
+2. make
+
+Make sure that you have all the required libraries.
+
+For further informations about the source files see the corresponding
+README files in src/README and test/src/README.
+
+Required Libraries
+----------------------------------------------------------------------
+1. CppUnit
+

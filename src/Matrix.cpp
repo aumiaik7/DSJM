@@ -372,6 +372,8 @@ bool Matrix::slo(int *list)
  *                  otherwise returns false.
  *
  */
+//this method is used to find the upper bound for dsatur based exact coloring algorithm
+// instead of this method the no. of columns can also be used as an upper bound
 bool Matrix::idoDsatur(int *order, int *clique)
 {
     int *head,*previous, *next, *tag, *inducedDeg;
@@ -1047,13 +1049,11 @@ int Matrix::rlf(int *color)
                 // Start a new Color Class or Independent set.
                 q = q + 1;
 
-
                 newColorClass = true;
 
                 // Swap values.
                 countV =  countU;
                 countU = 0;
-
 
                 u_maxdeg = 0;
 
@@ -1447,15 +1447,6 @@ bool Matrix::lfo(int *order)
 
 }
 
-/* class SLOTempMemory
-{
-public:
-  SLOTempMemory()
-    :
-  {}
-};
-*/
-
  /**
   *
   * @Description:
@@ -1500,9 +1491,7 @@ public:
 int Matrix::sdo(int *color)
 {
     int *satDeg = NULL;
-    //int *head = NULL;
     int **head = NULL;
-    //int *headj = NULL;
     int *next = NULL;
     int *previous = NULL;
     int *tag = NULL;
@@ -1510,30 +1499,15 @@ int Matrix::sdo(int *color)
     int maxgrp = 0;
     int *inducedDeg = NULL;	
     int *maxSatTrack = NULL;
-
-    //boost::dynamic_bitset<>** bitsets;
-
     bool **colorTracker;
-
-
-   
-    
-
-
-    // for(boost::dynamic_bitset<>::size_type i = 0; i < x.size(); i++)
-    //     std::cout << x[i];
-
-    // std::cout << "\n";
-    // std::cout << x << "\n"; 
-
 
     try
     {
         // The following three integer arrays consist of a doubly linked satDeg. It acts
         // as a bucket priority queue for the incidence degree of the columns.
 
-        // head(deg) is the first column in the deg satDeg unless head(deg) =
-        // 0. If head(deg) = 0 there are no columns in the deg satDeg.
+        // head(deg)(inDeg) is the first column in the deg satDeg and induced deg unless 
+        // head(deg)(inDeg) = 0. If head(deg)(incDeg) = 0 there are no columns in the deg satDeg and inDeg.
 
         // previous(col) is the column before col in the incidence satDeg unless
         // previous(col) = 0. If previous(col) = 0,  col is the first column in this
@@ -1543,7 +1517,7 @@ int Matrix::sdo(int *color)
         // next(col) = 0. If next(col) = 0,  col is the last column in this incidence
         // satDeg.
 
-        //head     = new int[N];
+        head = new int*[N+1]; //2D head to find column of maximum saturation degree and maximum induced degree 
         next     = new int[N+1];
         previous = new int[N+1];
 
@@ -1564,42 +1538,35 @@ int Matrix::sdo(int *color)
 
         colorTracker = new bool*[N+1]; //track whether the colored column is a new colored column for its neighbors
 
-        head = new int*[N+1]; //2D head to find column of maximum saturation degree and maximum induced degree 
+       
 
         maxSatTrack = new int[N+1](); //track the no of column in saturation degree lists 
 
-        int* incMax = new  int[maxdeg+1](); //holds the maximum induced degree in saturation degree lists
+        int* indMax = new  int[maxdeg+1](); //holds the maximum induced degree in saturation degree lists
 
                
         head[0] = new int[maxdeg+1](); //initialize saturation degree 0 list 
   
-        // Initialize the doubly linked list, <id:satDeg>, and <id:tag> and <id:order> integer array.
-        //for (int jp = N; jp >= 1; jp--)
-        incMax[0] = maxdeg;
+        // Initialization
+        indMax[0] = maxdeg;
         for (int jp = 1; jp <= N; jp++)
         {
-            //int ic = tag[jp]; // Tag is sorted indices for now 
             int ic = jp;
             head[jp] = NULL;       
-            
-
-            tag[jp] = 0;
+	    tag[jp] = 0;
             satDeg[jp] = 0;
             color[jp] = N;
             seqTag[jp] = 0;
-            //*(bitsets+jp) = NULL; 
             colorTracker[jp] = NULL;
-           //headj[jp] = -1;
-	        inducedDeg[jp] = ndeg[jp];
+            inducedDeg[jp] = ndeg[jp];
             maxSatTrack[0]++;
             addColumn2(head,next,previous,inducedDeg[jp],0,jp);
         }
         
        
-        cout<<"maxSatTrack[0] : "<<maxSatTrack[0]<<" maxDeg: "<<maxdeg<<endl;
+        //cout<<"maxSatTrack[0] : "<<maxSatTrack[0]<<" maxDeg: "<<maxdeg<<endl;
         int numord = 1;
 
-        //int maxlst = 0;
         int maxsat = 0;
     	int prevJcol = 0;
         int searchLength = 0;
@@ -1607,55 +1574,23 @@ int Matrix::sdo(int *color)
         {
            
            
-            // Find a column jp with the maximal saturation degree.
-
+           // Find a column jp with the maximal saturation degree.
            //int maxSatHead, maxIdegHead; 
            int jcol;
-           //cout<<"Now"<<endl;
-           // while(true)
-           //  {
-           //      maxSatHead = head[maxsat][0];
-           //      if(maxSatHead > 0)
-           //          break;
-           //      maxsat--;
-           //  }
 
-           // /cout<<" maxsat: "<<maxsat<<" maxSatTrack[maxsat]: "<<maxSatTrack[maxsat]<<endl;
-           while(true)
-           {
-                if(maxSatTrack[maxsat] > 0)
-                    break;
-                maxsat--;
-                searchLength++;
-           }
+            while(true)
+            {
+                 if(maxSatTrack[maxsat] > 0)
+                     break;
+                 maxsat--;
+                 searchLength++;
+            }
 
-
-            //cout<<"Here  maxsat: "<<maxsat<<endl;
-            // int numwgt = -1;
-            // maxIdegHead = maxSatHead;
-            // int j = 1;
-            // while(true)
-            // {
-
-
-            //     if(inducedDeg[maxIdegHead] > numwgt)
-            //     {
-            //         numwgt = inducedDeg[maxIdegHead]; 
-            //         jcol = maxIdegHead;
-            //     } 
-            //     maxIdegHead = head[maxsat][j];
-            //     cout<<"After: "<<maxIdegHead<<endl;
-            //     if(maxIdegHead == 0)
-            //         break;
-            //     j++;
-                
-
-            // }
 
             int check = 0;
             //for(int i = maxdeg-maxsat; i >= 0 ; i--)
             
-            for(int i = incMax[maxsat]; i >= 0 ; i--)
+            for(int i = indMax[maxsat]; i >= 0 ; i--)
             {
 
                 if(head[maxsat][i] > 0)
@@ -1663,25 +1598,18 @@ int Matrix::sdo(int *color)
 
                     jcol = head[maxsat][i];
                     check = i;
-                    incMax[maxsat] = i;
+                    indMax[maxsat] = i;
                     break;
                 }
                 searchLength++;
             }
 
-            // if(jcol == 969)    
-            // {
-                // cout<<"Here  maxsat: "<<maxsat<<endl;
-                // cout<<"Jcoooooooool: "<<jcol<<" "<<" prev jcol: "<<prevJcol<<" check: "<<check<<" numord: "<<numord<<endl;
-            // }
+           
             prevJcol = jcol;
-             //cout<<"ndeg[tag[jp]] :"<<ndeg[jcol]<<endl;
        
             // To Color the column <id:jcol> with smallest possible number
             // we find all columns adjacent to column <id:jcol>.
             // and find the color that is not used yet.
-
-            
             for(int jp = jpntr[jcol] ; jp < jpntr[jcol+1]  ; jp++)
             {
                 int ir = row_ind[jp];
@@ -1698,30 +1626,18 @@ int Matrix::sdo(int *color)
             {
                 if(seqTag[newColor] != jcol)
                     break;
-        //     goto SDO_L50;
             }
-        //changed this to remove the goto statement
+
             if(newColor>maxgrp) 
             {
                 maxgrp = maxgrp + 1;
-
                 // This position means we are creating a new color.
-                // So, create a new bitset.
-                // boost::dynamic_bitset<> x(N);
-                //*(bitsets+maxgrp) = new boost::dynamic_bitset<>(N+1,0);
                 colorTracker[maxgrp] = new bool[N+1]();
                 head[maxgrp] = new int [maxdeg+1]();
-                
-                // maxIncTrack.push_back(maxIncList);
-                // maxIncTrack[maxgrp].push_back(0);
-            // *(bitsets+maxgrp)->resize(N); 
             }
 
-        //SDO_L50:
             color[jcol] = newColor;
-            //(*(bitsets+newColor))->set(jcol); 
             colorTracker[newColor][jcol] = true;
-
             satDeg[jcol] = numord;
             numord++;
 
@@ -1731,20 +1647,13 @@ int Matrix::sdo(int *color)
                 break;
             }
 
-            // delete column jcol from the maxsat queue.
-            //deleteColumn(head,next,previous,maxsat,jcol);
+            // delete column jcol from the maxsat and max induced deg queue.
             deleteColumn2(head,next,previous,inducedDeg[jcol],maxsat,jcol);
-            // if(head[maxsat][inducedDeg[jcol]]==0)
-            //     maxIncTrack[maxsat].pop_back();
             maxSatTrack[maxsat]--;
-            //if(maxSatTrack[maxsat]<0)
-            // /cout<<"maxSatTrack[maxsat]: "<<maxSatTrack[maxsat]<<""<<endl;
-
             tag[jcol] = N;
 
-            // Update the Saturation Degree for the Neighbors of
+            // Update the Saturation and induced Degree for the Neighbors of
             // <id:jcol>
-
             for (int jp = jpntr[jcol] ; jp < jpntr[jcol+1] ; jp++)
             {
                 int ir = row_ind[jp];
@@ -1756,157 +1665,72 @@ int Matrix::sdo(int *color)
                     if(tag[ic] < numord)
                     {
                         tag[ic] = numord;
-                        //inducedDeg[ic] = inducedDeg[ic] - 1;
-                        //bool isNewColor = (*(bitsets+newColor))->test(jcol); 
-                        //bool isNewColor = (*(bitsets+newColor))->test(ic); 
                         bool isNewColor = colorTracker[newColor][ic]; 
                         if(!isNewColor)
                         {
-                            //(*(bitsets+newColor))->set(ic);     
                             colorTracker[newColor][ic] = true;
                             // update the pointers to the current saturation
                             // degree lists.
                             satDeg[ic]++;
                             // update the maxsat.
                             maxsat = max(maxsat,satDeg[ic]);
-
-                            //cout<<"ic: "<<ic<<" satDeg[ic]: "<<satDeg[ic]<<endl;    
-                            //deleteColumn(head,next,previous,satDeg[ic]-1,ic);
-                            //deleteColumn2(head,next,previous,inducedDeg[ic]+1, satDeg[ic]-1,ic);
+			    //delete column from current sat an induced deg and add to higher
+			    //sat and new (lower) induced degree list 	
                             deleteColumn2(head,next,previous,inducedDeg[ic],satDeg[ic]-1,ic);
-                            // if(head[satDeg[ic]-1][inducedDeg[ic]]==0)
-                            //     maxIncTrack[satDeg[ic]-1].pop_back();
-                            //addColumn(head,next,previous,satDeg[ic],ic);
-                            //cout<<"before maxSatTrack[satDeg[ic]-1]: "<<maxSatTrack[satDeg[ic]-1]<<endl;
-                            maxSatTrack[satDeg[ic]-1]--;
-                            //cout<<"after maxSatTrack[satDeg[ic]-1]: "<<maxSatTrack[0]<<endl;
                             addColumn2(head,next,previous,--inducedDeg[ic],satDeg[ic],ic);
-                            if(inducedDeg[ic]>incMax[satDeg[ic]])
-                                incMax[satDeg[ic]] = inducedDeg[ic];
-                            // if(inducedDeg[ic]>maxIncTrack[satDeg[ic]][maxIncTrack[satDeg[ic]].size()-1])
-                            //      maxIncTrack[satDeg[ic]].push_back(inducedDeg[ic]);
+		  	    maxSatTrack[satDeg[ic]-1]--;
+                            //update max induced degree
+                            indMax[satDeg[ic]] = max(inducedDeg[ic],indMax[satDeg[ic]]);
                             maxSatTrack[satDeg[ic]]++;
                             
                         }
                         else
                         {
                             deleteColumn2(head,next,previous,inducedDeg[ic],satDeg[ic],ic);
-                            // if(head[satDeg[ic]][inducedDeg[ic]]==0)
-                            //     maxIncTrack[satDeg[ic]].pop_back();
                             addColumn2(head,next,previous,--inducedDeg[ic],satDeg[ic],ic);
-                            if(inducedDeg[ic]>incMax[satDeg[ic]])
-                                incMax[satDeg[ic]] = inducedDeg[ic];
-                             // if(inducedDeg[ic]>maxIncTrack[satDeg[ic]][maxIncTrack[satDeg[ic]].size()-1])
-                             //     maxIncTrack[satDeg[ic]].push_back(inducedDeg[ic]);
+			    indMax[satDeg[ic]] = max(inducedDeg[ic],indMax[satDeg[ic]]);	
                         }
-                        //inducedDeg[ic] = inducedDeg[ic] - 1;
-                        // if(ic == 969)    
-                        // {
-                        //     cout<<" Induced Deg: "<<inducedDeg[ic]<<" jcol: "<<jcol<<endl;
-                        // }
-                         
                     }
                 }
             }
-
-        
-            // for(int i=0; i<=N; i++)
-            // {
-            //     if(head2[maxsat][i] == 0)
-            //     {
-            //         cout<<"i  :"<<i<<endl;    
-            //         break;
-            //     }
-            //     cout<<"maxsat: "<<maxsat<<" degree: "<<inducedDeg[head2[maxsat][i]]<<" Head: "<<head2[maxsat][i]<<" Next: "<<next[head2[maxsat][i]]<<" headj: "<< headj[head2[maxsat][i]]<<endl;
-            // }
-
-        
-	    
-        }
+	}
         cout<<" Search Length: "<<searchLength<<endl;
-
-        // for(int i=0; i<=N; i++)
-        //     {
-        //         if(head2[0][i] == 0)
-        //         {
-        //             cout<<"i  :"<<i<<endl;    
-        //             break;
-        //         }
-        //         cout<<"maxsat: "<<0<<" degree: "<<inducedDeg[head2[0][i]]<<" Head: "<<head2[0][i]<<" Next: "<<next[head2[0][i]]<<" headj: "<< headj[head2[0][i]]<<endl;
-        //     }
-        //  for(int i=0; i<=N; i++)
-        //     {
-        //         if(head2[1][i] == 0)
-        //         {
-        //             cout<<"i  :"<<i<<endl;    
-        //             break;
-        //         }
-        //         cout<<"maxsat: "<<1<<" degree: "<<inducedDeg[head2[1][i]]<<" Head: "<<head2[1][i]<<" Next: "<<next[head2[1][i]]<<" headj: "<< headj[head2[1][i]]<<endl;
-        //     }
-
 
     }
     catch(std::bad_alloc)
     {
         std::cerr << "ERROR: Memory Exhausted " << std::endl;
 
-        //if(head) delete[] head;
+        if(head) delete[] head;
         if(previous) delete[] previous;
         if(next) delete[] next;
         if(tag) delete[] tag;
         if(seqTag) delete[] seqTag;
         if(satDeg) delete[] satDeg;
         if(inducedDeg) delete[] inducedDeg;
-        //if(headj) delete[] headj;
-        if(head) delete[] head;
         if(colorTracker) delete[] colorTracker;
 
-     //   if(bitsets)
-     //    {
-	    // //	
-     //        //for(int i =0 ; i <= N; i++)
-     //        //{
-     //        //    if(bitsets+i)
-     //        //    {
-     //        //        delete (*(bitsets+i)); 
-     //        //    } 
-     //        //}
-	    	
-     //        delete[] bitsets; 
-     //    } 
-	
         return 0;
     }
 
-    //if(head) delete[] head;
+    if(head) delete [] head;
     if(previous) delete[] previous;
     if(next) delete[] next;
     if(tag) delete[] tag;
     if(seqTag) delete[] seqTag;
     if(satDeg) delete[] satDeg;
     if(inducedDeg) delete[] inducedDeg;
-    //if(headj) delete[] headj;
-    if(head) delete [] head;
     if(colorTracker) delete[] colorTracker;
- //    if(bitsets)
- //    {
- //        //for(int i =0 ; i <= N; i++)
- //        //{
- //        //    if(bitsets+i)
- //        //    {
- //        //        delete (*(bitsets+i)); 
- //        //    } 
- //        //}
-	// //	
- //        delete[] bitsets; 
- //    } 
-
 
     return maxgrp;
 }
 
 /* sdo() ENDS*/
+
+//This SDO is the old sdo. You can comment the current sdo and uncomment
+// this old one and use it
 /*
+
 int Matrix::sdo(int *color)
 {
     int *satDeg = NULL;
@@ -2193,511 +2017,19 @@ int Matrix::sdo(int *color)
 /* sdo() ENDS*/
 
 
-/*int *satDegDsat = NULL;
-int *headDsat = NULL;
-int *nextDsat = NULL;
-int *previousDsat = NULL;
-int *tagDsat = NULL;
-int *seqTagDsat = NULL;
-int maxgrpDsat = 0;
-int *inducedDegDsat = NULL;	
-int **colorTracker;
 
-int LB;//lower bound
-int UB;//upper bound  
-int maxsatDsat;
-int *colorDsat;
-int maxlstDsat = 0;	
-bool *handled;
-int startTime,currentTime; //to keep track of timing 
-double subProblems = 0;
-int tbChoice;*/
-/*
-int Matrix::getColumn()
-{
-    int column;
-    int maxsatLevel = maxsatDsat;
-    //it simply retruns the head of maxsat
-    if(tbChoice==1)
-    {   
-        
-        while(true)
-        {
-            column = headDsat[maxsatLevel];
-            //jp = headDsat[maxsatDsat];
-            if(column>0)
-                break;
-            maxsatLevel--;
-            //maxsatDsat--;
-        }
-        return column;
-    }
-    //maximum common unused colors-1
-    else if(tbChoice==2)
-    {
-        while(true)
-        {
-
-            column = headDsat[maxsatLevel];
-            //jp = headDsat[maxsatDsat];
-            if(column>0)
-            {
-               int maxCol = column; 
-               int maxCount = 0;    
-               while(true)
-               {
-                    int count = 0;
-                    bool *tagCol = new bool[N+1]();
-                    tagCol[column] = true;
-                    for (int jp = jpntr[column] ; jp < jpntr[column+1] ; jp++)
-                    {
-                        int ir = row_ind[jp];
-
-                        for( int ip = ipntr[ir] ; ip < ipntr[ir+1] ; ip++)
-                        {
-                            int ic = col_ind[ip];
-                            if(!tagCol[ic] && !handled[ic])
-                            {   
-                                //it is now tagged so will not be processed in any next iteration
-                                tagCol[ic] = true;  
-                                for(int color=1; color<=maxsatDsat; color++)
-                                {
-                                     if(colorTracker[color][column] == 0 && colorTracker[color][ic] == 0)
-                                     {
-                                        count++;
-                                        if(count>maxCount)
-                                        {
-                                            maxCount = count;
-                                            maxCol = column;
-                                        }
-                                     }      
-                                }
-                            }
-                        }
-                    }
-                    if(tagCol) delete [] tagCol;
-                    if(nextDsat[column]<=0)
-                    {
-                        return maxCol;
-                    }
-                    column = nextDsat[column];
-               
-               }
-
-            }    
-            maxsatLevel--;
-            //maxsatDsat--;
-        }
-    }
-    //maximum common unused colors-3
-    else if(tbChoice==3)
-    {
-        while(true)
-        {
-
-            column = headDsat[maxsatLevel];
-            //jp = headDsat[maxsatDsat];
-            if(column>0)
-            {
-               int maxCol = column; 
-               int maxCount = 0;    
-               while(true)
-               {
-                    int count = 0;
-                    bool *tagCol = new bool[N+1]();
-                    tagCol[column] = true;
-                    for (int jp = jpntr[column] ; jp < jpntr[column+1] ; jp++)
-                    {
-                        int ir = row_ind[jp];
-
-                        for( int ip = ipntr[ir] ; ip < ipntr[ir+1] ; ip++)
-                        {
-                            int ic = col_ind[ip];
-                            if(satDegDsat[ic] != satDegDsat[column])
-                                continue;
-                            if(!tagCol[ic] && !handled[ic] )
-                            {   
-                                //it is now tagged so will not be processed in any next iteration
-                                tagCol[ic] = true;  
-                                for(int color=1; color<=maxsatDsat; color++)
-                                {
-                                     if(colorTracker[color][column] == 0 && colorTracker[color][ic] == 0)
-                                     {
-                                        count++;
-                                        if(count>maxCount)
-                                        {
-                                            maxCount = count;
-                                            maxCol = column;
-                                        }
-                                     }      
-                                }
-                            }
-                        }
-                    }
-                    if(tagCol) delete [] tagCol;
-                    if(nextDsat[column]<=0)
-                    {
-                        return maxCol;
-                    }
-                    column = nextDsat[column];
-               
-               }
-
-            }    
-            maxsatLevel--;
-            //maxsatDsat--;
-        }
-    }
-    //maximum common unused colors-4
-    else if(tbChoice==4)
-    {
-        while(true)
-        {
-
-            column = headDsat[maxsatLevel];
-            //jp = headDsat[maxsatDsat];
-            if(column>0)
-            {
-               int maxCol = column; 
-               int maxCount = 0;    
-               while(true)
-               {
-                    int count = 0;
-                    bool *tagCol = new bool[N+1]();
-                    tagCol[column] = true;
-                    for (int jp = jpntr[column] ; jp < jpntr[column+1] ; jp++)
-                    {
-                        int ir = row_ind[jp];
-
-                        for( int ip = ipntr[ir] ; ip < ipntr[ir+1] ; ip++)
-                        {
-                            int ic = col_ind[ip];
-                            if(satDegDsat[ic]<1)
-                                continue;
-                            if(!tagCol[ic] && !handled[ic] )
-                            {   
-                                //it is now tagged so will not be processed in any next iteration
-                                tagCol[ic] = true;  
-                                for(int color=1; color<=maxsatDsat; color++)
-                                {
-                                     if(colorTracker[color][column] == 0 && colorTracker[color][ic] == 0)
-                                     {
-                                        count++;
-                                        if(count>maxCount)
-                                        {
-                                            maxCount = count;
-                                            maxCol = column;
-                                        }
-                                     }      
-                                }
-                            }
-                        }
-                    }
-                    if(tagCol) delete [] tagCol;
-                    if(nextDsat[column]<=0)
-                    {
-                        return maxCol;
-                    }
-                    column = nextDsat[column];
-               
-               }
-
-            }    
-            maxsatLevel--;
-            //maxsatDsat--;
-        }
-    }
-}   
-
-//After coloring a colunm we look for all of its adjacent columns
-//and update their saturation degree where applicable
-void Matrix::satDegInc(int jcol,int order,int colorNo)
-{
-	//this array is for simple tagging. we select a nonzero element of jcol
-	//if we process a neighboring column of jcol we dont need to process that
-	//column in any next iteration. so we tag that column and don't procees that  
-	bool *tagCol = new bool[N+1]();
-	tagCol[jcol] = true;
-	for (int jp = jpntr[jcol] ; jp < jpntr[jcol+1] ; jp++)
-	{
-    	int ir = row_ind[jp];
-
-        for( int ip = ipntr[ir] ; ip < ipntr[ir+1] ; ip++)
-        {
-            int ic = col_ind[ip];
-           
-         
-            //column ic has not been processed
-            if(!tagCol[ic])
-            {	
-            	//it is now tagged so will not be processed in any next iteration
-               	tagCol[ic] = true;	
-            	
-            	//noumber of "colorNO" colored neighbors in ordered graph
-            	int prevColorCount = colorTracker[colorNo][ic];
-                		            	
-                //no "colorNo" colored neighbors in ordered graph so we can increase the saturation degree of ic		            	
-               	if(prevColorCount==0)// && toggleFlag[ic] ==0)
-                {
-                	
-                    satDegDsat[ic]++;
-                    
-                    // update the maxsat.
-                    maxsatDsat = max(maxsatDsat,satDegDsat[ic]);
-                   
-                    //this means the column isn't handled 
-                    //and in the bucket so we can update its
-                    //degree list (sat degree) in bucket 
-                    if(!handled[ic])
-                    {
-                    	deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic]-1,ic);
-                    	addColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic],ic);
-                    }
-		    				    		
-                }
-
-				//increase the "colorNo" colored neighbor(s) in ordered graph of ic 
-				colorTracker[colorNo][ic]++;
-				//decrease ic's degree in unordered graph
-				inducedDegDsat[ic] = inducedDegDsat[ic] - 1;
-				
-            }
-        }
-   	}
-    if(tagCol) delete[] tagCol;
-}
-
-//After removing a color of a colunm we look for all of its adjacent 
-//columns and update their saturation degree where applicable
-void Matrix::satDegDec(int jcol,int order,int colorNo)
-{
-	//this array is for simple tagging. we select a nonzero element of jcol
-	//if we process a neighboring column of jcol we dont need to process that
-	//column in any next iteration. so we tag that column and don't procees that  
-	bool *tagCol = new bool[N+1]();
-	tagCol[jcol] = true;
-	for (int jp = jpntr[jcol] ; jp < jpntr[jcol+1] ; jp++)
-	{
-    	int ir = row_ind[jp];
-
-        for( int ip = ipntr[ir] ; ip < ipntr[ir+1] ; ip++)
-        {
-            int ic = col_ind[ip];
-            
-            //column ic has not been processed
-            if(!tagCol[ic])
-            {
-            	//it is now tagged so will not be processed in any next iteration
-            	tagCol[ic] = true;
-            	//noumber of "colorNO" colored neighbors in ordered graph
-            	int prevColorCount = colorTracker[colorNo][ic];
-            	//one "colorNo" colored neighbor(which will be deleted) in ordered graph so we can decrease the saturation degree of ic		
-	          	if(prevColorCount==1)
-	            {
-	            	satDegDsat[ic]--;
-                    maxsatDsat = max(maxsatDsat,satDegDsat[ic]);
-                    //this means the column isn't handled 
-                    //and in the bucket so we can update its
-                    //degree list (sat degree) in bucket 
-                    if(!handled[ic])
-                    {
-                    	deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic]+1,ic);
-                    	addColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic],ic);
-                    }
-		    	}
-		    	//decrease the "colorNo" colored neighbor(s) in ordered graph of ic 
-	            colorTracker[colorNo][ic]--;
-	            if(colorTracker[colorNo][ic]<0)
-	            	cout<<"Onnoooooo "<<ic<<" jcol "<<jcol<<" colorTracker[colorNo][ic] "<<colorTracker[colorNo][ic]<<endl; 
-	            //increase ic's degree in unordered graph
-                inducedDegDsat[ic] = inducedDegDsat[ic] + 1;
-			}
-        }
-   	}
-    if(tagCol) delete[] tagCol;
-}
-
-//this function takes a column, a color no and color matrix as input
-//it check the colorNo is available for it or no by checking the
-//colors of its neighbors
-bool Matrix::colorAvailable(int jcol, int colorNo)
-{
-
-	for (int jp = jpntr[jcol] ; jp < jpntr[jcol+1] ; jp++)
-        {
-        	int ir = row_ind[jp];
-			 for( int ip = ipntr[ir] ; ip < ipntr[ir+1] ; ip++)
-			 {
-			 	int ic = col_ind[ip];
-				if(colorDsat[ic] == colorNo)
-					return false;
-			 }
-		
-	}
-
-	return true;
-}	
-
-//main branch and bound coloring method for dsatur exact
-int Matrix::branchColor(int order,int colorBoundary)
-{
-
-    int updatedColoring,jcol,colorNo;
-    subProblems++;
-	
-	if(colorBoundary >= UB) 
-	{
-		return colorBoundary;
-	}
-	if(UB<=LB)
-	{
-		return UB;
-	}
-	if(order >= N)
-	{
-		return colorBoundary;
-	}
-
-	//if time exceeds the limit we will stop and return
-  	if(( clock() - startTime ) / (double) CLOCKS_PER_SEC > CUT_OFF_TIME*60) 
-  	{
-       return UB;
-    }
-	
-	
-	//find the vertex with maximum saturation degree. 
-	//if there is more than one the we take the head to 
-	//break the tie
-	//int jp;
-    //bool trueFalse = false;
-    //int maxsatLevel = maxsatDsat;
-	//cout<<"color of 1<<"<<colorDsat[1]<<endl;
-	
-     //jcol = jp;
-    jcol = getColumn();
-    handled[jcol] = true;
-	
-
-	//cout<<" Ordering:"<<order<<" jcol "<<jcol<<endl;
-	//jcol is colored by all available colors (one at a time) and then 
-	//recursively colors rest of the unordered columns to find a new coloring 
-	for(colorNo=1; colorNo<=colorBoundary;colorNo++)
-	{
-		//from color 1 to colorboundary availability of those colors are checked for jcol
-		if(colorAvailable(jcol,colorNo))	
-		{
-            tagDsat[jcol] = N;  
-            
-            //delete jcol from unorderd list 
-            deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[jcol],jcol);
-			
-			colorDsat[jcol] = colorNo; // numord is new color for each clique member	
-            //available color is>maxsat 
-            if(colorNo>maxsatDsat)  
-            {
-                maxsatDsat++;
-                colorTracker[maxsatDsat] = new int[N+1]();  
-            }
-            //increase saturation degrees of jcol's neighbors 
-			satDegInc(jcol,order,colorDsat[jcol]);
-			//recursuvely color the rest of the graph
-			updatedColoring = branchColor(order+1,colorBoundary);
-			//new improved coloring found
-			if(updatedColoring<UB)
-			{
-				//this is our new decreased upperbound
-				UB = updatedColoring;
-                cout<<endl<<"Got current best coloring at time : "<<( clock() - startTime ) / (double) CLOCKS_PER_SEC<<endl;
-				//coloring
-				cout<<"New coloring: "<<UB<<" Subproblems: "<<subProblems<<endl;
-
-				// for(int i=1;i<=N;i++)
-				// 	cout<<i<<"-"<<colorDsat[i]<<";";
-				// cout<<endl;	
-			}
-           	
-           	//Remove color of jcol part
-
-			//decrease saturation degrees of its neighbors
-			satDegDec(jcol,order,colorDsat[jcol]);	
-			//removing color from jcol
-			colorDsat[jcol] = N;
- 			//add jcol back to unordered list
-           	addColumn(headDsat,nextDsat,previousDsat,satDegDsat[jcol],jcol);
-
-			tagDsat[jcol] = 0;
-			//new upperbound is <= color boundary so return from here
-           	if(UB <= colorBoundary)
-			{
-            	handled[jcol] = false;
-				return UB;
-			}
-			//else 
-			//	cout<<"Unsuccessful "<<UB<<endl;		
-					
-		
-		}	
-	}
-    //if colorBoundary+1 is still < the UB the we will color jcol
-    //using colorBoundary+1 and recursively color the rest of the 
-    //graoh to fin a new improved upper bound
-	if(colorBoundary+1 < UB)
-	{
-		
-		colorDsat[jcol] = colorBoundary+1;
-		tagDsat[jcol] = N;	
-		
-		//delete jcol from unorderd list 
-		deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[jcol],jcol);
-
-		//color+1 is>maxsat 
-		if(colorBoundary+1>maxsatDsat)	
-		{
-			maxsatDsat++;
-		 	colorTracker[maxsatDsat] = new int[N+1]();	
-		}
-		//increase saturation degrees of jcol's neighbors 
-		satDegInc(jcol,order,colorDsat[jcol]);
-
-		//recursuvely color the rest of the graph using new color boundary
-		updatedColoring = branchColor(order+1,colorBoundary+1);
-        //new improved coloring found
-		if(updatedColoring<UB)
-		{
-			//this is our new decreased upperbound
-			UB = updatedColoring;
-			cout<<endl<<"Got current best coloring at time : "<<( clock() - startTime ) / (double) CLOCKS_PER_SEC<<endl;
-			//coloring
-			cout<<"New coloring: "<<UB<<" Subproblems: "<<subProblems<<endl;
-			//for(int i=1;i<=N;i++)
-			//	cout<<i<<"-"<<colorDsat[i]<<";";
-			//cout<<endl;	
-		}
-      	//Remove color of jcol part
-
-		//decrease saturation degrees of its neighbors
-		satDegDec(jcol,order,colorDsat[jcol]);	
-		//adding it back to uncolored list of columns	
-		addColumn(headDsat,nextDsat,previousDsat,satDegDsat[jcol],jcol);
-        //remove color
-        colorDsat[jcol] = N;
-		tagDsat[jcol] = 0; 
-        
-	}		
-    handled[jcol] = false;
-	return UB;
-}*/	
-
-//int Matrix::dsatur(int *color,int *clique, int ub)
 int Matrix::dsatur(int *clique, int ub, int tbCh)
 {
    
-  	//upper bound (ub) is the coloring we get from ido
+    //upper bound (ub) is the coloring we get from ido
     UB = ub;	
+    //Or UB can be set to no. of columns
+    //UB = N;
+    // tie-breaking choice	
     tbChoice = tbCh;
     maxgrpDsat = 0;
     subProblems = 0;
-    //UB = N;	
+    	
 
     //cout<<endl<<"UB :"<<UB<<endl;
     
@@ -2754,20 +2086,10 @@ int Matrix::dsatur(int *clique, int ub, int tbCh)
 
 
 
-        // Sort the indices of degree array <id:ndeg> in descending order, i.e
-        // ndeg(tag(i)) is in descending order , i = 1,2,...,n
-        //
-        // <id:tag> is used here as an in-out-parameter to <id:indexSort> routine. It
-        // will hold the sorted indices. The two arrays, <id:previous> and
-        // <id:next> is used for temporary storage required for <id:indexSort>
-        // routine.
-        //MatrixUtility::indexsort(N,N-1, ndeg,-1,tagDsat , previousDsat, nextDsat);
-
         // Initialize the doubly linked list, <id:satDegDsat>, and <id:tagDegDsat>integer array.
         for (int jp = N; jp >= 1; jp--)
         {
-            //int ic = tagDsat[jp]; // Tag is sorted indices for now 
-	    	int ic = jp; 
+            int ic = jp; 
             headDsat[N-jp] = 0;
 
             addColumn(headDsat,nextDsat,previousDsat,0,ic);
@@ -2775,98 +2097,91 @@ int Matrix::dsatur(int *clique, int ub, int tbCh)
             tagDsat[jp] = 0;
             satDegDsat[jp] = 0;
             colorDsat[jp] = N;
-            //seqTagDsat[jp] = 0;
-            //*(bitsetsDsat+jp) = NULL; 
             colorTracker[jp] = NULL; 	
-            //colorTracker[jp] = new int[N+1]();
-	    	inducedDegDsat[jp] = ndeg[jp];
+            inducedDegDsat[jp] = ndeg[jp];
             handled[jp] = false;
         }
 	
-		//int ci;//clique index	
-		int jcol;
-		int numord = 0;
-		maxsatDsat = 0;
-		
-		//
-	  	int irRhoMax = maxi;
-	  	int colorNo;
+	int jcol;
+	int numord = 0;
+	maxsatDsat = 0;
+	
+  	int irRhoMax = maxi;
+  	int colorNo;
 
-	  	
-	  	//starting time
+  	
+  	//starting time
         startTime = clock();
-	  	//color each column in rho_max clique and update
-	  	//their neighbors saturation degree
-	  	for( int ipRhoMax = ipntr[irRhoMax] ; ipRhoMax < ipntr[irRhoMax+1] ; ipRhoMax++)
-	    {
-			jcol = col_ind[ipRhoMax];
-			
-			numord++;
-			colorDsat[jcol] = numord; // numord is new color for each clique member
-			//if(jcol == 1)
-			//	cout<<"Jcol is 1 and its color"<<colorDsat[1]<<" ";
-			//cout<<"rho_max member:"<<jcol<<endl;
-			deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[jcol],jcol);
-			//every column of rho_max get a new color
-			//so new colorTracker level is created
-			colorTracker[numord] = new int[N+1]();
-			//colored
-			colorNo = numord;
-			tagDsat[jcol] = numord;
-			//handled
+  	//color each column in rho_max clique and update
+  	//their neighbors saturation degree
+  	for( int ipRhoMax = ipntr[irRhoMax] ; ipRhoMax < ipntr[irRhoMax+1] ; ipRhoMax++)
+	{
+		jcol = col_ind[ipRhoMax];
+		
+		numord++;
+		colorDsat[jcol] = numord; // numord is new color for each clique member
+		//if(jcol == 1)
+		//	cout<<"Jcol is 1 and its color"<<colorDsat[1]<<" ";
+		//cout<<"rho_max member:"<<jcol<<endl;
+		deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[jcol],jcol);
+		//every column of rho_max get a new color
+		//so new colorTracker level is created
+		colorTracker[numord] = new int[N+1]();
+		//colored
+		colorNo = numord;
+		tagDsat[jcol] = numord;
+		//handled
 	        handled[jcol] = true;
 	        //updating saturation degrees of jcols neighbors
-			for (int jp = jpntr[jcol] ; jp < jpntr[jcol+1] ; jp++)
+		for (int jp = jpntr[jcol] ; jp < jpntr[jcol+1] ; jp++)
+		{
+			int ir = row_ind[jp];
+
+			for( int ip = ipntr[ir] ; ip < ipntr[ir+1] ; ip++)
 			{
-	        	int ir = row_ind[jp];
+			    int ic = col_ind[ip];
+			    
+			    //if(tagDsat[ic] < numord)
+			    if(tagDsat[ic] < numord)
+			    {
+			       	tagDsat[ic] = numord;
+			    	//noumber of "colorNO" colored neighbors in ordered graph
+		    		int prevColorCount = colorTracker[colorNo][ic];	
+			        //no "colorNo" colored neighbors in ordered graph so we can increase the saturation degree of ic
+			        if(prevColorCount==0)
+			        {
+				    satDegDsat[ic]++;
+			            //update maximum saturation
+			            maxsatDsat = max(maxsatDsat,satDegDsat[ic]);
+			            //delete the column ic from its current saturation degree list
+			            if(!handled[ic])
+				    {    
+		                	deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic]-1,ic);
+				        //add it to its prev+1 saturation degree list
+				        addColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic],ic);
+				    }
+			        }
+			       	//increase the "colorNo" colored neighbor(s) in ordered graph of ic 
+				colorTracker[colorNo][ic]++;
+				//decrease ic's degree in unordered graph
+				inducedDegDsat[ic] = inducedDegDsat[ic] - 1;
+			    }
+			}
+       		}
+	}
 
-		        for( int ip = ipntr[ir] ; ip < ipntr[ir+1] ; ip++)
-		        {
-		            int ic = col_ind[ip];
-		            
-		            //if(tagDsat[ic] < numord)
-		            if(tagDsat[ic] < numord)
-		            {
-		               	tagDsat[ic] = numord;
-		            	
-		            	//noumber of "colorNO" colored neighbors in ordered graph
-	            		int prevColorCount = colorTracker[colorNo][ic];	
-		                
-		                 //no "colorNo" colored neighbors in ordered graph so we can increase the saturation degree of ic
-		                if(prevColorCount==0)
-		                {
-						    satDegDsat[ic]++;
-		                  	//update maximum saturation
-		                    maxsatDsat = max(maxsatDsat,satDegDsat[ic]);
-		                    //delete the column ic from its current saturation degree list
-		                    if(!handled[ic])
-			                {    
-                                deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic]-1,ic);
-			                    //add it to its prev+1 saturation degree list
-			                    addColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic],ic);
-			                }
-		                }
-		               	//increase the "colorNo" colored neighbor(s) in ordered graph of ic 
-						colorTracker[colorNo][ic]++;
-						//decrease ic's degree in unordered graph
-						inducedDegDsat[ic] = inducedDegDsat[ic] - 1;
-		            }
-		        }
-	       	}
-		}
-
-		//lower bound is size of rho_max       
-		LB = rho_max;
-		cout<<"LB :"<<LB<<endl;
-		//calling main branch and bound coloring method
-	    maxgrpDsat = branchColor(numord,numord);   
-	    //Done
-		cout<<endl<<"Coloring :"<<maxgrpDsat<<endl;
-		//currentTime = timeBuffer.tms_utime;
-		//cout<<"Total coloring time : "<<(currentTime-startTime)/60.0<<" Subproblems:"<<subProblems <<endl;
+	//lower bound is size of rho_max       
+	LB = rho_max;
+	cout<<"LB :"<<LB<<endl;
+	//calling main branch and bound coloring method
+        maxgrpDsat = branchColor(numord,numord);   
+        //Done
+	cout<<endl<<"Coloring :"<<maxgrpDsat<<endl;
+	//currentTime = timeBuffer.tms_utime;
+	//cout<<"Total coloring time : "<<(currentTime-startTime)/60.0<<" Subproblems:"<<subProblems <<endl;
         cout<<endl<<"Got current best coloring at time : "<<( clock() - startTime ) / (double) CLOCKS_PER_SEC<<" Subproblems:"<<subProblems <<endl;
         //printf("Best coloring has value %d, subproblems: %d time:%7.1f\n",maxgrpDsat,subProblems,( clock() - startTime ) / (double) CLOCKS_PER_SEC);
-	}
+    }
     catch(std::bad_alloc)
     {
         std::cerr << "ERROR: Memory Exhausted " << std::endl;
@@ -2875,17 +2190,11 @@ int Matrix::dsatur(int *clique, int ub, int tbCh)
         if(previousDsat) delete[] previousDsat;
         if(nextDsat) delete[] nextDsat;
         if(tagDsat) delete[] tagDsat;
-        //if(seqTagDsat) delete[] seqTagDsat;
         if(satDegDsat) delete[] satDegDsat;
         if(inducedDegDsat) delete[] inducedDegDsat;
         if(colorDsat) delete[] colorDsat;
         if(handled) delete[] handled;
-
-       /*	for(int i = 0; i <= N; i++) 
-       	{
-    		if(colorTracker[i]) delete [] colorTracker[i];
-		}*/
-		if(colorTracker) delete [] colorTracker;	
+	if(colorTracker) delete [] colorTracker;	
 	
         return 0;
     }
@@ -2894,254 +2203,15 @@ int Matrix::dsatur(int *clique, int ub, int tbCh)
     if(previousDsat) delete[] previousDsat;
     if(nextDsat) delete[] nextDsat;
     if(tagDsat) delete[] tagDsat;
-    //if(seqTagDsat) delete[] seqTagDsat;
     if(satDegDsat) delete[] satDegDsat;
     if(inducedDegDsat) delete[] inducedDegDsat;
     if(colorDsat) delete[] colorDsat;
     if(handled) delete[] handled;
 
-   /* for(int i = 0; i <= N; i++) 
-    {
-    	if(colorTracker[i]) delete [] colorTracker[i];
-	}*/
-	if(colorTracker) delete [] colorTracker;		 
+    if(colorTracker) delete [] colorTracker;		 
 
     return maxgrpDsat;
 }
-
-/* prev sdo
-int Matrix::sdo(int *color)
-{
-    int *satDeg = NULL;
-    int *head = NULL;
-    int *next = NULL;
-    int *previous = NULL;
-    int *tag = NULL;
-    int *seqTag = NULL;
-    int maxgrp = 0;
-
-    try
-    {
-        // The following three integer arrays consist of a doubly linked satDeg. It acts
-        // as a bucket priority queue for the incidence degree of the columns.
-
-        // head(deg) is the first column in the deg satDeg unless head(deg) =
-        // 0. If head(deg) = 0 there are no columns in the deg satDeg.
-
-        // previous(col) is the column before col in the incidence satDeg unless
-        // previous(col) = 0. If previous(col) = 0,  col is the first column in this
-        // incidence satDeg.
-
-        // next(col) is the column after col in the incidence satDeg unless
-        // next(col) = 0. If next(col) = 0,  col is the last column in this incidence
-        // satDeg.
-
-        head     = new int[N];
-        next     = new int[N+1];
-        previous = new int[N+1];
-
-        tag      = new int[N+1]; // for each unordered column, tag[jcol] stores
-                                 // the number of order it has been processed for,
-                                 // and for ordered/colored column, it stores N
-
-        seqTag      = new int[N+1]; // This array of size n+1 is used for
-                                    // searching the lowest possible color for a
-                                    // column jcol.
-
-        satDeg = new int[N+1]; // Array of size n+1, for each unordered column j,
-                               // satDeg[j] is the saturation degree, where j =
-                               // 1,2,3,...,n.
-                               // For each ordered column j, satDeg[j] is the
-                               // order in Staruation Degree Ordering.
-
-
-
-
-        // Sort the indices of degree array <id:ndeg> in descending order, i.e
-        // ndeg(tag(i)) is in descending order , i = 1,2,...,n
-        //
-        // <id:tag> is used here as an in-out-parameter to <id:indexSort> routine. It
-        // will hold the sorted indices. The two arrays, <id:previous> and
-        // <id:next> is used for temporary storage required for <id:indexSort>
-        // routine.
-        MatrixUtility::indexsort(N,N-1, ndeg,-1,tag , previous, next);
-
-        // Initialize the doubly linked list, <id:satDeg>, and <id:tag> and <id:order> integer array.
-        for (int jp = N; jp >= 1; jp--)
-        {
-            int ic = tag[jp]; //Tag is sorted indices for now 
-            head[N-jp] = 0;
-
-            addColumn(head,next,previous,0,ic);
-
-            tag[jp] = 0;
-            satDeg[jp] = 0;
-            color[jp] = N;
-            seqTag[jp] = 0;
-        }
-
-        int maximalClique = 0;
-        int numord = 1;
-
-        // determine the maximal search length to search for maximal degree in
-        // the maximal incidence degree satDeg.
-        int maxlst = 0;
-
-        for( int ir = 1; ir <= M; ir++)
-        {
-            maxlst = maxlst + MatrixUtility::square(ipntr[ir+1] - ipntr[ir]);
-        }
-
-        maxlst = maxlst / N;
-
-        int maxsat = 0;
-        while(true)
-        {
-            int jp;
-            int jcol;
-            // Find a column jp with the maximal saturation degree.
-            while(true)
-            {
-                jp = head[maxsat];
-                if(jp > 0)
-                    break;
-                maxsat--;
-            }
-
-            // We search a distance of maxLast length to find the column with
-            // maximal degree in the original graph.
-            for(int numlst = 1,numwgt = -1;  numlst <= maxlst; numlst++)
-            {
-                if(ndeg[jp] > numwgt)
-                {
-                    numwgt = ndeg[jp];
-                    jcol = jp;
-                }
-                jp = next[jp];
-                if(jp <= 0)
-                    break;
-            }
-
-            // To Color the column <id:jcol> with smallest possible number
-            // we find all columns adjacent to column <id:jcol>.
-            // and find the color that is not used yet.
-
-            for(int jp = jpntr[jcol] ; jp < jpntr[jcol+1]  ; jp++)
-            {
-                int ir = row_ind[jp];
-
-                for( int ip = ipntr[ir]; ip < ipntr[ir + 1] ; ip++)
-                {
-                    int ic = col_ind[ip];
-                    seqTag[color[ic]] = jcol;
-                }
-            }
-
-            int newColor;
-            for (newColor = 1; newColor <= maxgrp; newColor++)
-            {
-                if(seqTag[newColor] != jcol)
-                {
-                	break;
-                	//goto SDO_L50;
-                }
-            }
-           //changed this to remove the goto statement
-           if(newColor>maxgrp)
-        	   maxgrp = maxgrp + 1;
-
-        //SDO_L50:
-            color[jcol] = newColor;
-
-            satDeg[jcol] = numord;
-            numord++;
-
-            // Termination Test.
-            if(numord > N)
-            {
-                break;
-            }
-
-            // delete column jcol from the maxsat queue.
-            deleteColumn(head,next,previous,maxsat,jcol);
-
-            tag[jcol] = N;
-
-            // Update the Saturation Degree for the Neighbors of
-            // <id:jcol>
-
-            for (int jp = jpntr[jcol] ; jp < jpntr[jcol+1] ; jp++)
-            {
-                int ir = row_ind[jp];
-
-                for( int ip = ipntr[ir] ; ip < ipntr[ir+1] ; ip++)
-                {
-                    int ic = col_ind[ip];
-
-                    if(tag[ic] < numord)
-                    {
-                        tag[ic] = numord;
-
-                        bool isNewColor = true;
-
-                        // search the neighborhood of ic
-                        for (int x_jp = jpntr[ic]; x_jp < jpntr[ic+1] ; x_jp++)
-                        {
-                            int x_ir = row_ind[x_jp];
-                            for (int x_ip = ipntr[ir]; x_ip < ipntr[ir+1]; x_ip++)
-                            {
-                                int x_ic = col_ind[x_ip];
-                                if(color[x_ic] == newColor)
-                                {
-                                    isNewColor = false;
-                                    //goto SDO_ISNEWCOLOR;
-                                    break;
-                                }
-                            }
-                        }
-
-                        // ========================================
-                    //SDO_ISNEWCOLOR:
-                        if(isNewColor)
-                        {
-                            // update the pointers to the current saturation
-                            // degree lists.
-
-                            satDeg[ic]++;
-                            // update the maxsat.
-                            maxsat = max(maxsat,satDeg[ic]);
-
-                            deleteColumn(head,next,previous,satDeg[ic]-1,ic);
-                            addColumn(head,next,previous,satDeg[ic],ic);
-                        }
-                    }
-                }
-            }
-
-        }
-    }
-    catch(bad_alloc)
-    {
-        cerr << "ERROR: Memory Exhausted " << endl;
-
-        if(head) delete[] head;
-        if(previous) delete[] previous;
-        if(next) delete[] next;
-        if(tag) delete[] tag;
-        if(seqTag) delete[] seqTag;
-
-        return 0;
-    }
-
-    if(head) delete[] head;
-    if(previous) delete[] previous;
-    if(next) delete[] next;
-    if(tag) delete[] tag;
-    if(seqTag) delete[] seqTag;
-
-    return maxgrp;
-}
-*/
 
 
 int Matrix::updateDegreesToUVertices(int n, int jcol,int maxdeg, int *jpntr,int *row_ind,

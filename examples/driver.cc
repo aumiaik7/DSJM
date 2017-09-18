@@ -186,7 +186,7 @@ RunningTimeInfo runOrderingAndColoringAlgorithm(Configuration* configuration, T*
         {
             //timer.Start();
             int *list = new int[configuration->N+1];
-	          int *clique = new int[configuration->N+1];	
+	    int *clique = new int[configuration->N+1];	
             ngrp = new int[configuration->N+1];
             success = matrix->idoDsatur(list,clique);
             //timer.Stop();
