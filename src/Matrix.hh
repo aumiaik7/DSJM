@@ -57,7 +57,8 @@ public:
     int sdo2(int *ngrp);
     int slo_rlf(int *list, int *ngrp);
     //int dsatur(int *ngrp, int *clique, int UB);
-    int dsatur(int *clique, int UB, int tbChoice);    
+    //int dsatur(int *clique, int UB, int tbChoice);    
+    int dsatur(int UB, int tbChoice);    
 
     Matrix* getSeedMatrix(int *ngrp);
 

@@ -29,7 +29,7 @@ public:
     virtual bool computedegree() = 0 ;
     virtual int greedycolor(int *list, int *ngrp) = 0 ;
     virtual int rlf(int *ngrp) = 0;
-    virtual int dsatur(int *clique, int UB, int tbChoice) = 0;
+    virtual int dsatur(int UB, int tbChoice) = 0;
     virtual int slo_rlf(int *list, int *ngrp) = 0 ;	  
 
     void setVerify(bool v);

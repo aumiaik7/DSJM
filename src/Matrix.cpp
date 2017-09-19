@@ -2018,25 +2018,39 @@ int Matrix::sdo(int *color)
 
 
 
-int Matrix::dsatur(int *clique, int ub, int tbCh)
+/**
+ * Purpose: 		Computes DSATUR based exact Coloring of the columns of a sparse matrix A (i.e. the vertices
+ *          		of the column intersection graph G(A) )
+ *
+ * Pre-condition: 	The matrix object is nonempty. Assumes that the degree of
+ *                  of the columns have already been computed in the data member
+ *                  <id:ndeg> integer array of size n+1 using computeDegree() method.
+ *
+ * Post-condition: 	DSATUR based exact coloring of Matrix A(graph G(A)) is stored in the
+ * 			        in-out-parameter <id:color>, an integer array of size n+1,
+ * 			        such that if k =  color[j] then the column j is colored with
+ * 			        color k, j = 1,2,...,n
+ *
+ * Parameters:      out-parameter <id:color>, an integer pointer to an array of size n+1. The array will
+ *                  contain the color values of the columns in successful
+ *                  completion. The integer array uses 1-based indexing.
+ *
+ *
+ * Return values:   Returns the number of colors if succeeds, otherwise returns
+ *                  0(zero).
+ *
+ */
+
+int Matrix::dsatur(int ub, int tbCh)
 {
    
     //upper bound (ub) is the coloring we get from ido
     UB = ub;	
-    //Or UB can be set to no. of columns
-    //UB = N;
     // tie-breaking choice	
     tbChoice = tbCh;
     maxgrpDsat = 0;
     subProblems = 0;
     	
-
-    //cout<<endl<<"UB :"<<UB<<endl;
-    
-
-
-    
-
     try
     {
         // The following three integer arrays consist of a doubly linked satDegDsat. It acts
@@ -2120,9 +2134,6 @@ int Matrix::dsatur(int *clique, int ub, int tbCh)
 		
 		numord++;
 		colorDsat[jcol] = numord; // numord is new color for each clique member
-		//if(jcol == 1)
-		//	cout<<"Jcol is 1 and its color"<<colorDsat[1]<<" ";
-		//cout<<"rho_max member:"<<jcol<<endl;
 		deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[jcol],jcol);
 		//every column of rho_max get a new color
 		//so new colorTracker level is created
@@ -2180,7 +2191,7 @@ int Matrix::dsatur(int *clique, int ub, int tbCh)
 	//currentTime = timeBuffer.tms_utime;
 	//cout<<"Total coloring time : "<<(currentTime-startTime)/60.0<<" Subproblems:"<<subProblems <<endl;
         cout<<endl<<"Got current best coloring at time : "<<( clock() - startTime ) / (double) CLOCKS_PER_SEC<<" Subproblems:"<<subProblems <<endl;
-        //printf("Best coloring has value %d, subproblems: %d time:%7.1f\n",maxgrpDsat,subProblems,( clock() - startTime ) / (double) CLOCKS_PER_SEC);
+      
     }
     catch(std::bad_alloc)
     {

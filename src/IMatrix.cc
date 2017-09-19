@@ -64,59 +64,9 @@ void IMatrix::deleteColumn(int *head,int *next,int *previous,int numdeg,int jcol
      next[jcol] = previous[jcol] = 0;	
 }
 
-//void IMatrix::deleteColumn2(int **head,int *next,int *previous,int* headj, int numdeg,int jcol)
+//unlike deletecolumn method this method deletes a column from a bucket with 2d head array
 void IMatrix::deleteColumn2(int **head,int *next,int *previous,int ideg, int numdeg,int jcol)
 {
-    //cout<<"Deleteing :"<<jcol<<" headj[jcol]: "<<headj[jcol]<<endl;
-        
-    // if ( headj[jcol] != -1)
-    // {
-
-    //     //cout<<" Jcol: "<<jcol<<" next[jcol]: "<<next[jcol]<<endl;
-    //     //cout<<" head[numdeg][headj[jcol]]: "<<head[numdeg][headj[jcol]]<<" next[jcol]: "<<next[jcol]<<endl;
-    //     head[numdeg][headj[jcol]] = next[jcol];
-    //     //cout<<" head[numdeg][headj[jcol]]: "<<head[numdeg][headj[jcol]]<<endl;
-    //     if(head[numdeg][headj[jcol]] == 0)
-    //     {
-    //         int j = headj[jcol];
-
-    //         while(true)
-    //         {
-    //             cout<<" JJ : "<<j<<endl;
-    //             head[numdeg][j] = head[numdeg][j+1];
-    //             if(head[numdeg][j] == 0)
-    //                 break;
-    //             headj[head[numdeg][j]] = j;
-    //             j++; 
-    //         }
-    //     }
-    //     else
-    //     {
-             
-    //          headj[next[jcol]] = headj[jcol];
-    //     }
-
-
-
-    // }
-    // else
-    // {
-        
-
-    //     next[previous[jcol]] = next[jcol];
-       
-    // }
-
-    // if(next[jcol] > 0)
-    // {
-        
-    //     previous[next[jcol]] = previous[jcol];
-    //      cout<<"After"<<endl;
-    // }
-    //  next[jcol] = previous[jcol] = 0;
-    //  headj[jcol]= -1;	
-
-
     if ( previous[jcol] == 0)
     {
         head[numdeg][ideg] = next[jcol];
@@ -131,9 +81,6 @@ void IMatrix::deleteColumn2(int **head,int *next,int *previous,int ideg, int num
         previous[next[jcol]] = previous[jcol];
     }
      next[jcol] = previous[jcol] = 0;
-
-    // if(jcol ==969)
-         // cout<<" Numdeg: "<<numdeg<<" head[numdeg]["<<ideg<<"] : "<<head[numdeg][ideg]<< "  next[jcol]: "<<next[jcol]<< " previous[jcol]: "<<previous[jcol]<<endl;
 
 }
 
@@ -152,78 +99,16 @@ void IMatrix::addColumn(int *head,int *next,int *previous, int numdeg, int jcol)
     head[numdeg] = jcol;
 }
 
+//unlike addcolumn method this method adds a column to a bucket with 2d head array
 void IMatrix::addColumn2(int **head,int *next,int *previous, int ideg, int numdeg, int jcol)
 {
-
-    /*if(numdeg == 0)
-    {
-	previous[jcol] = 0;	
-	next[jcol] = head[numdeg][0];
-	if(head[numdeg][0] > 0)
-        {
-        	previous[head[numdeg][0]] = jcol;
-    	}
-    	head[numdeg][0] = jcol;
-    } 	
-
-    else
-    {*/
-
-    	// int j = 0;
-    	// previous[jcol] = 0;
-    	
-    	// while(true)
-    	// {
-    	// 	if(head[numdeg][j]>0 && inducedDeg[jcol] == inducedDeg[head[numdeg][j]])
-    	// 	{
-     //            headj[head[numdeg][j]] = -1;
-     //            headj[jcol] = j;
-    			
-     //            previous[head[numdeg][j]] = jcol;
-     //            next[jcol] = head[numdeg][j];
-    	// 		head[numdeg][j] = jcol;
-    	// 		break;
-    	// 	}		
-    	// 	else if(head[numdeg][j] == 0)
-    	// 	{
-
-    	// 		head[numdeg][j] = jcol;	
-    	// 		next[jcol] = 0;
-     //            headj[jcol] = j;
-     //            //cout<<"Head Jcol: "<<jcol<<endl;
-    	// 		break;		
-    	// 	}	
-     //        j++;
-    		
-    	// }
-
-        previous[jcol] = 0;
+   	previous[jcol] = 0;
         next[jcol] = head[numdeg][ideg];
-        // while(true)
-        // {
         if(head[numdeg][ideg]>0)
         {
-            
             previous[head[numdeg][ideg]] = jcol;
-            //next[jcol] = head[numdeg][ideg];
         }
         head[numdeg][ideg] = jcol;
-                //break;
-                   
-              
-            //j++;
-            
-        
-	
-    // }		
-    /*previous[jcol] = 0;
-    next[jcol] = head[numdeg];
-    if(head[numdeg] > 0)
-    {
-        previous[head[numdeg]] = jcol;
-    }
-    head[numdeg] = jcol;
-*/
 }
 
 void IMatrix::initializeDegreesToUVertices(int n,int *tag,int *u_head,int *u_next,int *u_previous, int *u_list, bool *inU, int *u_tag)
@@ -264,8 +149,9 @@ bool IMatrix::getVerify()
 }
 
 
-//dsature related methods
-
+//methods used for DSATUR based exact coloring alagorithms
+//this method is used to select a column in each iteration 
+//based on user's tie-breking choice(1-4) 
 int IMatrix::getColumn()
 {
     int column;
@@ -621,17 +507,10 @@ int IMatrix::branchColor(int order,int colorBoundary)
     //find the vertex with maximum saturation degree. 
     //if there is more than one the we take the head to 
     //break the tie
-    //int jp;
-    //bool trueFalse = false;
-    //int maxsatLevel = maxsatDsat;
-    //cout<<"color of 1<<"<<colorDsat[1]<<endl;
-    
-     //jcol = jp;
     jcol = getColumn();
     handled[jcol] = true;
     
 
-    //cout<<" Ordering:"<<order<<" jcol "<<jcol<<endl;
     //jcol is colored by all available colors (one at a time) and then 
     //recursively colors rest of the unordered columns to find a new coloring 
     for(colorNo=1; colorNo<=colorBoundary;colorNo++)
@@ -663,7 +542,7 @@ int IMatrix::branchColor(int order,int colorBoundary)
                 cout<<endl<<"Got current best coloring at time : "<<( clock() - startTime ) / (double) CLOCKS_PER_SEC<<endl;
                 //coloring
                 cout<<"New coloring: "<<UB<<" Subproblems: "<<subProblems<<endl;
-
+		//uncomment this part to see which column gets which color	
                 /*for(int i=1;i<=N;i++)
                     cout<<i<<"-"<<colorDsat[i]<<";";
                 cout<<endl; */
@@ -685,9 +564,6 @@ int IMatrix::branchColor(int order,int colorBoundary)
                 handled[jcol] = false;
                 return UB;
             }
-            //else 
-            //  cout<<"Unsuccessful "<<UB<<endl;        
-                    
         
         }   
     }
@@ -722,7 +598,8 @@ int IMatrix::branchColor(int order,int colorBoundary)
             cout<<endl<<"Got current best coloring at time : "<<( clock() - startTime ) / (double) CLOCKS_PER_SEC<<endl;
             //coloring
             cout<<"New coloring: "<<UB<<" Subproblems: "<<subProblems<<endl;
-            /*for(int i=1;i<=N;i++)
+            //uncomment this part to see which column gets which color
+	    /*for(int i=1;i<=N;i++)
                 cout<<i<<"-"<<colorDsat[i]<<";";
             cout<<endl; */
         }
