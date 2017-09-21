@@ -606,6 +606,179 @@ bool Matrix::idoDsatur(int *order, int *clique)
  */
 bool Matrix::ido(int *order )
 {
+    int **head,*previous, *next, *tag, *inducedDeg, *maxIncTrack;
+    try
+    {
+
+        // The following three integer arrays consist of a doubly linked list. It acts
+        // as a bucket priority queue for the incidence degree of the columns.
+
+        // head(deg)(inDeg) is the first column in the deg incDeg and induced deg unless 
+        // head(deg)(inDeg) = 0. If head(deg)(incDeg) = 0 there are no columns in the deg incDeg and inDeg.
+
+
+        // previous(col) is the column before col in the incidence list unless
+        // previous(col) = 0. If previous(col) = 0,  col is the first column in this
+        // incidence list.
+
+        // next(col) is the column after col in the incidence list unless
+        // next(col) = 0. If next(col) = 0,  col is the last column in this incidence
+        // list.
+
+	    // inducedDeg(col) is the degree of column in G(V\V')
+
+        // if col is in un-ordered column, then order[col] is the incidence
+        // degree of col to the graph induced by the ordered columns. If col is
+        // an ordered column, then order[col] is the incidence-degree order of
+        // column col.
+
+        head = new int*[N+1]; //2D head to find column of maximum saturation degree and maximum induced degree 
+        previous = new int[N+1];
+        next = new int[N+1];
+		inducedDeg = new int[N+1]; 
+		int cliqueIndex = 0;
+        tag = new int[N+1]; // Temporary array, used for marking ordered columns
+        maxIncTrack = new int[N+1](); //track the no of column in incedence degree lists 
+
+        int* indMax = new  int[maxdeg+1](); //holds the maximum induced degree in incidence degree lists
+
+               
+        head[0] = new int[maxdeg+1](); //initialize saturation degree 0 list 
+  
+
+        indMax[0] = maxdeg;
+
+        for(int jp =1 ; jp <= N ; jp++)
+        {
+            int ic = tag[jp]; // Tag is sorted indices for now 
+            head[jp] =  new int [maxdeg+1]();
+            tag[jp] = 0;
+            order[jp] = 0;
+	    	inducedDeg[jp] = ndeg[jp];	
+	    	maxIncTrack[0]++;
+	    	addColumn2(head,next,previous,inducedDeg[jp],0,jp);	    		
+        }
+
+        int maximalClique = 0;
+
+        int maxinc = 0;
+        int ncomp;
+        int numord = 1;
+        int searchLength = 0;
+        do
+        {
+           
+            int jcol;
+      
+            while(true)
+            {
+                 if(maxIncTrack[maxinc] > 0)
+                     break;
+                 maxinc--;
+                 searchLength++;
+            }
+
+            for(int i = indMax[maxinc]; i >= 0 ; i--)
+            {
+
+                if(head[maxinc][i] > 0)
+                {
+
+                    jcol = head[maxinc][i];
+                    //check = i;
+                    indMax[maxinc] = i;
+                    break;
+                }
+                searchLength++;
+            }
+
+
+            order[jcol] = numord;
+	   
+            numord = numord + 1;
+
+            // termination test.
+            if( numord > N)
+                break;
+
+            // delete column jcol from the maxinc and max induced deg order.
+            deleteColumn2(head,next,previous,inducedDeg[jcol],maxinc,jcol);
+            maxIncTrack[maxinc]--;
+            tag[jcol] = N;
+
+
+            // Find all columns adjacent to jcol
+            for(int jp = jpntr[jcol] ; jp <= jpntr[jcol+1] -1; jp++)
+            {
+                int ir = row_ind[jp];
+                for(int ip = ipntr[ir];ip <=  ipntr[ir+1]-1; ip++)
+                {
+                    int ic = col_ind[ip];
+
+                    if (tag[ic] < numord)
+                    {
+                        tag[ic] = numord;
+
+
+                        // update the pointers to the current incidence lists.
+                        int incidence = order[ic];
+                        order[ic] = order[ic] + 1;
+
+                        // update the maxinc.
+                        maxinc = max(maxinc,order[ic]);
+
+                        // delete column ic from the incidence list.
+                        deleteColumn2(head,next,previous,inducedDeg[ic],incidence,ic);
+
+                        maxIncTrack[incidence]--;
+                        addColumn2(head,next,previous,--inducedDeg[ic],incidence+1,ic);
+		  	            maxIncTrack[incidence+1]++;	
+
+		  	            indMax[incidence+1] = max(inducedDeg[ic],indMax[incidence+1]);
+
+                    }
+                }
+            }
+        }while(1);
+
+        // Invert the integer array <id:order>
+        for(int jcol = 1;jcol<= N; jcol++)
+        {
+            previous[order[jcol]] = jcol;
+        }
+        for(int jp = 1;jp <= N; jp++)
+        {
+            order[jp] = previous[jp];
+        }
+
+    }
+    catch (bad_alloc)
+    {
+        cerr << "Memory Exhausted in Matrix::IDO\n";
+
+        if(head) delete[] head;
+        if(previous) delete[] previous;
+        if(next) delete[] next;
+        if(tag) delete[] tag;
+
+        return false;
+    }
+
+    if(head) delete[] head;
+    if(previous) delete[] previous;
+    if(next) delete[] next;
+    if(tag) delete[] tag;
+    if(inducedDeg) delete[] inducedDeg;	
+
+    return true;
+
+}
+
+
+//This IDO is the old IDO. You can comment the current IDO and uncomment
+//this old one and use it
+/*bool Matrix::ido(int *order )
+{
     int *head,*previous, *next, *tag, *inducedDeg;
     try
     {
@@ -646,13 +819,11 @@ bool Matrix::ido(int *order )
         // will hold the sorted indices. The two arrays, <id:previous> and
         // <id:next> is used for temporary storage required for <id:indexSort>
         // routine.
-        MatrixUtility::indexsort(N,N-1,ndeg,-1,tag/* index*/ ,previous/* last
-                                                                       */ ,next/* next
-                                                                                */ );
+        MatrixUtility::indexsort(N,N-1,ndeg,-1,tag,previous, next);
         // Initialize the doubly linked list, and <id:tag> and <id:order> integer array.
         for(int jp =N ; jp >= 1 ; jp--)
         {
-            int ic = tag[jp]; /* Tag is sorted indices for now */
+            int ic = tag[jp]; // Tag is sorted indices for now 
             head[N-jp] = 0;
 
             addColumn(head,next,previous,0,ic);
@@ -796,7 +967,7 @@ bool Matrix::ido(int *order )
     return true;
 
 }
-
+*/
 
 /**
  * Purpose: 		Computes Recursive Largest-First coloring (RLF) of the columns of a sparse matrix A (i.e. the vertices
@@ -1553,7 +1724,7 @@ int Matrix::sdo(int *color)
         {
             int ic = jp;
             head[jp] = NULL;       
-	    tag[jp] = 0;
+	    	tag[jp] = 0;
             satDeg[jp] = 0;
             color[jp] = N;
             seqTag[jp] = 0;
@@ -1562,8 +1733,6 @@ int Matrix::sdo(int *color)
             maxSatTrack[0]++;
             addColumn2(head,next,previous,inducedDeg[jp],0,jp);
         }
-        
-       
         //cout<<"maxSatTrack[0] : "<<maxSatTrack[0]<<" maxDeg: "<<maxdeg<<endl;
         int numord = 1;
 
@@ -1674,11 +1843,11 @@ int Matrix::sdo(int *color)
                             satDeg[ic]++;
                             // update the maxsat.
                             maxsat = max(maxsat,satDeg[ic]);
-			    //delete column from current sat an induced deg and add to higher
-			    //sat and new (lower) induced degree list 	
+						    //delete column from current sat an induced deg and add to higher
+						    //sat and new (lower) induced degree list 	
                             deleteColumn2(head,next,previous,inducedDeg[ic],satDeg[ic]-1,ic);
                             addColumn2(head,next,previous,--inducedDeg[ic],satDeg[ic],ic);
-		  	    maxSatTrack[satDeg[ic]-1]--;
+		  	    			maxSatTrack[satDeg[ic]-1]--;
                             //update max induced degree
                             indMax[satDeg[ic]] = max(inducedDeg[ic],indMax[satDeg[ic]]);
                             maxSatTrack[satDeg[ic]]++;
@@ -1693,9 +1862,8 @@ int Matrix::sdo(int *color)
                     }
                 }
             }
-	}
-        cout<<" Search Length: "<<searchLength<<endl;
-
+		}
+	    cout<<" Search Length: "<<searchLength<<endl;
     }
     catch(std::bad_alloc)
     {
