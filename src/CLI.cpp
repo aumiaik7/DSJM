@@ -33,8 +33,8 @@ CLI::ordering_method CLI::parseMethod(char *string)
             return IDO_RLF;
         else if (strcmp ( "lfo_rlf", string) == 0)
             return LFO_RLF;
-  	else if (strcmp ( "dsatur", string) == 0)
-            return DSATUR;
+  	else if (strcmp ( "exact", string) == 0)
+            return EXACT;
         else
             return UNKNOWN;
     }
@@ -99,8 +99,8 @@ string CLI::method_to_string(ordering_method o)
         return "IDO_RLF";
     else if ( o == LFO_RLF)
         return "LFO_RLF";
-     else if ( o == DSATUR)
-        return "DSATUR";	
+     else if ( o == EXACT)
+        return "EXACT";	
     else
         return "UNKNOWN";
 }

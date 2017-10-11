@@ -19,7 +19,7 @@ namespace CLI
         SDO,
         SLO,
         SLO_RLF,
-	    DSATUR,
+	    EXACT,
         UNKNOWN,
 
     };

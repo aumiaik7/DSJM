@@ -36,6 +36,7 @@ public:
      **/
     bool ido(int *order);
     bool idoDsatur(int *order, int *clique);	
+    bool slo_exact(int *order, int *clique);
     bool lfo(int *order);
 
 
@@ -58,7 +59,7 @@ public:
     int slo_rlf(int *list, int *ngrp);
     //int dsatur(int *ngrp, int *clique, int UB);
     //int dsatur(int *clique, int UB, int tbChoice);    
-    int dsatur(int UB, int tbChoice);    
+    int exact(int UB,int *clique,int cliqueChoice,int tbChoice);    
 
     Matrix* getSeedMatrix(int *ngrp);
 

@@ -121,7 +121,7 @@ Configuration* processCommandLineParameters(int argc, char **argv, Configuration
 
             else if (configuration->oMethod == CLI::RLF_SLO)
                 ;
-	    else if (configuration->oMethod == CLI::DSATUR)
+	    else if (configuration->oMethod == CLI::EXACT)
                 ;	
 
             else
@@ -183,7 +183,7 @@ Configuration* processCommandLineParameters(int argc, char **argv, Configuration
             configuration->partitionFile = NULL;
             break;
         case 't': 
-            if(configuration->oMethod == CLI::DSATUR && atoi(optarg) <=4)
+            if(configuration->oMethod == CLI::EXACT && atoi(optarg) <=4)
             {
                 configuration->tieBrkDsat = atoi(optarg);
             }

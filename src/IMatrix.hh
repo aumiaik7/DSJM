@@ -24,12 +24,13 @@ public:
      **/
     virtual bool ido(int *order) = 0;
     virtual bool idoDsatur(int *order,int *clique) = 0;	
+    virtual bool slo_exact(int *order,int *clique) = 0; 
     virtual bool lfo(int *order) = 0 ;
 
     virtual bool computedegree() = 0 ;
     virtual int greedycolor(int *list, int *ngrp) = 0 ;
     virtual int rlf(int *ngrp) = 0;
-    virtual int dsatur(int UB, int tbChoice) = 0;
+    virtual int exact(int UB,int *clique,int cliqueChoice,int tbChoice) = 0;
     virtual int slo_rlf(int *list, int *ngrp) = 0 ;	  
 
     void setVerify(bool v);

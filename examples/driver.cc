@@ -182,10 +182,21 @@ RunningTimeInfo runOrderingAndColoringAlgorithm(Configuration* configuration, T*
             	timer.Stop();
 			
 	}
-	else if ( configuration->oMethod == CLI::DSATUR)
+	else if ( configuration->oMethod == CLI::EXACT)
         {
             //maxgrp is either no of columns or coloring we get from any heuristic
-	    maxgrp = configuration->N;
+	          maxgrp = configuration->N;
+            
+            timer.Start();
+            int *list;
+            list = new int[configuration->N+1];
+            // ngrp = new int[configuration->N+1];
+            int *clique = new int[configuration->N+1]();
+            success = matrix->slo_exact(list,clique);
+            timer.Stop();
+
+          
+            ordering_time = timer.GetWallTime();
 
 	    // here we set an Upper bound from the coloring we get from ido and coloring	
 	    /*timer.Start();
@@ -202,12 +213,13 @@ RunningTimeInfo runOrderingAndColoringAlgorithm(Configuration* configuration, T*
             timer.Stop();
 	    */ //uncomment this part to set ido ordering+coloring as upperbound	
 
-	    timer.Start();
+	          timer.Start();
             ngrp = new int[configuration->N+1];
             Matrix *nmatrix = dynamic_cast<Matrix*>(matrix);
             //maxgrp = nmatrix->dsatur(ngrp,clique,maxgrp);
-	    //maxgrp = nmatrix->dsatur(clique,maxgrp,configuration->tieBrkDsat); 
-	    maxgrp = nmatrix->dsatur(maxgrp,configuration->tieBrkDsat); 		
+      	    //maxgrp = nmatrix->dsatur(clique,maxgrp,configuration->tieBrkDsat); 
+      	    // maxgrp = nmatrix->dsatur(maxgrp,configuration->tieBrkDsat); 		
+            maxgrp = nmatrix->exact(maxgrp,clique,2,configuration->tieBrkDsat);     
             timer.Stop();	
 
 	    	

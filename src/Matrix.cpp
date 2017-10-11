@@ -286,6 +286,7 @@ bool Matrix::slo(int *list)
             if ((mindeg +1 == numord ) && (maximalClique == 0) )
             {
                 maximalClique = numord;
+               
             }
 
             // find column jcol with minimal degree
@@ -349,6 +350,119 @@ bool Matrix::slo(int *list)
 
 }
 
+bool Matrix::slo_exact(int *list, int *clique)
+{
+    int mindeg, numord;
+    int cliqueflag = false;
+    int cliqueIndex = 1;
+    if(list == NULL)
+        return false;
+
+
+    vector<int> tag;
+
+    try
+    {
+        tag.reserve(N+1);
+        BucketPQ<MinQueue> priority_queue(maxdeg,N);
+        mindeg = N;
+
+        for(int jp=1;jp <= N; jp++)
+        {
+            priority_queue.insert(jp,ndeg[jp]); // assume that ndeg has already been
+            // computed (by computeDegree() method)
+            tag[jp] = N;
+            mindeg = min(mindeg,ndeg[jp]);
+        }
+
+        int maximalClique = 0; // Reset maximalClique. It will be set in the while loop
+                           // only once.
+        numord = N; // numord stores the ordering number for the next column to be
+                    // processed. It also indicates the number of columns remaining
+                    // to be processed.
+
+        while(1)
+        {
+            int ic,ip, ir, jcol, jp, numdeg;
+            
+              // We find the largest clique when number of columns remaining is
+              // equal to mindeg+1.
+             
+            if ((mindeg +1 == numord ) && (maximalClique == 0) )
+            {
+                maximalClique = numord;
+                cliqueflag = true;
+                cout<<"Maximal Clique"<<maximalClique<<endl;
+            }
+
+
+
+            // find column jcol with minimal degree
+            Item item = priority_queue.top();
+            jcol = item.index;
+            mindeg = item.priority;
+
+            priority_queue.pop();
+
+            list[numord] = jcol;
+            numord = numord -1;
+
+            if(cliqueflag)
+		    {
+				clique[cliqueIndex] = jcol;
+				cout<<"cli jcol :" <<clique[cliqueIndex]<<endl;
+				cliqueIndex++;
+		    }
+
+            // when numord = 0, we have already processed all the columns
+            if (numord == 0)
+            {
+                return true;
+            }
+
+            tag[jcol] = 0;
+
+
+            // Determine all nonzero entries (ir,jcol)
+
+
+            for(jp = jpntr[jcol]; jp <= jpntr[jcol+1] -1;jp++)
+            {
+                ir = row_ind[jp] ;
+
+                // For each row ir,determine all nonzero entries (ir,ic)
+                for(ip = ipntr[ir] ; ip <= ipntr[ir+1] - 1; ip++)
+                {
+                    ic = col_ind[ip];
+                    // Array tag marks columns which are adjacent to
+                    // column jcol
+                     
+
+                    if(tag[ic] > numord)
+                    {
+
+                        tag[ic] = numord;
+
+                        // Update the degree in the priority queue.
+                        priority_queue.decrease(ic);
+                        numdeg = priority_queue.get(ic).priority;
+                        mindeg = min(mindeg,numdeg);
+
+                    }
+                }
+            }
+        }
+    }
+    catch(bad_alloc) // for vector.reserve()
+    {
+        return false;
+    }
+    catch(length_error) // for vector.reserve()
+    {
+        return false;
+    }
+
+}
 
 /**
  * Purpose: 		Computes Incidence-Degree Ordering (IDO) of the columns of a sparse matrix A (i.e. the vertices
@@ -429,8 +543,8 @@ bool Matrix::idoDsatur(int *order, int *clique)
 
             tag[jp] = 0;
             order[jp] = 0;
-	    inducedDeg[jp] = ndeg[jp];	
-	    clique[jp] = 0;//clique index starts from 0	
+		    inducedDeg[jp] = ndeg[jp];	
+		    clique[jp] = 0;//clique index starts from 0	
 	    		
         }
 
@@ -487,10 +601,10 @@ bool Matrix::idoDsatur(int *order, int *clique)
                 for(int numlst = 1,  numwgt = -1; numlst <= maxLast; numlst++)
                 {
                     //if (ndeg[jp] > numwgt)
-		    if (inducedDeg[jp] > numwgt)	
+		    		if (inducedDeg[jp] > numwgt)	
                     {
                         //numwgt = ndeg[jp];
-			numwgt = inducedDeg[jp];
+						numwgt = inducedDeg[jp];
                         jcol = jp;
                     }
                     jp = next[jp];
@@ -502,9 +616,9 @@ bool Matrix::idoDsatur(int *order, int *clique)
             order[jcol] = numord;
 	    if(cliqueflag)
 	    {
-		//cout<<"jcol :" <<jcol<<endl;		
-		clique[cliqueIndex] = jcol;
-		cliqueIndex++;
+			//cout<<"jcol :" <<jcol<<endl;		
+			clique[cliqueIndex] = jcol;
+			cliqueIndex++;
 	    }
             numord = numord + 1;
 
@@ -2209,7 +2323,7 @@ int Matrix::sdo(int *color)
  *
  */
 
-int Matrix::dsatur(int ub, int tbCh)
+int Matrix::exact(int ub,int *clique,int cliqueChoice,int tbCh)
 {
    
     //upper bound (ub) is the coloring we get from ido
@@ -2293,64 +2407,135 @@ int Matrix::dsatur(int ub, int tbCh)
 
   	
   	//starting time
-        startTime = clock();
+    startTime = clock();
   	//color each column in rho_max clique and update
   	//their neighbors saturation degree
-  	for( int ipRhoMax = ipntr[irRhoMax] ; ipRhoMax < ipntr[irRhoMax+1] ; ipRhoMax++)
-	{
-		jcol = col_ind[ipRhoMax];
-		
-		numord++;
-		colorDsat[jcol] = numord; // numord is new color for each clique member
-		deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[jcol],jcol);
-		//every column of rho_max get a new color
-		//so new colorTracker level is created
-		colorTracker[numord] = new int[N+1]();
-		//colored
-		colorNo = numord;
-		tagDsat[jcol] = numord;
-		//handled
-	        handled[jcol] = true;
-	        //updating saturation degrees of jcols neighbors
-		for (int jp = jpntr[jcol] ; jp < jpntr[jcol+1] ; jp++)
+  	if(cliqueChoice == 1)
+  	{
+	  	for( int ipRhoMax = ipntr[irRhoMax] ; ipRhoMax < ipntr[irRhoMax+1] ; ipRhoMax++)
 		{
-			int ir = row_ind[jp];
-
-			for( int ip = ipntr[ir] ; ip < ipntr[ir+1] ; ip++)
+			jcol = col_ind[ipRhoMax];
+			
+			numord++;
+			colorDsat[jcol] = numord; // numord is new color for each clique member
+			deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[jcol],jcol);
+			//every column of rho_max get a new color
+			//so new colorTracker level is created
+			colorTracker[numord] = new int[N+1]();
+			//colored
+			colorNo = numord;
+			tagDsat[jcol] = numord;
+			//handled
+		        handled[jcol] = true;
+		        //updating saturation degrees of jcols neighbors
+			for (int jp = jpntr[jcol] ; jp < jpntr[jcol+1] ; jp++)
 			{
-			    int ic = col_ind[ip];
-			    
-			    //if(tagDsat[ic] < numord)
-			    if(tagDsat[ic] < numord)
-			    {
-			       	tagDsat[ic] = numord;
-			    	//noumber of "colorNO" colored neighbors in ordered graph
-		    		int prevColorCount = colorTracker[colorNo][ic];	
-			        //no "colorNo" colored neighbors in ordered graph so we can increase the saturation degree of ic
-			        if(prevColorCount==0)
-			        {
-				    satDegDsat[ic]++;
-			            //update maximum saturation
-			            maxsatDsat = max(maxsatDsat,satDegDsat[ic]);
-			            //delete the column ic from its current saturation degree list
-			            if(!handled[ic])
-				    {    
-		                	deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic]-1,ic);
-				        //add it to its prev+1 saturation degree list
-				        addColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic],ic);
+				int ir = row_ind[jp];
+
+				for( int ip = ipntr[ir] ; ip < ipntr[ir+1] ; ip++)
+				{
+				    int ic = col_ind[ip];
+				    
+				    //if(tagDsat[ic] < numord)
+				    if(tagDsat[ic] < numord)
+				    {
+				       	tagDsat[ic] = numord;
+				    	//noumber of "colorNO" colored neighbors in ordered graph
+			    		int prevColorCount = colorTracker[colorNo][ic];	
+				        //no "colorNo" colored neighbors in ordered graph so we can increase the saturation degree of ic
+				        if(prevColorCount==0)
+				        {
+					    satDegDsat[ic]++;
+				            //update maximum saturation
+				            maxsatDsat = max(maxsatDsat,satDegDsat[ic]);
+				            //delete the column ic from its current saturation degree list
+				            if(!handled[ic])
+						    {    
+				                	deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic]-1,ic);
+						        //add it to its prev+1 saturation degree list
+						        addColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic],ic);
+						    }
+				        }
+				       	//increase the "colorNo" colored neighbor(s) in ordered graph of ic 
+					colorTracker[colorNo][ic]++;
+					//decrease ic's degree in unordered graph
+					inducedDegDsat[ic] = inducedDegDsat[ic] - 1;
 				    }
-			        }
-			       	//increase the "colorNo" colored neighbor(s) in ordered graph of ic 
-				colorTracker[colorNo][ic]++;
-				//decrease ic's degree in unordered graph
-				inducedDegDsat[ic] = inducedDegDsat[ic] - 1;
-			    }
-			}
-       		}
+				}
+	       	}
+		}
+		LB = rho_max;
+	}
+	else if(cliqueChoice == 2)
+  	{
+  		int cliqueIndex = 1;
+  		  cout<<"clique slo "<<clique[5]<<endl;
+
+	  	//for( int ipRhoMax = ipntr[irRhoMax] ; ipRhoMax < ipntr[irRhoMax+1] ; ipRhoMax++)
+	  	// for( jcol = clique[cliqueIndex] ; jcol > 0 ; cliqueIndex++)
+  		while(1)  
+		{
+			jcol = clique[cliqueIndex];
+
+			if(jcol == 0)
+				break;
+			cliqueIndex++;
+			//jcol = col_ind[ipRhoMax];
+			cout<<" exact cli "<<jcol<< " Index "<<cliqueIndex<<endl;
+			numord++;
+			colorDsat[jcol] = numord; // numord is new color for each clique member
+			deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[jcol],jcol);
+			//every column of rho_max get a new color
+			//so new colorTracker level is created
+			colorTracker[numord] = new int[N+1]();
+			//colored
+			colorNo = numord;
+			tagDsat[jcol] = numord;
+			//handled
+		    handled[jcol] = true;
+		    //updating saturation degrees of jcols neighbors
+			for (int jp = jpntr[jcol] ; jp < jpntr[jcol+1] ; jp++)
+			{
+				int ir = row_ind[jp];
+
+				for( int ip = ipntr[ir] ; ip < ipntr[ir+1] ; ip++)
+				{
+				    int ic = col_ind[ip];
+				    
+				    //if(tagDsat[ic] < numord)
+				    if(tagDsat[ic] < numord)
+				    {
+				       	tagDsat[ic] = numord;
+				    	//noumber of "colorNO" colored neighbors in ordered graph
+			    		int prevColorCount = colorTracker[colorNo][ic];	
+				        //no "colorNo" colored neighbors in ordered graph so we can increase the saturation degree of ic
+				        if(prevColorCount==0)
+				        {
+					    satDegDsat[ic]++;
+				            //update maximum saturation
+				            maxsatDsat = max(maxsatDsat,satDegDsat[ic]);
+				            //delete the column ic from its current saturation degree list
+				            if(!handled[ic])
+					    {    
+			                	deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic]-1,ic);
+					        //add it to its prev+1 saturation degree list
+					        addColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic],ic);
+					    }
+				        }
+				       	//increase the "colorNo" colored neighbor(s) in ordered graph of ic 
+						colorTracker[colorNo][ic]++;
+						//decrease ic's degree in unordered graph
+						inducedDegDsat[ic] = inducedDegDsat[ic] - 1;
+				    }
+				}
+	       	}
+		}
+		LB = cliqueIndex - 1;
 	}
 
+
 	//lower bound is size of rho_max       
-	LB = rho_max;
+	
 	cout<<"LB :"<<LB<<endl;
 	//calling main branch and bound coloring method
         maxgrpDsat = branchColor(numord,numord);   
