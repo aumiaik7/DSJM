@@ -187,6 +187,10 @@ RunningTimeInfo runOrderingAndColoringAlgorithm(Configuration* configuration, T*
             //maxgrp is either no of columns or coloring we get from any heuristic
 	          maxgrp = configuration->N;
             
+            //We calculate lower bound in 2 ways. 
+            //No-1: rho_max is lower bound. It is calculated in computedegree method
+            //No-2: lower bound is calculated using slo_exact method the following code
+            //block is used for that
             timer.Start();
             int *list;
             list = new int[configuration->N+1];
@@ -198,10 +202,10 @@ RunningTimeInfo runOrderingAndColoringAlgorithm(Configuration* configuration, T*
           
             ordering_time = timer.GetWallTime();
 
-	    // here we set an Upper bound from the coloring we get from ido and coloring	
-	    /*timer.Start();
+	         // here we set an Upper bound from the coloring we get from ido and coloring	
+	         /*timer.Start();
             int *list = new int[configuration->N+1];
-	    int *clique = new int[configuration->N+1];	
+	          int *clique = new int[configuration->N+1];	
             ngrp = new int[configuration->N+1];
             success = matrix->idoDsatur(list,clique);
             timer.Stop();
@@ -211,15 +215,13 @@ RunningTimeInfo runOrderingAndColoringAlgorithm(Configuration* configuration, T*
             timer.Start();
             maxgrp = matrix->greedycolor(list,ngrp);
             timer.Stop();
-	    */ //uncomment this part to set ido ordering+coloring as upperbound	
+	         */ //uncomment this part to set ido ordering+coloring as upperbound	
 
 	          timer.Start();
             ngrp = new int[configuration->N+1];
             Matrix *nmatrix = dynamic_cast<Matrix*>(matrix);
-            //maxgrp = nmatrix->dsatur(ngrp,clique,maxgrp);
-      	    //maxgrp = nmatrix->dsatur(clique,maxgrp,configuration->tieBrkDsat); 
-      	    // maxgrp = nmatrix->dsatur(maxgrp,configuration->tieBrkDsat); 		
-            maxgrp = nmatrix->exact(maxgrp,clique,2,configuration->tieBrkDsat);     
+            maxgrp = nmatrix->exact(maxgrp,clique,1,configuration->tieBrkDsat); // Lower bound from rho_max 
+            //maxgrp = nmatrix->exact(maxgrp,clique,2,configuration->tieBrkDsat); // Lower bound we get from slo_exact method     
             timer.Stop();	
 
 	    	

@@ -392,7 +392,7 @@ bool Matrix::slo_exact(int *list, int *clique)
             {
                 maximalClique = numord;
                 cliqueflag = true;
-                cout<<"Maximal Clique"<<maximalClique<<endl;
+                //cout<<"Maximal Clique"<<maximalClique<<endl;
             }
 
 
@@ -410,7 +410,6 @@ bool Matrix::slo_exact(int *list, int *clique)
             if(cliqueflag)
 		    {
 				clique[cliqueIndex] = jcol;
-				cout<<"cli jcol :" <<clique[cliqueIndex]<<endl;
 				cliqueIndex++;
 		    }
 
@@ -616,7 +615,6 @@ bool Matrix::idoDsatur(int *order, int *clique)
             order[jcol] = numord;
 	    if(cliqueflag)
 	    {
-			//cout<<"jcol :" <<jcol<<endl;		
 			clique[cliqueIndex] = jcol;
 			cliqueIndex++;
 	    }
@@ -1473,6 +1471,7 @@ int Matrix::slo_rlf(int *list,int *color)
             priority_queue.insert(list[jp], ndeg[list[jp]]);
             u_queue.insert(jp, 0);
         }
+
         bool newColorClass = true; // Flag variable to indicate whether we
                                    // have just picked a column for a new
                                    // color class or not. It stays true for
@@ -1847,7 +1846,7 @@ int Matrix::sdo(int *color)
             maxSatTrack[0]++;
             addColumn2(head,next,previous,inducedDeg[jp],0,jp);
         }
-        //cout<<"maxSatTrack[0] : "<<maxSatTrack[0]<<" maxDeg: "<<maxdeg<<endl;
+
         int numord = 1;
 
         int maxsat = 0;
@@ -1971,13 +1970,13 @@ int Matrix::sdo(int *color)
                         {
                             deleteColumn2(head,next,previous,inducedDeg[ic],satDeg[ic],ic);
                             addColumn2(head,next,previous,--inducedDeg[ic],satDeg[ic],ic);
-			    indMax[satDeg[ic]] = max(inducedDeg[ic],indMax[satDeg[ic]]);	
+			    			indMax[satDeg[ic]] = max(inducedDeg[ic],indMax[satDeg[ic]]);	
                         }
                     }
                 }
             }
 		}
-	    cout<<" Search Length: "<<searchLength<<endl;
+	    //cout<<" Search Length: "<<searchLength<<endl;
     }
     catch(std::bad_alloc)
     {
@@ -2426,8 +2425,8 @@ int Matrix::exact(int ub,int *clique,int cliqueChoice,int tbCh)
 			colorNo = numord;
 			tagDsat[jcol] = numord;
 			//handled
-		        handled[jcol] = true;
-		        //updating saturation degrees of jcols neighbors
+	        handled[jcol] = true;
+	        //updating saturation degrees of jcols neighbors
 			for (int jp = jpntr[jcol] ; jp < jpntr[jcol+1] ; jp++)
 			{
 				int ir = row_ind[jp];
@@ -2466,10 +2465,11 @@ int Matrix::exact(int ub,int *clique,int cliqueChoice,int tbCh)
 		}
 		LB = rho_max;
 	}
+	//color each column of clique we get from slo_exact method 
+  	//and update their neighbors saturation degree
 	else if(cliqueChoice == 2)
   	{
   		int cliqueIndex = 1;
-  		  cout<<"clique slo "<<clique[5]<<endl;
 
 	  	//for( int ipRhoMax = ipntr[irRhoMax] ; ipRhoMax < ipntr[irRhoMax+1] ; ipRhoMax++)
 	  	// for( jcol = clique[cliqueIndex] ; jcol > 0 ; cliqueIndex++)
@@ -2481,7 +2481,6 @@ int Matrix::exact(int ub,int *clique,int cliqueChoice,int tbCh)
 				break;
 			cliqueIndex++;
 			//jcol = col_ind[ipRhoMax];
-			cout<<" exact cli "<<jcol<< " Index "<<cliqueIndex<<endl;
 			numord++;
 			colorDsat[jcol] = numord; // numord is new color for each clique member
 			deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[jcol],jcol);
@@ -2511,16 +2510,16 @@ int Matrix::exact(int ub,int *clique,int cliqueChoice,int tbCh)
 				        //no "colorNo" colored neighbors in ordered graph so we can increase the saturation degree of ic
 				        if(prevColorCount==0)
 				        {
-					    satDegDsat[ic]++;
+					    	satDegDsat[ic]++;
 				            //update maximum saturation
 				            maxsatDsat = max(maxsatDsat,satDegDsat[ic]);
 				            //delete the column ic from its current saturation degree list
 				            if(!handled[ic])
-					    {    
-			                	deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic]-1,ic);
-					        //add it to its prev+1 saturation degree list
-					        addColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic],ic);
-					    }
+						    {    
+				                deleteColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic]-1,ic);
+						        //add it to its prev+1 saturation degree list
+						        addColumn(headDsat,nextDsat,previousDsat,satDegDsat[ic],ic);
+						    }
 				        }
 				       	//increase the "colorNo" colored neighbor(s) in ordered graph of ic 
 						colorTracker[colorNo][ic]++;
@@ -2538,12 +2537,12 @@ int Matrix::exact(int ub,int *clique,int cliqueChoice,int tbCh)
 	
 	cout<<"LB :"<<LB<<endl;
 	//calling main branch and bound coloring method
-        maxgrpDsat = branchColor(numord,numord);   
-        //Done
+    maxgrpDsat = branchColor(numord,numord);   
+    //Done
 	cout<<endl<<"Coloring :"<<maxgrpDsat<<endl;
 	//currentTime = timeBuffer.tms_utime;
 	//cout<<"Total coloring time : "<<(currentTime-startTime)/60.0<<" Subproblems:"<<subProblems <<endl;
-        cout<<endl<<"Got current best coloring at time : "<<( clock() - startTime ) / (double) CLOCKS_PER_SEC<<" Subproblems:"<<subProblems <<endl;
+    cout<<endl<<"Got current best coloring at time : "<<( clock() - startTime ) / (double) CLOCKS_PER_SEC<<" Subproblems:"<<subProblems <<endl;
       
     }
     catch(std::bad_alloc)
@@ -2558,7 +2557,7 @@ int Matrix::exact(int ub,int *clique,int cliqueChoice,int tbCh)
         if(inducedDegDsat) delete[] inducedDegDsat;
         if(colorDsat) delete[] colorDsat;
         if(handled) delete[] handled;
-	if(colorTracker) delete [] colorTracker;	
+		if(colorTracker) delete [] colorTracker;	
 	
         return 0;
     }
