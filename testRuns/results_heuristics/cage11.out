@@ -1,0 +1,23 @@
+Output format: File name, no. of rows, no. of columns, no. of non-zero elements, method name, ordering time, coloring time, colors/partitions 
+
+
+Method: LFO
+data_heuristics/cage11.mtx,39082,39082,559722,LFO,0,0.02,79
+
+
+Method: SLO
+data_heuristics/cage11.mtx,39082,39082,559722,SLO,0.1,0.03,62
+
+
+Method: IDO
+data_heuristics/cage11.mtx,39082,39082,559722,IDO,0.16,0.01,65
+
+
+Method: SDO
+data_heuristics/cage11.mtx,39082,39082,559722,SDO,0,0.15,59
+
+
+Method: RLF
+data_heuristics/cage11.mtx,39082,39082,559722,RLF,0,1.46,54
+
+

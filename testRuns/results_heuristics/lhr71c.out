@@ -1,0 +1,23 @@
+Output format: File name, no. of rows, no. of columns, no. of non-zero elements, method name, ordering time, coloring time, colors/partitions 
+
+
+Method: LFO
+data_heuristics/lhr71c.mtx,70304,70304,1058754,LFO,0,0.07,66
+
+
+Method: SLO
+data_heuristics/lhr71c.mtx,70304,70304,1058754,SLO,0.13,0.07,63
+
+
+Method: IDO
+data_heuristics/lhr71c.mtx,70304,70304,1058754,IDO,0.17,0.07,64
+
+
+Method: SDO
+data_heuristics/lhr71c.mtx,70304,70304,1058754,SDO,0,0.23,63
+
+
+Method: RLF
+data_heuristics/lhr71c.mtx,70304,70304,1058754,RLF,0,0.78,63
+
+

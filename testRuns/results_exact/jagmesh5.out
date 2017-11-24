@@ -1,0 +1,48 @@
+######################## Tie-breaking method: SIMPLE
+data_exact/jagmesh5.mtx,LB :7
+
+Got current best coloring at time : 0
+New coloring: 7 Subproblems: 1174
+
+Coloring :7
+
+Got current best coloring at time : 0 Subproblems:1174
+1180,1180,7750,EXACT,0,0,7
+
+
+######################## Tie-breaking method: SEWELL
+data_exact/jagmesh5.mtx,LB :7
+
+Got current best coloring at time : 0.1875
+New coloring: 7 Subproblems: 1174
+
+Coloring :7
+
+Got current best coloring at time : 0.1875 Subproblems:1174
+1180,1180,7750,EXACT,0,0.19,7
+
+
+######################## Tie-breaking method: SEGUNDO
+data_exact/jagmesh5.mtx,LB :7
+
+Got current best coloring at time : 0.03125
+New coloring: 7 Subproblems: 1174
+
+Coloring :7
+
+Got current best coloring at time : 0.03125 Subproblems:1174
+1180,1180,7750,EXACT,0,0.05,7
+
+
+######################## Tie-breaking method: NEW
+data_exact/jagmesh5.mtx,LB :7
+
+Got current best coloring at time : 0.265625
+New coloring: 7 Subproblems: 1174
+
+Coloring :7
+
+Got current best coloring at time : 0.265625 Subproblems:1174
+1180,1180,7750,EXACT,0,0.27,7
+
+

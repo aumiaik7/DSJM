@@ -1,0 +1,23 @@
+Output format: File name, no. of rows, no. of columns, no. of non-zero elements, method name, ordering time, coloring time, colors/partitions 
+
+
+Method: LFO
+data_heuristics/af23560.mtx,23560,23560,484256,LFO,0,0.02,64
+
+
+Method: SLO
+data_heuristics/af23560.mtx,23560,23560,484256,SLO,0.04,0.02,41
+
+
+Method: IDO
+data_heuristics/af23560.mtx,23560,23560,484256,IDO,0.06,0.01,43
+
+
+Method: SDO
+data_heuristics/af23560.mtx,23560,23560,484256,SDO,0,0.08,41
+
+
+Method: RLF
+data_heuristics/af23560.mtx,23560,23560,484256,RLF,0,0.95,37
+
+

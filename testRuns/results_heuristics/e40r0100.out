@@ -1,0 +1,23 @@
+Output format: File name, no. of rows, no. of columns, no. of non-zero elements, method name, ordering time, coloring time, colors/partitions 
+
+
+Method: LFO
+data_heuristics/e40r0100.mtx,17281,17281,553562,LFO,0,0.03,91
+
+
+Method: SLO
+data_heuristics/e40r0100.mtx,17281,17281,553562,SLO,0.06,0.04,69
+
+
+Method: IDO
+data_heuristics/e40r0100.mtx,17281,17281,553562,IDO,0.1,0.03,70
+
+
+Method: SDO
+data_heuristics/e40r0100.mtx,17281,17281,553562,SDO,0,0.11,68
+
+
+Method: RLF
+data_heuristics/e40r0100.mtx,17281,17281,553562,RLF,0,1.85,67
+
+

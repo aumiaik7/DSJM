@@ -1,0 +1,23 @@
+Output format: File name, no. of rows, no. of columns, no. of non-zero elements, method name, ordering time, coloring time, colors/partitions 
+
+
+Method: LFO
+data_heuristics/lp_ken_18.mtx,105127,154699,358171,LFO,0,0.05,334
+
+
+Method: SLO
+data_heuristics/lp_ken_18.mtx,105127,154699,358171,SLO,0.14,0.04,325
+
+
+Method: IDO
+data_heuristics/lp_ken_18.mtx,105127,154699,358171,IDO,0.45,0.04,325
+
+
+Method: SDO
+data_heuristics/lp_ken_18.mtx,105127,154699,358171,SDO,0,0.38,325
+
+
+Method: RLF
+data_heuristics/lp_ken_18.mtx,105127,154699,358171,RLF,0,2.21,325
+
+

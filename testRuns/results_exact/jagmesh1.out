@@ -1,0 +1,63 @@
+######################## Tie-breaking method: SIMPLE
+data_exact/jagmesh1.mtx,LB :7
+
+Got current best coloring at time : 0
+New coloring: 10 Subproblems: 930
+
+Got current best coloring at time : 0
+New coloring: 9 Subproblems: 1239
+
+Got current best coloring at time : 17.6406
+New coloring: 8 Subproblems: 6.16606e+06
+
+Coloring :8
+
+Got current best coloring at time : 17.6406 Subproblems:6.1665e+06
+936,936,6264,EXACT,0,17.7,8
+
+
+######################## Tie-breaking method: SEWELL
+data_exact/jagmesh1.mtx,LB :7
+
+Got current best coloring at time : 0.078125
+New coloring: 10 Subproblems: 930
+
+Got current best coloring at time : 0.125
+New coloring: 9 Subproblems: 1455
+
+Coloring :9
+
+Got current best coloring at time : 3600.02 Subproblems:9.29283e+07
+936,936,6264,EXACT,0,3674.46,9
+
+
+######################## Tie-breaking method: SEGUNDO
+data_exact/jagmesh1.mtx,LB :7
+
+Got current best coloring at time : 0.03125
+New coloring: 10 Subproblems: 930
+
+Got current best coloring at time : 0.046875
+New coloring: 9 Subproblems: 1228
+
+Coloring :9
+
+Got current best coloring at time : 3600.02 Subproblems:3.03931e+08
+936,936,6264,EXACT,0,3644.6,9
+
+
+######################## Tie-breaking method: NEW
+data_exact/jagmesh1.mtx,LB :7
+
+Got current best coloring at time : 0.046875
+New coloring: 10 Subproblems: 930
+
+Got current best coloring at time : 0.0625
+New coloring: 9 Subproblems: 1522
+
+Coloring :9
+
+Got current best coloring at time : 3600.02 Subproblems:1.00943e+08
+936,936,6264,EXACT,0,3604.95,9
+
+

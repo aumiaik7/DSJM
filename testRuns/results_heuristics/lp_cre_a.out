@@ -1,0 +1,23 @@
+Output format: File name, no. of rows, no. of columns, no. of non-zero elements, method name, ordering time, coloring time, colors/partitions 
+
+
+Method: LFO
+data_heuristics/lp_cre_a.mtx,3516,7248,18168,LFO,0,0.01,360
+
+
+Method: SLO
+data_heuristics/lp_cre_a.mtx,3516,7248,18168,SLO,0.01,0,360
+
+
+Method: IDO
+data_heuristics/lp_cre_a.mtx,3516,7248,18168,IDO,0.03,0,360
+
+
+Method: SDO
+data_heuristics/lp_cre_a.mtx,3516,7248,18168,SDO,0,0.01,360
+
+
+Method: RLF
+data_heuristics/lp_cre_a.mtx,3516,7248,18168,RLF,0,0.14,360
+
+

@@ -1,0 +1,48 @@
+######################## Tie-breaking method: SIMPLE
+data_exact/dwt_878.mtx,LB :10
+
+Got current best coloring at time : 0
+New coloring: 10 Subproblems: 869
+
+Coloring :10
+
+Got current best coloring at time : 0 Subproblems:869
+878,878,7448,EXACT,0,0,10
+
+
+######################## Tie-breaking method: SEWELL
+data_exact/dwt_878.mtx,LB :10
+
+Got current best coloring at time : 0
+New coloring: 10 Subproblems: 869
+
+Coloring :10
+
+Got current best coloring at time : 0 Subproblems:869
+878,878,7448,EXACT,0,0,10
+
+
+######################## Tie-breaking method: SEGUNDO
+data_exact/dwt_878.mtx,LB :10
+
+Got current best coloring at time : 0
+New coloring: 10 Subproblems: 869
+
+Coloring :10
+
+Got current best coloring at time : 0 Subproblems:869
+878,878,7448,EXACT,0,0,10
+
+
+######################## Tie-breaking method: NEW
+data_exact/dwt_878.mtx,LB :10
+
+Got current best coloring at time : 0
+New coloring: 10 Subproblems: 869
+
+Coloring :10
+
+Got current best coloring at time : 0 Subproblems:869
+878,878,7448,EXACT,0,0.01,10
+
+

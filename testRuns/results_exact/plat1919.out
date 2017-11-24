@@ -1,0 +1,54 @@
+######################## Tie-breaking method: SIMPLE
+data_exact/plat1919.mtx,LB :19
+
+Got current best coloring at time : 0
+New coloring: 24 Subproblems: 1901
+
+Got current best coloring at time : 0.015625
+New coloring: 23 Subproblems: 3359
+
+Coloring :23
+
+Got current best coloring at time : 3600.02 Subproblems:4.5701e+08
+1919,1919,32399,EXACT,0.01,3603.64,23
+
+
+######################## Tie-breaking method: SEWELL
+data_exact/plat1919.mtx,LB :19
+
+Got current best coloring at time : 0.03125
+New coloring: 25 Subproblems: 1901
+
+Coloring :25
+
+Got current best coloring at time : 3600.02 Subproblems:1.98785e+08
+1919,1919,32399,EXACT,0,3638.56,25
+
+
+######################## Tie-breaking method: SEGUNDO
+data_exact/plat1919.mtx,LB :19
+
+Got current best coloring at time : 0.03125
+New coloring: 24 Subproblems: 1901
+
+Got current best coloring at time : 0.078125
+New coloring: 23 Subproblems: 3871
+
+Coloring :23
+
+Got current best coloring at time : 3600.02 Subproblems:2.11195e+08
+1919,1919,32399,EXACT,0,3727.89,23
+
+
+######################## Tie-breaking method: NEW
+data_exact/plat1919.mtx,LB :19
+
+Got current best coloring at time : 0.046875
+New coloring: 24 Subproblems: 1901
+
+Coloring :24
+
+Got current best coloring at time : 3600.03 Subproblems:1.77972e+08
+1919,1919,32399,EXACT,0,3669.14,24
+
+

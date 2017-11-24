@@ -1,0 +1,60 @@
+######################## Tie-breaking method: SIMPLE
+data_exact/flower_4_1.mtx,LB :5
+
+Got current best coloring at time : 0
+New coloring: 6 Subproblems: 125
+
+Got current best coloring at time : 0
+New coloring: 5 Subproblems: 202
+
+Coloring :5
+
+Got current best coloring at time : 0 Subproblems:202
+121,129,386,EXACT,0,0.01,5
+
+
+######################## Tie-breaking method: SEWELL
+data_exact/flower_4_1.mtx,LB :5
+
+Got current best coloring at time : 0
+New coloring: 6 Subproblems: 125
+
+Got current best coloring at time : 0
+New coloring: 5 Subproblems: 215
+
+Coloring :5
+
+Got current best coloring at time : 0.015625 Subproblems:215
+121,129,386,EXACT,0,0,5
+
+
+######################## Tie-breaking method: SEGUNDO
+data_exact/flower_4_1.mtx,LB :5
+
+Got current best coloring at time : 0
+New coloring: 6 Subproblems: 125
+
+Got current best coloring at time : 0
+New coloring: 5 Subproblems: 368
+
+Coloring :5
+
+Got current best coloring at time : 0 Subproblems:368
+121,129,386,EXACT,0,0,5
+
+
+######################## Tie-breaking method: NEW
+data_exact/flower_4_1.mtx,LB :5
+
+Got current best coloring at time : 0
+New coloring: 6 Subproblems: 125
+
+Got current best coloring at time : 0
+New coloring: 5 Subproblems: 209
+
+Coloring :5
+
+Got current best coloring at time : 0 Subproblems:209
+121,129,386,EXACT,0,0,5
+
+

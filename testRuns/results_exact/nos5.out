@@ -1,0 +1,54 @@
+######################## Tie-breaking method: SIMPLE
+data_exact/nos5.mtx,LB :23
+
+Got current best coloring at time : 0
+New coloring: 25 Subproblems: 446
+
+Got current best coloring at time : 13.0156
+New coloring: 24 Subproblems: 2.3713e+06
+
+Coloring :24
+
+Got current best coloring at time : 3600.02 Subproblems:6.02611e+08
+468,468,5172,EXACT,0,3641.52,24
+
+
+######################## Tie-breaking method: SEWELL
+data_exact/nos5.mtx,LB :23
+
+Got current best coloring at time : 0.015625
+New coloring: 24 Subproblems: 446
+
+Coloring :24
+
+Got current best coloring at time : 3600.02 Subproblems:2.69047e+08
+468,468,5172,EXACT,0.01,3657.3,24
+
+
+######################## Tie-breaking method: SEGUNDO
+data_exact/nos5.mtx,LB :23
+
+Got current best coloring at time : 0
+New coloring: 24 Subproblems: 446
+
+Got current best coloring at time : 0
+New coloring: 23 Subproblems: 978
+
+Coloring :23
+
+Got current best coloring at time : 0 Subproblems:978
+468,468,5172,EXACT,0,0.01,23
+
+
+######################## Tie-breaking method: NEW
+data_exact/nos5.mtx,LB :23
+
+Got current best coloring at time : 0
+New coloring: 24 Subproblems: 446
+
+Coloring :24
+
+Got current best coloring at time : 3600.02 Subproblems:3.03396e+08
+468,468,5172,EXACT,0,3625.02,24
+
+

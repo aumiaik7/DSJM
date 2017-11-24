@@ -46,7 +46,7 @@ void display_usage(void)
 {
   puts("Graph Coloring Driver Program");
   puts("Usage: ");
-  puts("        -m rlf/ido/sdo/slo/lfo/dsatur !Name of the Ordering Algorithm!");
+  puts("        -m rlf/ido/sdo/slo/lfo/exact !Name of the Ordering Algorithm!");
   puts("        -i matrix.mtx !Name of the matrix File!");
   puts("        -h !Help!");
   puts("        -s !Statistics Only!");
@@ -54,7 +54,7 @@ void display_usage(void)
   puts("        -v !Generate Results for Verification!");
   puts("        -q !Load Each row as a partition!");
   puts("        -c !The Command Line!");
-  puts("        -t !Only foe DSATUR-exact. DSATUR-exact tie bracking method(1/2/3/4)!");
+  puts("        -t !Only for DSATUR-exact. DSATUR-exact tie bracking method(1/2/3/4)!");
   /* ... */
   exit(EXIT_FAILURE);
 }
@@ -212,7 +212,7 @@ int main(int argc, char *argv[])
 
   if (argc < 2 )
     {
-      fprintf (stderr, "Usage: %s -i [martix-market-filename] -m [slo/ido/rlf/lfo/sdo]\n", argv[0]);
+      fprintf (stderr, "Usage: %s -i [martix-market-filename] -m [slo/ido/rlf/lfo/sdo/exact]\n", argv[0]);
       exit(1);
     }
   /**

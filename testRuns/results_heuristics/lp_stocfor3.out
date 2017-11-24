@@ -1,0 +1,23 @@
+Output format: File name, no. of rows, no. of columns, no. of non-zero elements, method name, ordering time, coloring time, colors/partitions 
+
+
+Method: LFO
+data_heuristics/lp_stocfor3.mtx,16675,23541,76473,LFO,0,0,16
+
+
+Method: SLO
+data_heuristics/lp_stocfor3.mtx,16675,23541,76473,SLO,0.01,0,15
+
+
+Method: IDO
+data_heuristics/lp_stocfor3.mtx,16675,23541,76473,IDO,0.01,0.01,15
+
+
+Method: SDO
+data_heuristics/lp_stocfor3.mtx,16675,23541,76473,SDO,0,0,15
+
+
+Method: RLF
+data_heuristics/lp_stocfor3.mtx,16675,23541,76473,RLF,0,0.01,15
+
+

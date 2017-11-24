@@ -329,7 +329,7 @@ bool canReadFile(Configuration *configuration)
   FILE *f;
   if( configuration->inputfile_given == false)
     {
-      fprintf (stderr, "Usage: %s -i [martix-market-filename] -m [slo/ido/rlf/lfo/sdo]\n", configuration->exeName.c_str());
+      fprintf (stderr, "Usage: %s -i [martix-market-filename] -m [slo/ido/rlf/lfo/sdo/exact]\n", configuration->exeName.c_str());
       fprintf (stderr, "Use an input file with -i $filename\n");
       return false;
     }

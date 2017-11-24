@@ -1,0 +1,23 @@
+Output format: File name, no. of rows, no. of columns, no. of non-zero elements, method name, ordering time, coloring time, colors/partitions 
+
+
+Method: LFO
+data_heuristics/e30r2000.mtx,9661,9661,306356,LFO,0,0.02,89
+
+
+Method: SLO
+data_heuristics/e30r2000.mtx,9661,9661,306356,SLO,0.03,0.02,70
+
+
+Method: IDO
+data_heuristics/e30r2000.mtx,9661,9661,306356,IDO,0.05,0.02,72
+
+
+Method: SDO
+data_heuristics/e30r2000.mtx,9661,9661,306356,SDO,0,0.06,70
+
+
+Method: RLF
+data_heuristics/e30r2000.mtx,9661,9661,306356,RLF,0,1.05,65
+
+

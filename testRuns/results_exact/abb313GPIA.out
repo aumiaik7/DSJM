@@ -1,0 +1,57 @@
+######################## Tie-breaking method: SIMPLE
+data_exact/abb313GPIA.mtx,LB :6
+
+Got current best coloring at time : 0
+New coloring: 11 Subproblems: 1552
+
+Got current best coloring at time : 0.015625
+New coloring: 10 Subproblems: 3084
+
+Coloring :10
+
+Got current best coloring at time : 3600.02 Subproblems:3.98587e+08
+50463,1557,101857,EXACT,0.02,3624.14,10
+
+
+######################## Tie-breaking method: SEWELL
+data_exact/abb313GPIA.mtx,LB :6
+
+Got current best coloring at time : 0.078125
+New coloring: 11 Subproblems: 1552
+
+Got current best coloring at time : 22.9688
+New coloring: 10 Subproblems: 271906
+
+Coloring :10
+
+Got current best coloring at time : 3600.02 Subproblems:6.60361e+07
+50463,1557,101857,EXACT,0,3603.23,10
+
+
+######################## Tie-breaking method: SEGUNDO
+data_exact/abb313GPIA.mtx,LB :6
+
+Got current best coloring at time : 0.046875
+New coloring: 11 Subproblems: 1552
+
+Got current best coloring at time : 0.140625
+New coloring: 10 Subproblems: 3381
+
+Coloring :10
+
+Got current best coloring at time : 3600.02 Subproblems:4.50675e+07
+50463,1557,101857,EXACT,0.01,3628.36,10
+
+
+######################## Tie-breaking method: NEW
+data_exact/abb313GPIA.mtx,LB :6
+
+Got current best coloring at time : 0.09375
+New coloring: 10 Subproblems: 1552
+
+Coloring :10
+
+Got current best coloring at time : 3600.02 Subproblems:3.30722e+07
+50463,1557,101857,EXACT,0,3601.22,10
+
+

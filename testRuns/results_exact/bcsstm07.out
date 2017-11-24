@@ -1,0 +1,60 @@
+######################## Tie-breaking method: SIMPLE
+data_exact/bcsstm07.mtx,LB :26
+
+Got current best coloring at time : 0
+New coloring: 30 Subproblems: 395
+
+Got current best coloring at time : 0.078125
+New coloring: 29 Subproblems: 16105
+
+Got current best coloring at time : 118.062
+New coloring: 28 Subproblems: 1.62282e+07
+
+Coloring :28
+
+Got current best coloring at time : 3600.02 Subproblems:5.30248e+08
+420,420,7252,EXACT,0,3601.32,28
+
+
+######################## Tie-breaking method: SEWELL
+data_exact/bcsstm07.mtx,LB :26
+
+Got current best coloring at time : 0
+New coloring: 30 Subproblems: 395
+
+Got current best coloring at time : 11.0781
+New coloring: 29 Subproblems: 711365
+
+Coloring :29
+
+Got current best coloring at time : 3600.02 Subproblems:1.75177e+08
+420,420,7252,EXACT,0,3601.55,29
+
+
+######################## Tie-breaking method: SEGUNDO
+data_exact/bcsstm07.mtx,LB :26
+
+Got current best coloring at time : 0.015625
+New coloring: 29 Subproblems: 395
+
+Got current best coloring at time : 0.015625
+New coloring: 28 Subproblems: 481
+
+Coloring :28
+
+Got current best coloring at time : 3600.02 Subproblems:2.89613e+08
+420,420,7252,EXACT,0,3679.65,28
+
+
+######################## Tie-breaking method: NEW
+data_exact/bcsstm07.mtx,LB :26
+
+Got current best coloring at time : 0
+New coloring: 29 Subproblems: 395
+
+Coloring :29
+
+Got current best coloring at time : 3600.02 Subproblems:1.41905e+08
+420,420,7252,EXACT,0,3649.18,29
+
+

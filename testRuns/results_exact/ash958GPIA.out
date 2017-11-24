@@ -1,0 +1,63 @@
+######################## Tie-breaking method: SIMPLE
+data_exact/ash958GPIA.mtx,LB :2
+
+Got current best coloring at time : 0
+New coloring: 5 Subproblems: 1915
+
+Got current best coloring at time : 0
+New coloring: 4 Subproblems: 3684
+
+Coloring :4
+
+Got current best coloring at time : 0 Subproblems:3689
+12506,1916,25012,EXACT,0.01,0.01,4
+
+
+######################## Tie-breaking method: SEWELL
+data_exact/ash958GPIA.mtx,LB :2
+
+Got current best coloring at time : 0.109375
+New coloring: 6 Subproblems: 1915
+
+Got current best coloring at time : 0.21875
+New coloring: 5 Subproblems: 3561
+
+Coloring :5
+
+Got current best coloring at time : 3600.02 Subproblems:2.98554e+07
+12506,1916,25012,EXACT,0,3601.48,5
+
+
+######################## Tie-breaking method: SEGUNDO
+data_exact/ash958GPIA.mtx,LB :2
+
+Got current best coloring at time : 0.140625
+New coloring: 5 Subproblems: 1915
+
+Got current best coloring at time : 0.28125
+New coloring: 4 Subproblems: 3635
+
+Coloring :4
+
+Got current best coloring at time : 0.28125 Subproblems:3640
+12506,1916,25012,EXACT,0,0.28,4
+
+
+######################## Tie-breaking method: NEW
+data_exact/ash958GPIA.mtx,LB :2
+
+Got current best coloring at time : 0.109375
+New coloring: 6 Subproblems: 1915
+
+Got current best coloring at time : 0.203125
+New coloring: 5 Subproblems: 3557
+
+Got current best coloring at time : 0.4375
+New coloring: 4 Subproblems: 5643
+
+Coloring :4
+
+Got current best coloring at time : 0.4375 Subproblems:5648
+12506,1916,25012,EXACT,0,0.44,4
+
+

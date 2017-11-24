@@ -1,0 +1,23 @@
+Output format: File name, no. of rows, no. of columns, no. of non-zero elements, method name, ordering time, coloring time, colors/partitions 
+
+
+Method: LFO
+data_heuristics/lhr34.mtx,35152,35152,764014,LFO,0,0.05,66
+
+
+Method: SLO
+data_heuristics/lhr34.mtx,35152,35152,764014,SLO,0.09,0.04,63
+
+
+Method: IDO
+data_heuristics/lhr34.mtx,35152,35152,764014,IDO,0.12,0.06,64
+
+
+Method: SDO
+data_heuristics/lhr34.mtx,35152,35152,764014,SDO,0,0.17,63
+
+
+Method: RLF
+data_heuristics/lhr34.mtx,35152,35152,764014,RLF,0,0.56,63
+
+

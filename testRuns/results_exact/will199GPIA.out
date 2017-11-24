@@ -1,0 +1,48 @@
+######################## Tie-breaking method: SIMPLE
+data_exact/will199GPIA.mtx,LB :6
+
+Got current best coloring at time : 0
+New coloring: 7 Subproblems: 696
+
+Coloring :7
+
+Got current best coloring at time : 0 Subproblems:696
+6010,701,12323,EXACT,0,0.01,7
+
+
+######################## Tie-breaking method: SEWELL
+data_exact/will199GPIA.mtx,LB :6
+
+Got current best coloring at time : 0.03125
+New coloring: 7 Subproblems: 696
+
+Coloring :7
+
+Got current best coloring at time : 0.03125 Subproblems:696
+6010,701,12323,EXACT,0,0.03,7
+
+
+######################## Tie-breaking method: SEGUNDO
+data_exact/will199GPIA.mtx,LB :6
+
+Got current best coloring at time : 0.015625
+New coloring: 7 Subproblems: 696
+
+Coloring :7
+
+Got current best coloring at time : 0.03125 Subproblems:696
+6010,701,12323,EXACT,0,0.02,7
+
+
+######################## Tie-breaking method: NEW
+data_exact/will199GPIA.mtx,LB :6
+
+Got current best coloring at time : 0.015625
+New coloring: 7 Subproblems: 696
+
+Coloring :7
+
+Got current best coloring at time : 0.015625 Subproblems:696
+6010,701,12323,EXACT,0,0.02,7
+
+

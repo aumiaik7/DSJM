@@ -1,0 +1,60 @@
+######################## Tie-breaking method: SIMPLE
+data_exact/poisson2D.mtx,LB :9
+
+Got current best coloring at time : 0
+New coloring: 11 Subproblems: 359
+
+Got current best coloring at time : 0
+New coloring: 10 Subproblems: 412
+
+Got current best coloring at time : 0
+New coloring: 9 Subproblems: 595
+
+Coloring :9
+
+Got current best coloring at time : 0 Subproblems:595
+367,367,2417,EXACT,0,0,9
+
+
+######################## Tie-breaking method: SEWELL
+data_exact/poisson2D.mtx,LB :9
+
+Got current best coloring at time : 0
+New coloring: 10 Subproblems: 359
+
+Coloring :10
+
+Got current best coloring at time : 3600.02 Subproblems:7.77818e+08
+367,367,2417,EXACT,0,3647.27,10
+
+
+######################## Tie-breaking method: SEGUNDO
+data_exact/poisson2D.mtx,LB :9
+
+Got current best coloring at time : 0
+New coloring: 10 Subproblems: 359
+
+Got current best coloring at time : 0
+New coloring: 9 Subproblems: 494
+
+Coloring :9
+
+Got current best coloring at time : 0 Subproblems:494
+367,367,2417,EXACT,0,0.01,9
+
+
+######################## Tie-breaking method: NEW
+data_exact/poisson2D.mtx,LB :9
+
+Got current best coloring at time : 0
+New coloring: 10 Subproblems: 359
+
+Got current best coloring at time : 0
+New coloring: 9 Subproblems: 582
+
+Coloring :9
+
+Got current best coloring at time : 0 Subproblems:582
+367,367,2417,EXACT,0,0.02,9
+
+
